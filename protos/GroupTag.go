@@ -1,0 +1,23 @@
+package protos
+
+type GroupTag int32
+
+const (
+	GroupTag_None GroupTag = 0
+	GroupTag_Group01 GroupTag = 1
+	GroupTag_Group02 GroupTag = 2
+	GroupTag_Group03 GroupTag = 4
+	GroupTag_Group04 GroupTag = 8
+	GroupTag_Group05 GroupTag = 16
+	GroupTag_Group06 GroupTag = 32
+	GroupTag_Group07 GroupTag = 64
+	GroupTag_Group08 GroupTag = 128
+	GroupTag_Group09 GroupTag = 256
+	GroupTag_Group10 GroupTag = 512
+	GroupTag_Group11 GroupTag = 1024
+	GroupTag_Group12 GroupTag = 2048
+	GroupTag_Group13 GroupTag = 4096
+	GroupTag_Group14 GroupTag = 8192
+	GroupTag_Group15 GroupTag = 16384
+	GroupTag_Group16 GroupTag = 32768
+)

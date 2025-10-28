@@ -1,0 +1,134 @@
+name: Generate protocols from Decompiled Code
+on:
+  schedule:
+    - cron: "0 */2 * * 3"
+  workflow_dispatch:
+    inputs:
+      force_update:
+        type: boolean
+        required: false
+        description: "Force update the library"
+
+jobs:
+  determine-version:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.get-version.outputs.skip }}
+      version: ${{ steps.get-version.outputs.version }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          ref: develop
+          sparse-checkout: |
+            version.txt
+          sparse-checkout-cone-mode: false
+          fetch-depth: 0
+      - name: Check the APK version
+        id: get-version
+        run: |
+          # If current version is the same as the latest version, exit
+          latest_version=$(curl -s https://ba.pokeguy.dev/com.YostarJP.BlueArchive/version.txt)
+          echo "::notice title=Latest APK Version::$latest_version"
+          # Skip this step if the version.txt file does not exist
+          if [ ! -f version.txt ]; then
+            echo "Version file not found."
+            # Update the version.txt file with the latest version
+            echo "version=$latest_version" >> $GITHUB_OUTPUT
+            echo "skip=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          # Exit 0 if env variable SKIP is true
+          if [ "${{ github.event.inputs.force_update }}" = "true" ]; then
+            echo "Forcing update..."
+            echo "skip=false" >> $GITHUB_OUTPUT
+            echo "version=$latest_version" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          current_version=$(cat version.txt)
+          if [ "$current_version" = "$latest_version" ]; then
+            echo "Current version is the same as the latest version: $current_version. Skipping..."
+            echo "skip=true" >> $GITHUB_OUTPUT
+            echo "version=$latest_version" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          # Update the version.txt file with the latest version
+          echo "version=$latest_version" >> $GITHUB_OUTPUT
+          echo "skip=false" >> $GITHUB_OUTPUT
+
+  check-branch:
+    runs-on: ubuntu-latest
+    needs: determine-version
+    if: needs.determine-version.outputs.skip == 'false'
+    outputs:
+      should_run: ${{ steps.check-branch.outputs.should_run }}
+    steps:
+      - name: Check if branch already exists
+        id: check-branch
+        run: |
+          branch_name="chore/generate-schema-${{ needs.determine-version.outputs.version }}"
+          if gh api repos/${{ github.repository }}/branches/"$branch_name" --silent 2>/dev/null; then
+            echo "Branch $branch_name already exists. Skipping workflow."
+            echo "should_run=false" >> $GITHUB_OUTPUT
+          else
+            echo "Branch does not exist. Proceeding with schema generation."
+            echo "should_run=true" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+  generate-schema:
+    runs-on: ubuntu-latest
+    needs: [determine-version, check-branch]
+    if: needs.check-branch.outputs.should_run == 'true'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          ref: develop
+          sparse-checkout-cone-mode: false
+          fetch-depth: 0
+      - name: Setup SSH agent
+        uses: webfactory/ssh-agent@v0.9.1
+        with:
+          ssh-private-key: ${{secrets.BLUEARCHIVE_TOGO_PRIVATE_KEY}}
+      - name: Download decompiled zip file
+        run: curl -s https://ba.pokeguy.dev/com.YostarJP.BlueArchive/decompiled/${{ needs.determine-version.outputs.version }}/decompiled.zip -o output.zip
+      - name: Unzip the file
+        run: unzip output.zip -d output "DiffableCs/BlueArchive/**"
+      - name: Setup Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: "^1.25.3"
+      - name: Generate the schema
+        env:
+          GOPRIVATE: github.com/arisu-archive
+        run: |
+          git config --global --add url."git@github.com:".insteadOf "https://github.com/"
+          go run github.com/arisu-archive/bluearchive-togo/cmd/ba-togo@latest convert -i ./output/DiffableCs/BlueArchive -o protos -n "MX.NetworkProtocol" -m "github.com/arisu-archive/plana-protos" --map "FlatData=github.com/arisu-archive/plana-flatbuffers/go/flatdata" --omit-empty --omit-zero
+          echo -n "${{ needs.determine-version.outputs.version }}" > version.txt
+          git config --global --unset url."git@github.com:".insteadOf "https://github.com/"
+      - name: Fix the linting issues
+        uses: golangci/golangci-lint-action@v8
+        with:
+          version: v2.1
+          args: --fix ./...
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "['./protos', 'version.txt']"
+          message: "chore(apk): generate protos for ${{ needs.determine-version.outputs.version }}"
+          default_author: github_actions
+          push: true
+          new_branch: chore/generate-protos-${{ needs.determine-version.outputs.version }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Create pull request
+        run: |
+          gh pr create -B develop -H "chore/generate-protos-${{ needs.determine-version.outputs.version }}" \
+                        --title 'chore(protos): generate protos for ${{ needs.determine-version.outputs.version }}' \
+                        --body '* Version: ${{ needs.determine-version.outputs.version }}' \
+                        --label needs-review \
+                        --label auto-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
