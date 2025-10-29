@@ -2,7 +2,6 @@ package protos
 
 type AccountLoginSyncResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	Responses ResponsePacket `json:",omitempty,omitzero"`
 	CafeGetInfoResponse CafeGetInfoResponse `json:",omitempty,omitzero"`
 	AccountCurrencySyncResponse AccountCurrencySyncResponse `json:",omitempty,omitzero"`

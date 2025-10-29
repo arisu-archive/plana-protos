@@ -6,6 +6,5 @@ import (
 
 type EchelonPresetListRequest struct {
 	RequestPacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	EchelonExtensionType flatdata.EchelonExtensionType `json:",omitempty,omitzero"`
 }

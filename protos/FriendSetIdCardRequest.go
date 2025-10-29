@@ -2,7 +2,6 @@ package protos
 
 type FriendSetIdCardRequest struct {
 	RequestPacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	Comment string `json:",omitempty,omitzero"`
 	RepresentCharacterUniqueId int64 `json:",omitempty,omitzero"`
 	EmblemId int64 `json:",omitempty,omitzero"`

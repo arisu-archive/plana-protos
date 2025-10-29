@@ -2,7 +2,6 @@ package protos
 
 type EquipmentItemEquipRequest struct {
 	RequestPacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	CharacterServerId int64 `json:",omitempty,omitzero"`
 	EquipmentServerIds []int64 `json:",omitempty,omitzero"`
 	EquipmentServerId int64 `json:",omitempty,omitzero"`

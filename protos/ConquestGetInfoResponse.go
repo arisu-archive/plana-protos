@@ -6,7 +6,6 @@ import (
 
 type ConquestGetInfoResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	ConquestInfoDB ConquestInfoDB `json:",omitempty,omitzero"`
 	ConquestedTileDBs []ConquestTileDB `json:",omitempty,omitzero"`
 	ConquestObjectDBsWrapper []ConquestEventObjectDB `json:",omitempty,omitzero"`

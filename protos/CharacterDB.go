@@ -1,12 +1,7 @@
 package protos
 
-import (
-	"github.com/arisu-archive/plana-flatbuffers/go/flatdata"
-)
-
 type CharacterDB struct {
 	ParcelBase
-	Type flatdata.ParcelType `json:",omitempty,omitzero"`
 	ServerId int64 `json:",omitempty,omitzero"`
 	UniqueId int64 `json:",omitempty,omitzero"`
 	StarGrade int32 `json:",omitempty,omitzero"`

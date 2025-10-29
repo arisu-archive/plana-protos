@@ -2,7 +2,6 @@ package protos
 
 type MiniGameDreamMakerDailyClosingResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	InfoDB MiniGameDreamMakerInfoDB `json:",omitempty,omitzero"`
 	ParameterDBs []MiniGameDreamMakerParameterDB `json:",omitempty,omitzero"`
 	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`

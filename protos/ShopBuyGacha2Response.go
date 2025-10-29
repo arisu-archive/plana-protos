@@ -6,7 +6,6 @@ import (
 
 type ShopBuyGacha2Response struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	UpdateTime time.Time `json:",omitempty,omitzero"`
 	GemBonusRemain int64 `json:",omitempty,omitzero"`
 	GemPaidRemain int64 `json:",omitempty,omitzero"`

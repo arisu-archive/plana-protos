@@ -2,7 +2,6 @@ package protos
 
 type AccountAuthRequest struct {
 	RequestPacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	Version int64 `json:",omitempty,omitzero"`
 	DevId string `json:",omitempty,omitzero"`
 	IMEI int64 `json:",omitempty,omitzero"`

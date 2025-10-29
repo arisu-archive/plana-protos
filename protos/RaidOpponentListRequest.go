@@ -6,7 +6,6 @@ import (
 
 type RaidOpponentListRequest struct {
 	RequestPacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	Rank *int64 `json:",omitempty,omitzero"`
 	Score *int64 `json:",omitempty,omitzero"`
 	IsUpper bool `json:",omitempty,omitzero"`

@@ -6,7 +6,6 @@ import (
 
 type RaidCreateBattleRequest struct {
 	RequestPacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	RaidUniqueId int64 `json:",omitempty,omitzero"`
 	IsPractice bool `json:",omitempty,omitzero"`
 	Tags []int32 `json:",omitempty,omitzero"`

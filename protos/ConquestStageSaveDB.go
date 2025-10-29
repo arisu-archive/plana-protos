@@ -6,7 +6,6 @@ import (
 
 type ConquestStageSaveDB struct {
 	ContentSaveDB
-	ContentType flatdata.ContentType `json:",omitempty,omitzero"`
 	ConquestEventObjectDBId *int64 `json:",omitempty,omitzero"`
 	EventContentId int64 `json:",omitempty,omitzero"`
 	Difficulty flatdata.StageDifficulty `json:",omitempty,omitzero"`

@@ -2,7 +2,6 @@ package protos
 
 type EventContentConcentrationFlipCardResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	SaveDB EventContentConcentrationSaveDB `json:",omitempty,omitzero"`
 	First EventContentConcentrationCardDB `json:",omitempty,omitzero"`
 	Second EventContentConcentrationCardDB `json:",omitempty,omitzero"`

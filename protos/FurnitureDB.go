@@ -6,7 +6,6 @@ import (
 
 type FurnitureDB struct {
 	ConsumableItemBaseDB
-	Type flatdata.ParcelType `json:",omitempty,omitzero"`
 	Location flatdata.FurnitureLocation `json:",omitempty,omitzero"`
 	CafeDBId int64 `json:",omitempty,omitzero"`
 	PositionX float32 `json:",omitempty,omitzero"`

@@ -7,7 +7,6 @@ import (
 
 type BillingTransactionStartByYostarResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	PurchaseCount int64 `json:",omitempty,omitzero"`
 	PurchaseResetDate time.Time `json:",omitempty,omitzero"`
 	PurchaseOrderId int64 `json:",omitempty,omitzero"`

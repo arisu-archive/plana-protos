@@ -1,12 +1,7 @@
 package protos
 
-import (
-	"github.com/arisu-archive/plana-flatbuffers/go/flatdata"
-)
-
 type WeaponDB struct {
 	ParcelBase
-	Type flatdata.ParcelType `json:",omitempty,omitzero"`
 	UniqueId int64 `json:",omitempty,omitzero"`
 	Level int32 `json:",omitempty,omitzero"`
 	Exp int64 `json:",omitempty,omitzero"`

@@ -2,7 +2,6 @@ package protos
 
 type AccountCreateRequest struct {
 	RequestPacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	DevId string `json:",omitempty,omitzero"`
 	Version int64 `json:",omitempty,omitzero"`
 	IMEI int64 `json:",omitempty,omitzero"`

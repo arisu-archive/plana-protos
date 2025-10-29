@@ -2,7 +2,6 @@ package protos
 
 type ArenaEnterBattleResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	AccountCurrencyDB AccountCurrencyDB `json:",omitempty,omitzero"`
 	ArenaBattleDB ArenaBattleDB `json:",omitempty,omitzero"`
 	ArenaPlayerInfoDB ArenaPlayerInfoDB `json:",omitempty,omitzero"`

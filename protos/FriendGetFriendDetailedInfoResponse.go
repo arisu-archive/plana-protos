@@ -2,7 +2,6 @@ package protos
 
 type FriendGetFriendDetailedInfoResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	Nickname string `json:",omitempty,omitzero"`
 	Level int64 `json:",omitempty,omitzero"`
 	ClanName string `json:",omitempty,omitzero"`

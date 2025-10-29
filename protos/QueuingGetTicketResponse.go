@@ -2,7 +2,6 @@ package protos
 
 type QueuingGetTicketResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	WaitingTicket string `json:",omitempty,omitzero"`
 	EnterTicket string `json:",omitempty,omitzero"`
 	TicketSequence int64 `json:",omitempty,omitzero"`

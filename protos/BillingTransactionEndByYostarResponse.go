@@ -2,7 +2,6 @@ package protos
 
 type BillingTransactionEndByYostarResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	ParcelResult ParcelResultDB `json:",omitempty,omitzero"`
 	MailDB MailDB `json:",omitempty,omitzero"`
 	CountList []PurchaseCountDB `json:",omitempty,omitzero"`

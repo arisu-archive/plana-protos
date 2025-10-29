@@ -2,7 +2,6 @@ package protos
 
 type QueuingGetTicketRequest struct {
 	RequestPacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	YostarUID int64 `json:",omitempty,omitzero"`
 	YostarToken string `json:",omitempty,omitzero"`
 	MakeStandby bool `json:",omitempty,omitzero"`

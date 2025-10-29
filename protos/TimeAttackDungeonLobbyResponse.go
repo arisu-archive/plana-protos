@@ -2,7 +2,6 @@ package protos
 
 type TimeAttackDungeonLobbyResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	RoomDBs map[int64]TimeAttackDungeonRoomDB `json:",omitempty,omitzero"`
 	PreviousRoomDB TimeAttackDungeonRoomDB `json:",omitempty,omitzero"`
 	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`

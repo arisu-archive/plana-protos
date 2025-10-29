@@ -6,7 +6,6 @@ import (
 
 type RaidLobbyResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	SeasonType flatdata.RaidSeasonType `json:",omitempty,omitzero"`
 	RaidGiveUpDB RaidGiveUpDB `json:",omitempty,omitzero"`
 	RaidLobbyInfoDB SingleRaidLobbyInfoDB `json:",omitempty,omitzero"`

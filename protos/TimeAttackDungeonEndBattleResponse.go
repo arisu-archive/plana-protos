@@ -2,7 +2,6 @@ package protos
 
 type TimeAttackDungeonEndBattleResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	RoomDB TimeAttackDungeonRoomDB `json:",omitempty,omitzero"`
 	TotalPoint int64 `json:",omitempty,omitzero"`
 	DefaultPoint int64 `json:",omitempty,omitzero"`

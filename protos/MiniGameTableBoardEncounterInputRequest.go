@@ -2,7 +2,6 @@ package protos
 
 type MiniGameTableBoardEncounterInputRequest struct {
 	RequestPacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	EventContentId int64 `json:",omitempty,omitzero"`
 	ObjectServerId int64 `json:",omitempty,omitzero"`
 	EncounterStage int32 `json:",omitempty,omitzero"`

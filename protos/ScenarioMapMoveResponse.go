@@ -2,7 +2,6 @@ package protos
 
 type ScenarioMapMoveResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	SaveDataDB StoryStrategyStageSaveDB `json:",omitempty,omitzero"`
 	ScenarioIds []int64 `json:",omitempty,omitzero"`
 	EchelonEntityId int64 `json:",omitempty,omitzero"`

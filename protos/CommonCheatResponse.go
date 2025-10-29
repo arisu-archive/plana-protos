@@ -2,7 +2,6 @@ package protos
 
 type CommonCheatResponse struct {
 	ResponsePacket
-	Protocol Protocol `json:",omitempty,omitzero"`
 	Account AccountDB `json:",omitempty,omitzero"`
 	AccountCurrency AccountCurrencyDB `json:",omitempty,omitzero"`
 	CharacterDBs []CharacterDB `json:",omitempty,omitzero"`
