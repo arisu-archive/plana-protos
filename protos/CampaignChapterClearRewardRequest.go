@@ -6,6 +6,6 @@ import (
 
 type CampaignChapterClearRewardRequest struct {
 	RequestPacket
-	CampaignChapterUniqueId int64 `json:",omitempty,omitzero"`
-	StageDifficulty flatdata.StageDifficulty `json:",omitempty,omitzero"`
+	CampaignChapterUniqueId int64                    `json:",omitempty,omitzero"`
+	StageDifficulty         flatdata.StageDifficulty `json:",omitempty,omitzero"`
 }

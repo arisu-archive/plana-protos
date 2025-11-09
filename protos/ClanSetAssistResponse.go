@@ -2,7 +2,7 @@ package protos
 
 type ClanSetAssistResponse struct {
 	ResponsePacket
-	ClanAssistSlotDB ClanAssistSlotDB `json:",omitempty,omitzero"`
-	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
-	RewardInfo ClanAssistRewardInfo `json:",omitempty,omitzero"`
+	ClanAssistSlotDB ClanAssistSlotDB     `json:",omitempty,omitzero"`
+	ParcelResultDB   ParcelResultDB       `json:",omitempty,omitzero"`
+	RewardInfo       ClanAssistRewardInfo `json:",omitempty,omitzero"`
 }

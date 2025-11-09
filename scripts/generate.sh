@@ -10,7 +10,8 @@ curl -s https://ba.pokeguy.dev/$package_name/decompiled/$version/decompiled.zip 
 unzip ./tmp/decompiled.zip -d ./tmp "DiffableCs/BlueArchive/**"
 go run github.com/arisu-archive/bluearchive-togo/cmd/ba-togo@latest convert -i ./tmp/DiffableCs/BlueArchive -o protos -n "MX.NetworkProtocol" \
     -m "github.com/arisu-archive/$module_prefix-protos" \
-    --map "FlatData=github.com/arisu-archive/$module_prefix-flatbuffers/go/flatdata"
+    --map "FlatData=github.com/arisu-archive/$module_prefix-flatbuffers/go/flatdata" \
+    --omit-empty --omit-zero
 echo -n "$version" > version.txt
 rm -rf ./tmp
 golangci-lint run --fix ./...

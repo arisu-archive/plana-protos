@@ -7,5 +7,5 @@ import (
 type BattlePassMissionMultipleRewardRequest struct {
 	RequestPacket
 	MissionCategory flatdata.MissionCategory `json:",omitempty,omitzero"`
-	BattlePassId int64 `json:",omitempty,omitzero"`
+	BattlePassId    int64                    `json:",omitempty,omitzero"`
 }

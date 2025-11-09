@@ -1,12 +1,8 @@
 package protos
 
-import (
-	"time"
-)
-
 type WorldRaidBossGroup struct {
 	ContentsValueChangeDB
-	GroupId int64 `json:",omitempty,omitzero"`
-	BossSpawnTime time.Time `json:",omitempty,omitzero"`
-	EliminateTime time.Time `json:",omitempty,omitzero"`
+	GroupId       int64  `json:",omitempty,omitzero"`
+	BossSpawnTime MxTime `json:",omitempty,omitzero"`
+	EliminateTime MxTime `json:",omitempty,omitzero"`
 }

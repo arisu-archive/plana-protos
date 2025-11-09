@@ -6,7 +6,7 @@ import (
 
 type ConquestUpgradeBaseRequest struct {
 	RequestPacket
-	EventContentId int64 `json:",omitempty,omitzero"`
-	Difficulty flatdata.StageDifficulty `json:",omitempty,omitzero"`
-	TileUniqueId int64 `json:",omitempty,omitzero"`
+	EventContentId int64                    `json:",omitempty,omitzero"`
+	Difficulty     flatdata.StageDifficulty `json:",omitempty,omitzero"`
+	TileUniqueId   int64                    `json:",omitempty,omitzero"`
 }

@@ -5,7 +5,7 @@ import (
 )
 
 type CardShopPurchaseHistoryDB struct {
-	EventContentId int64 `json:",omitempty,omitzero"`
-	Rarity flatdata.Rarity `json:",omitempty,omitzero"`
-	PurchaseCount int64 `json:",omitempty,omitzero"`
+	EventContentId int64           `json:",omitempty,omitzero"`
+	Rarity         flatdata.Rarity `json:",omitempty,omitzero"`
+	PurchaseCount  int64           `json:",omitempty,omitzero"`
 }

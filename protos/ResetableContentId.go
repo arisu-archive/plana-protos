@@ -5,6 +5,6 @@ import (
 )
 
 type ResetableContentId struct {
-	Type flatdata.ResetContentType `json:",omitempty,omitzero"`
-	Mapped int64 `json:",omitempty,omitzero"`
+	Type   flatdata.ResetContentType `json:",omitempty,omitzero"`
+	Mapped int64                     `json:",omitempty,omitzero"`
 }

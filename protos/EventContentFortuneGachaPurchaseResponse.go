@@ -2,6 +2,6 @@ package protos
 
 type EventContentFortuneGachaPurchaseResponse struct {
 	ResponsePacket
-	FortuneGachaShopUniqueId int64 `json:",omitempty,omitzero"`
-	ParcelResultDB ParcelResultDB `json:",omitempty,omitzero"`
+	FortuneGachaShopUniqueId int64          `json:",omitempty,omitzero"`
+	ParcelResultDB           ParcelResultDB `json:",omitempty,omitzero"`
 }

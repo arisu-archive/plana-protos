@@ -3,7 +3,7 @@ package protos
 type GroupTag int32
 
 const (
-	GroupTag_None GroupTag = 0
+	GroupTag_None    GroupTag = 0
 	GroupTag_Group01 GroupTag = 1
 	GroupTag_Group02 GroupTag = 2
 	GroupTag_Group03 GroupTag = 4

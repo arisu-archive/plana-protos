@@ -6,9 +6,9 @@ import (
 
 type ConquestConquerWithBattleStartRequest struct {
 	RequestPacket
-	EventContentId int64 `json:",omitempty,omitzero"`
-	Difficulty flatdata.StageDifficulty `json:",omitempty,omitzero"`
-	TileUniqueId int64 `json:",omitempty,omitzero"`
-	EchelonNumber *int64 `json:",omitempty,omitzero"`
-	ClanAssistUseInfo ClanAssistUseInfo `json:",omitempty,omitzero"`
+	EventContentId    int64                    `json:",omitempty,omitzero"`
+	Difficulty        flatdata.StageDifficulty `json:",omitempty,omitzero"`
+	TileUniqueId      int64                    `json:",omitempty,omitzero"`
+	EchelonNumber     *int64                   `json:",omitempty,omitzero"`
+	ClanAssistUseInfo ClanAssistUseInfo        `json:",omitempty,omitzero"`
 }

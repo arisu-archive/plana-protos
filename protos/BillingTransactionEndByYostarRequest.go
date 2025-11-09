@@ -6,6 +6,6 @@ import (
 
 type BillingTransactionEndByYostarRequest struct {
 	RequestPacket
-	PurchaseOrderId int64 `json:",omitempty,omitzero"`
-	EndType flatdata.BillingTransactionEndType `json:",omitempty,omitzero"`
+	PurchaseOrderId int64                              `json:",omitempty,omitzero"`
+	EndType         flatdata.BillingTransactionEndType `json:",omitempty,omitzero"`
 }

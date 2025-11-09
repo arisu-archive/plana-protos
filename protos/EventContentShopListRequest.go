@@ -6,6 +6,6 @@ import (
 
 type EventContentShopListRequest struct {
 	RequestPacket
-	EventContentId int64 `json:",omitempty,omitzero"`
-	CategoryList []flatdata.ShopCategoryType `json:",omitempty,omitzero"`
+	EventContentId int64                       `json:",omitempty,omitzero"`
+	CategoryList   []flatdata.ShopCategoryType `json:",omitempty,omitzero"`
 }

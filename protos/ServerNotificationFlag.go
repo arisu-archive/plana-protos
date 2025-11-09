@@ -3,19 +3,19 @@ package protos
 type ServerNotificationFlag int32
 
 const (
-	ServerNotificationFlag_None ServerNotificationFlag = 0
-	ServerNotificationFlag_NewMailArrived ServerNotificationFlag = 4
-	ServerNotificationFlag_HasUnreadMail ServerNotificationFlag = 8
-	ServerNotificationFlag_NewToastDetected ServerNotificationFlag = 16
-	ServerNotificationFlag_CanReceiveArenaDailyReward ServerNotificationFlag = 32
-	ServerNotificationFlag_CanReceiveRaidReward ServerNotificationFlag = 64
-	ServerNotificationFlag_ServerMaintenance ServerNotificationFlag = 256
-	ServerNotificationFlag_CannotReceiveMail ServerNotificationFlag = 512
-	ServerNotificationFlag_InventoryFullRewardMail ServerNotificationFlag = 1024
+	ServerNotificationFlag_None                           ServerNotificationFlag = 0
+	ServerNotificationFlag_NewMailArrived                 ServerNotificationFlag = 4
+	ServerNotificationFlag_HasUnreadMail                  ServerNotificationFlag = 8
+	ServerNotificationFlag_NewToastDetected               ServerNotificationFlag = 16
+	ServerNotificationFlag_CanReceiveArenaDailyReward     ServerNotificationFlag = 32
+	ServerNotificationFlag_CanReceiveRaidReward           ServerNotificationFlag = 64
+	ServerNotificationFlag_ServerMaintenance              ServerNotificationFlag = 256
+	ServerNotificationFlag_CannotReceiveMail              ServerNotificationFlag = 512
+	ServerNotificationFlag_InventoryFullRewardMail        ServerNotificationFlag = 1024
 	ServerNotificationFlag_CanReceiveClanAttendanceReward ServerNotificationFlag = 2048
-	ServerNotificationFlag_HasClanApplicant ServerNotificationFlag = 4096
-	ServerNotificationFlag_HasFriendRequest ServerNotificationFlag = 8192
-	ServerNotificationFlag_CheckConquest ServerNotificationFlag = 16384
-	ServerNotificationFlag_CanReceiveEliminateRaidReward ServerNotificationFlag = 32768
+	ServerNotificationFlag_HasClanApplicant               ServerNotificationFlag = 4096
+	ServerNotificationFlag_HasFriendRequest               ServerNotificationFlag = 8192
+	ServerNotificationFlag_CheckConquest                  ServerNotificationFlag = 16384
+	ServerNotificationFlag_CanReceiveEliminateRaidReward  ServerNotificationFlag = 32768
 	ServerNotificationFlag_CanReceiveMultiFloorRaidReward ServerNotificationFlag = 65536
 )

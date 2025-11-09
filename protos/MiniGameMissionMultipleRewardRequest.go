@@ -7,5 +7,5 @@ import (
 type MiniGameMissionMultipleRewardRequest struct {
 	RequestPacket
 	MissionCategory flatdata.MissionCategory `json:",omitempty,omitzero"`
-	EventContentId int64 `json:",omitempty,omitzero"`
+	EventContentId  int64                    `json:",omitempty,omitzero"`
 }
