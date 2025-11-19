@@ -5,6 +5,6 @@ import (
 )
 
 type CraftNodeResult struct {
-	NodeTier flatdata.CraftNodeTier `json:",omitempty,omitzero"`
-	ParcelInfo ParcelInfo `json:",omitempty,omitzero"`
+	NodeTier   flatdata.CraftNodeTier `json:",omitempty,omitzero"`
+	ParcelInfo ParcelInfo             `json:",omitempty,omitzero"`
 }

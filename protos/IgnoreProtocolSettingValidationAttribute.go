@@ -1,4 +1,3 @@
 package protos
 
-type IgnoreProtocolSettingValidationAttribute struct {
-}
+type IgnoreProtocolSettingValidationAttribute struct{}

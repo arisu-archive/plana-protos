@@ -6,6 +6,6 @@ import (
 
 type NotificationEventContentReddotResponse struct {
 	ResponsePacket
-	Reddots map[int64][]flatdata.NotificationEventReddot `json:",omitempty,omitzero"`
-	EventContentUnlockCGDBs map[int64][]EventContentCollectionDB `json:",omitempty,omitzero"`
+	Reddots                 map[int64][]flatdata.NotificationEventReddot `json:",omitempty,omitzero"`
+	EventContentUnlockCGDBs map[int64][]EventContentCollectionDB         `json:",omitempty,omitzero"`
 }

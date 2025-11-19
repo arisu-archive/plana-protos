@@ -6,8 +6,8 @@ import (
 
 type ConquestMainStoryGetInfoResponse struct {
 	ResponsePacket
-	ConquestInfoDB ConquestInfoDB `json:",omitempty,omitzero"`
-	ConquestedTileDBs []ConquestTileDB `json:",omitempty,omitzero"`
+	ConquestInfoDB       ConquestInfoDB                     `json:",omitempty,omitzero"`
+	ConquestedTileDBs    []ConquestTileDB                   `json:",omitempty,omitzero"`
 	DifficultyToStepDict map[flatdata.StageDifficulty]int32 `json:",omitempty,omitzero"`
-	IsFirstEnter bool `json:",omitempty,omitzero"`
+	IsFirstEnter         bool                               `json:",omitempty,omitzero"`
 }

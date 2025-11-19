@@ -1,10 +1,6 @@
 package protos
 
-import (
-	"time"
-)
-
 type ScenarioHistoryDB struct {
-	ScenarioUniqueId int64 `json:",omitempty,omitzero"`
-	ClearDateTime time.Time `json:",omitempty,omitzero"`
+	ScenarioUniqueId int64  `json:",omitempty,omitzero"`
+	ClearDateTime    MxTime `json:",omitempty,omitzero"`
 }

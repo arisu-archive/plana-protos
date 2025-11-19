@@ -6,7 +6,7 @@ import (
 
 type SelectTicketReplaceInfo struct {
 	MaterialType flatdata.ParcelType `json:",omitempty,omitzero"`
-	MaterialId int64 `json:",omitempty,omitzero"`
-	TicketItemId int64 `json:",omitempty,omitzero"`
-	Amount int32 `json:",omitempty,omitzero"`
+	MaterialId   int64               `json:",omitempty,omitzero"`
+	TicketItemId int64               `json:",omitempty,omitzero"`
+	Amount       int32               `json:",omitempty,omitzero"`
 }

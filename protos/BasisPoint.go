@@ -1,4 +1,3 @@
 package protos
 
-type BasisPoint struct {
-}
+type BasisPoint struct{}

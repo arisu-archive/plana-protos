@@ -5,7 +5,7 @@ import (
 )
 
 type PurchaseOrderDB struct {
-	ShopCashId int64 `json:",omitempty,omitzero"`
-	StatusCode flatdata.PurchaseStatusCode `json:",omitempty,omitzero"`
-	PurchaseOrderId int64 `json:",omitempty,omitzero"`
+	ShopCashId      int64                       `json:",omitempty,omitzero"`
+	StatusCode      flatdata.PurchaseStatusCode `json:",omitempty,omitzero"`
+	PurchaseOrderId int64                       `json:",omitempty,omitzero"`
 }
