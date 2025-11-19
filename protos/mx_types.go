@@ -2,6 +2,7 @@ package protos
 
 import (
 	"encoding/json"
+	"fmt"
 	"strings"
 	"time"
 )
@@ -11,7 +12,11 @@ type MxTime time.Time
 
 // MarshalJSON implements the json.Marshaler interface.
 func (mt MxTime) MarshalJSON() ([]byte, error) {
-	return json.Marshal(time.Time(mt).Format("2006-01-02T15:04:05"))
+	b, err := json.Marshal(time.Time(mt).Format("2006-01-02T15:04:05"))
+	if err != nil {
+		return nil, fmt.Errorf("failed to marshal mx time: %w", err)
+	}
+	return b, nil
 }
 
 // UnmarshalJSON implements the json.Unmarshaler interface.
@@ -19,7 +24,7 @@ func (mt *MxTime) UnmarshalJSON(data []byte) error {
 	s := strings.Trim(string(data), "\"")
 	parsedTime, err := time.Parse("2006-01-02T15:04:05", s)
 	if err != nil {
-		return err
+		return fmt.Errorf("failed to unmarshal mx time: %w", err)
 	}
 	*mt = MxTime(parsedTime)
 	return nil

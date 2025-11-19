@@ -208,6 +208,8 @@ const (
 	Protocol_Craft_RewardAll                           Protocol = 21012
 	Protocol_Craft_ShiftingCompleteProcessAll          Protocol = 21013
 	Protocol_Craft_ShiftingRewardAll                   Protocol = 21014
+	Protocol_Craft_SavePreset                          Protocol = 21015
+	Protocol_Craft_SavePresetName                      Protocol = 21016
 	Protocol_Arena_EnterLobby                          Protocol = 22000
 	Protocol_Arena_Login                               Protocol = 22001
 	Protocol_Arena_SettingChange                       Protocol = 22002
@@ -464,6 +466,7 @@ const (
 	Protocol_MultiFloorRaid_EndBattle                  Protocol = 49002
 	Protocol_MultiFloorRaid_ReceiveReward              Protocol = 49003
 	Protocol_Queuing_GetTicket                         Protocol = 50000
+	Protocol_Queuing_GetCryptoKeys                     Protocol = 50001
 	Protocol_BattlePass_GetInfo                        Protocol = 51000
 	Protocol_BattlePass_BuyLevel                       Protocol = 51001
 	Protocol_BattlePass_ReceiveReward                  Protocol = 51002

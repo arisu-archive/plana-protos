@@ -59,7 +59,7 @@ const (
 	WebAPIErrorCode_YostarServerNotSuccessStatusCode               WebAPIErrorCode = 1009
 	WebAPIErrorCode_YostarNetworkException                         WebAPIErrorCode = 1010
 	WebAPIErrorCode_YostarException                                WebAPIErrorCode = 1011
-	WebAPIErrorCode_AccoountPassCheckNotSupportCheat               WebAPIErrorCode = 1012
+	WebAPIErrorCode_AccountPassCheckNotSupportCheat                WebAPIErrorCode = 1012
 	WebAPIErrorCode_AccountCreateFail                              WebAPIErrorCode = 1013
 	WebAPIErrorCode_AccountAddPubliserAccountFail                  WebAPIErrorCode = 1014
 	WebAPIErrorCode_AccountAddDevIdFail                            WebAPIErrorCode = 1015
