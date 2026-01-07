@@ -25,4 +25,5 @@ type AccountDB struct {
 	CreateDate                 MxTime                `json:",omitempty,omitzero"`
 	UnReadMailCount            *int32                `json:",omitempty,omitzero"`
 	LinkRewardDate             *MxTime               `json:",omitempty,omitzero"`
+	LastReturningDate          *MxTime               `json:",omitempty,omitzero"`
 }

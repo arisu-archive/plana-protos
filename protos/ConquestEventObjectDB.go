@@ -10,5 +10,6 @@ type ConquestEventObjectDB struct {
 	Difficulty         flatdata.StageDifficulty `json:",omitempty,omitzero"`
 	TileUniqueId       int64                    `json:",omitempty,omitzero"`
 	ObjectId           int64                    `json:",omitempty,omitzero"`
+	ObjectType         ConquestEventObjectType  `json:",omitempty,omitzero"`
 	IsAlive            bool                     `json:",omitempty,omitzero"`
 }

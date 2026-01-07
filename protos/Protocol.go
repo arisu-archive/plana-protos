@@ -193,6 +193,8 @@ const (
 	Protocol_Cafe_Open                                 Protocol = 20018
 	Protocol_Cafe_Travel                               Protocol = 20019
 	Protocol_Cafe_SummonCharacterTicketUse             Protocol = 20020
+	Protocol_Cafe_PresetDetail                         Protocol = 20021
+	Protocol_Cafe_UpdateCopyPresetFurniture            Protocol = 20022
 	Protocol_Craft_List                                Protocol = 21000
 	Protocol_Craft_SelectNode                          Protocol = 21001
 	Protocol_Craft_UpdateNodeLevel                     Protocol = 21002
@@ -465,6 +467,7 @@ const (
 	Protocol_MultiFloorRaid_EnterBattle                Protocol = 49001
 	Protocol_MultiFloorRaid_EndBattle                  Protocol = 49002
 	Protocol_MultiFloorRaid_ReceiveReward              Protocol = 49003
+	Protocol_MultiFloorRaid_Login                      Protocol = 49004
 	Protocol_Queuing_GetTicket                         Protocol = 50000
 	Protocol_Queuing_GetCryptoKeys                     Protocol = 50001
 	Protocol_BattlePass_GetInfo                        Protocol = 51000
@@ -474,4 +477,6 @@ const (
 	Protocol_BattlePass_MissionSingleReward            Protocol = 51004
 	Protocol_BattlePass_MissionMultipleReward          Protocol = 51005
 	Protocol_BattlePass_Check                          Protocol = 51006
+	Protocol_DailyRecord_Reward                        Protocol = 52000
+	Protocol_Option_Save                               Protocol = 53000
 )

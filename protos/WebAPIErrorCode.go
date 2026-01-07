@@ -229,6 +229,8 @@ const (
 	WebAPIErrorCode_CafeCannotTravelToOwnCafe                      WebAPIErrorCode = 15021
 	WebAPIErrorCode_CafeCannotTravel                               WebAPIErrorCode = 15022
 	WebAPIErrorCode_CafeCannotTravel_CafeLock                      WebAPIErrorCode = 15023
+	WebAPIErrorCode_CafePresetCopyNotAllowed                       WebAPIErrorCode = 15024
+	WebAPIErrorCode_CafePresetNotVisitingCafe                      WebAPIErrorCode = 15025
 	WebAPIErrorCode_ScenarioMode_Fail                              WebAPIErrorCode = 16000
 	WebAPIErrorCode_ScenarioMode_DuplicatedScenarioModeId          WebAPIErrorCode = 16001
 	WebAPIErrorCode_ScenarioMode_LimitClearedScenario              WebAPIErrorCode = 16002
@@ -590,6 +592,9 @@ const (
 	WebAPIErrorCode_BattlePassBuyLevelMaxLevelOver                 WebAPIErrorCode = 50002
 	WebAPIErrorCode_BattlePassBuyLevelBuyCountError                WebAPIErrorCode = 50003
 	WebAPIErrorCode_BattlePassAlreadyGetRewardAll                  WebAPIErrorCode = 50004
+	WebAPIErrorCode_DailyRecordNotFound                            WebAPIErrorCode = 51000
+	WebAPIErrorCode_DailyRecordAlreadyExpired                      WebAPIErrorCode = 51001
+	WebAPIErrorCode_DailyRecordRewardNotExist                      WebAPIErrorCode = 51002
 	WebAPIErrorCode_FieldDataNotFound                              WebAPIErrorCode = 60000
 	WebAPIErrorCode_FieldInteracionFailed                          WebAPIErrorCode = 60001
 	WebAPIErrorCode_FieldQuestClearFailed                          WebAPIErrorCode = 60002

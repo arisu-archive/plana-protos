@@ -1,3 +1,3 @@
 package protos
 
-type KillLogCollection struct{}
+type KillLogCollection = []KillLog
