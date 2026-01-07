@@ -21,5 +21,7 @@ type AccountAuthResponse struct {
 	EncryptedUID                        string                 `json:",omitempty,omitzero"`
 	AccountRestrictionsDB               AccountRestrictionsDB  `json:",omitempty,omitzero"`
 	IssueAlertInfos                     []IssueAlertInfoDB     `json:",omitempty,omitzero"`
+	DailyRecordDBs                      []DailyRecordDB        `json:",omitempty,omitzero"`
+	OptionDB                            OptionDB               `json:",omitempty,omitzero"`
 	IsArenaAnonymous                    bool                   `json:",omitempty,omitzero"`
 }

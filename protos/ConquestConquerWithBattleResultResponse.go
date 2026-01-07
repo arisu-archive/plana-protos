@@ -1,16 +1,12 @@
 package protos
 
-import (
-	"github.com/arisu-archive/plana-flatbuffers/go/flatdata"
-)
-
 type ConquestConquerWithBattleResultResponse struct {
 	ResponsePacket
-	ParcelResultDB               ParcelResultDB                      `json:",omitempty,omitzero"`
-	ConquestTileDB               ConquestTileDB                      `json:",omitempty,omitzero"`
-	ConquestInfoDB               ConquestInfoDB                      `json:",omitempty,omitzero"`
-	ConquestEventObjectDBWrapper []ConquestEventObjectDB             `json:",omitempty,omitzero"`
-	DisplayInfos                 []ConquestDisplayInfo               `json:",omitempty,omitzero"`
-	StepAfterBattle              int32                               `json:",omitempty,omitzero"`
-	DisplayParcelByRewardTag     map[flatdata.RewardTag][]ParcelInfo `json:",omitempty,omitzero"`
+	ParcelResultDB               ParcelResultDB          `json:",omitempty,omitzero"`
+	ConquestTileDB               ConquestTileDB          `json:",omitempty,omitzero"`
+	ConquestInfoDB               ConquestInfoDB          `json:",omitempty,omitzero"`
+	ConquestEventObjectDBWrapper []ConquestEventObjectDB `json:",omitempty,omitzero"`
+	DisplayInfos                 []ConquestDisplayInfo   `json:",omitempty,omitzero"`
+	StepAfterBattle              int32                   `json:",omitempty,omitzero"`
+	DisplayParcelByRewardTag     map[string][]ParcelInfo `json:",omitempty,omitzero"`
 }

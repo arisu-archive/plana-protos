@@ -5,7 +5,6 @@ import (
 )
 
 type MissionInfo struct {
-	IMissionConstraint
 	Id                            int64                                     `json:",omitempty,omitzero"`
 	Category                      flatdata.MissionCategory                  `json:",omitempty,omitzero"`
 	ResetType                     flatdata.MissionResetType                 `json:",omitempty,omitzero"`
