@@ -7,7 +7,7 @@ import (
 type AttendanceBookReward struct {
 	UniqueId          int64                        `json:",omitempty,omitzero"`
 	Type              flatdata.AttendanceType      `json:",omitempty,omitzero"`
-	AccountType       flatdata.AccountState        `json:",omitempty,omitzero"`
+	TargetGroup       flatdata.TargetGroup         `json:",omitempty,omitzero"`
 	DisplayOrder      int64                        `json:",omitempty,omitzero"`
 	AccountLevelLimit int64                        `json:",omitempty,omitzero"`
 	Title             string                       `json:",omitempty,omitzero"`
