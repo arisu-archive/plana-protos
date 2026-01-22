@@ -14,9 +14,6 @@ type MailDB struct {
 	SendDate          MxTime            `json:",omitempty,omitzero"`
 	ReceiptDate       *MxTime           `json:",omitempty,omitzero"`
 	ExpireDate        *MxTime           `json:",omitempty,omitzero"`
-	OrderId           *int64            `json:",omitempty,omitzero"`
-	ProductId         *int64            `json:",omitempty,omitzero"`
-	IsCashMail        bool              `json:",omitempty,omitzero"`
 	ParcelInfos       []ParcelInfo      `json:",omitempty,omitzero"`
 	RemainParcelInfos []ParcelInfo      `json:",omitempty,omitzero"`
 }

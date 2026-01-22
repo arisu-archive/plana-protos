@@ -5,7 +5,6 @@ type GroupSummary struct {
 	LeaderEntityId         EntityId                 `json:",omitempty,omitzero"`
 	Heroes                 []HeroSummary            `json:",omitempty,omitzero"`
 	Supporters             []HeroSummary            `json:",omitempty,omitzero"`
-	CarrierSkillSupporters []HeroSummary            `json:",omitempty,omitzero"`
 	UseAutoSkill           bool                     `json:",omitempty,omitzero"`
 	TSSInteractionServerId int64                    `json:",omitempty,omitzero"`
 	TSSInteractionUniqueId int64                    `json:",omitempty,omitzero"`

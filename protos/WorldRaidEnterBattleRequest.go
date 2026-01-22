@@ -3,7 +3,6 @@ package protos
 type WorldRaidEnterBattleRequest struct {
 	RequestPacket
 	SeasonId       int64               `json:",omitempty,omitzero"`
-	PhaseId        int64               `json:",omitempty,omitzero"`
 	GroupId        int64               `json:",omitempty,omitzero"`
 	UniqueId       int64               `json:",omitempty,omitzero"`
 	EchelonId      int64               `json:",omitempty,omitzero"`

@@ -89,8 +89,6 @@ const (
 	Protocol_Mail_List                                 Protocol = 7000
 	Protocol_Mail_Check                                Protocol = 7001
 	Protocol_Mail_Receive                              Protocol = 7002
-	Protocol_Mail_ListSemiPermanent                    Protocol = 7003
-	Protocol_Mail_ReceiveSemiPermanent                 Protocol = 7004
 	Protocol_Mission_List                              Protocol = 8000
 	Protocol_Mission_Reward                            Protocol = 8001
 	Protocol_Mission_MultipleReward                    Protocol = 8002
@@ -334,7 +332,6 @@ const (
 	Protocol_MomoTalk_Reply                            Protocol = 33003
 	Protocol_MomoTalk_FavorSchedule                    Protocol = 33004
 	Protocol_ClearDeck_List                            Protocol = 34000
-	Protocol_ClearDeck_GroupedList                     Protocol = 34001
 	Protocol_MiniGame_StageList                        Protocol = 35000
 	Protocol_MiniGame_EnterStage                       Protocol = 35001
 	Protocol_MiniGame_Result                           Protocol = 35002
@@ -401,7 +398,6 @@ const (
 	Protocol_WorldRaid_EnterBattle                     Protocol = 40002
 	Protocol_WorldRaid_BattleResult                    Protocol = 40003
 	Protocol_WorldRaid_ReceiveReward                   Protocol = 40004
-	Protocol_WorldRaid_UpdateCarrierSkill              Protocol = 40005
 	Protocol_ResetableContent_Get                      Protocol = 41000
 	Protocol_Conquest_GetInfo                          Protocol = 42000
 	Protocol_Conquest_Conquer                          Protocol = 42001
@@ -483,8 +479,4 @@ const (
 	Protocol_BattlePass_Check                          Protocol = 51006
 	Protocol_DailyRecord_Reward                        Protocol = 52000
 	Protocol_Option_Save                               Protocol = 53000
-	Protocol_PermanentRaid_Lobby                       Protocol = 54000
-	Protocol_PermanentRaid_EnterBattle                 Protocol = 54001
-	Protocol_PermanentRaid_EndBattle                   Protocol = 54002
-	Protocol_PermanentRaid_GiveUp                      Protocol = 54003
 )

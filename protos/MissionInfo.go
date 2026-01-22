@@ -16,7 +16,7 @@ type MissionInfo struct {
 	StartableEndDate              MxTime                                    `json:",omitempty,omitzero"`
 	EndDate                       MxTime                                    `json:",omitempty,omitzero"`
 	EndDday                       int64                                     `json:",omitempty,omitzero"`
-	TargetGroup                   flatdata.TargetGroup                      `json:",omitempty,omitzero"`
+	AccountState                  flatdata.AccountState                     `json:",omitempty,omitzero"`
 	AccountLevel                  int64                                     `json:",omitempty,omitzero"`
 	PreMissionIds                 []int64                                   `json:",omitempty,omitzero"`
 	NextMissionId                 int64                                     `json:",omitempty,omitzero"`
