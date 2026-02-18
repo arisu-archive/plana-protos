@@ -11,4 +11,5 @@ type PermanentRaidBattleHistoryDB struct {
 	RaidBattleDB                  RaidBattleDB        `json:",omitempty,omitzero"`
 	RaidBossDBs                   []RaidBossDB        `json:",omitempty,omitzero"`
 	ParticipateCharacterServerIds []int64             `json:",omitempty,omitzero"`
+	AssistUseInfo                 ClanAssistUseInfo   `json:",omitempty,omitzero"`
 }
