@@ -77,6 +77,8 @@ const (
 	WebAPIErrorCode_InappositeNicknameRestricted                   WebAPIErrorCode = 1027
 	WebAPIErrorCode_InappositeCommentRestricted                    WebAPIErrorCode = 1028
 	WebAPIErrorCode_InappositeCallnameRestricted                   WebAPIErrorCode = 1029
+	WebAPIErrorCode_AccountContentBan                              WebAPIErrorCode = 1030
+	WebAPIErrorCode_InvalidAccountOptionsRequest                   WebAPIErrorCode = 1031
 	WebAPIErrorCode_CharacterNotFound                              WebAPIErrorCode = 2000
 	WebAPIErrorCode_CharacterLocked                                WebAPIErrorCode = 2001
 	WebAPIErrorCode_CharacterAlreadyHas                            WebAPIErrorCode = 2002
@@ -451,6 +453,8 @@ const (
 	WebAPIErrorCode_EventContentConcentrationAlreadyMatchedIndex   WebAPIErrorCode = 36020
 	WebAPIErrorCode_EventContentConcentrationCannotCompleteRound   WebAPIErrorCode = 36021
 	WebAPIErrorCode_EventContentConcentrationCannotSkipRound       WebAPIErrorCode = 36022
+	WebAPIErrorCode_EventContentClueSearchCannotSubmit             WebAPIErrorCode = 36023
+	WebAPIErrorCode_EventContentClueSearchCannotCompleteRound      WebAPIErrorCode = 36024
 	WebAPIErrorCode_MiniGameStageIsNotOpen                         WebAPIErrorCode = 37000
 	WebAPIErrorCode_MiniGameStageInvalidResult                     WebAPIErrorCode = 37001
 	WebAPIErrorCode_MiniGameShootingStageInvlid                    WebAPIErrorCode = 37002

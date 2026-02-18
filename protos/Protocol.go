@@ -326,6 +326,9 @@ const (
 	Protocol_EventContent_ConcentrationFlipCard        Protocol = 30048
 	Protocol_EventContent_ConcentrationRoundComplete   Protocol = 30049
 	Protocol_EventContent_ConcentrationRoundSkip       Protocol = 30050
+	Protocol_EventContent_ClueSearchGetInfo            Protocol = 30051
+	Protocol_EventContent_ClueSearchSubmit             Protocol = 30052
+	Protocol_EventContent_ClueSearchRoundComplete      Protocol = 30053
 	Protocol_TTS_GetFile                               Protocol = 31000
 	Protocol_ContentLog_UIOpenStatistics               Protocol = 32000
 	Protocol_MomoTalk_OutLine                          Protocol = 33000
