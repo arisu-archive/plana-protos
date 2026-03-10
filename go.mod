@@ -4,7 +4,7 @@ go 1.25.0
 
 toolchain go1.25.5
 
-require github.com/arisu-archive/plana-flatbuffers v0.9.0
+require github.com/arisu-archive/plana-flatbuffers v0.10.0
 
 require (
 	github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20251204154751-651482551f83 // indirect
