@@ -47,6 +47,8 @@ const (
 	WebAPIErrorCode_GatewayPassCheckNotSupport                     WebAPIErrorCode = 901
 	WebAPIErrorCode_GatewayWaitingTicketTimeOut                    WebAPIErrorCode = 902
 	WebAPIErrorCode_ClientUpdateRequire                            WebAPIErrorCode = 903
+	WebAPIErrorCode_GatewayInvalidAuthTicket                       WebAPIErrorCode = 904
+	WebAPIErrorCode_GatewayExpiredAuthTicket                       WebAPIErrorCode = 905
 	WebAPIErrorCode_AccountCreateNoDevId                           WebAPIErrorCode = 1000
 	WebAPIErrorCode_AccountCreateDuplicatedDevId                   WebAPIErrorCode = 1001
 	WebAPIErrorCode_AccountAuthEmptyDevId                          WebAPIErrorCode = 1002

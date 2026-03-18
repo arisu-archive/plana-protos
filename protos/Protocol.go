@@ -477,6 +477,8 @@ const (
 	Protocol_MultiFloorRaid_Login                      Protocol = 49004
 	Protocol_Queuing_GetTicket                         Protocol = 50000
 	Protocol_Queuing_GetCryptoKeys                     Protocol = 50001
+	Protocol_Queuing_GetAuthTicket                     Protocol = 50002
+	Protocol_Queuing_ProcessWaitingQueue               Protocol = 50003
 	Protocol_BattlePass_GetInfo                        Protocol = 51000
 	Protocol_BattlePass_BuyLevel                       Protocol = 51001
 	Protocol_BattlePass_ReceiveReward                  Protocol = 51002
