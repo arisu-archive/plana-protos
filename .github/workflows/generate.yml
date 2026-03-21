@@ -17,7 +17,7 @@ jobs:
       version: ${{ steps.get-version.outputs.version }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: develop
           sparse-checkout: |
@@ -83,13 +83,13 @@ jobs:
     if: needs.check-branch.outputs.should_run == 'true'
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: develop
           sparse-checkout-cone-mode: false
           fetch-depth: 0
       - name: Setup SSH agent
-        uses: webfactory/ssh-agent@v0.9.1
+        uses: webfactory/ssh-agent@v0.10.0
         with:
           ssh-private-key: ${{secrets.BLUEARCHIVE_TOGO_PRIVATE_KEY}}
       - name: Download decompiled zip file
@@ -108,10 +108,12 @@ jobs:
           go run github.com/arisu-archive/bluearchive-togo/cmd/ba-togo@latest convert -i ./output/DiffableCs/BlueArchive -o protos -n "MX.NetworkProtocol" -m "github.com/arisu-archive/plana-protos" --map "FlatData=github.com/arisu-archive/plana-flatbuffers/go/flatdata" --omit-empty --omit-zero
           echo -n "${{ needs.determine-version.outputs.version }}" > version.txt
           git config --global --unset url."git@github.com:".insteadOf "https://github.com/"
+          go run github.com/dmarkham/enumer@latest -type=Protocol -trimprefix=Protocol_ ./protos/Protocol.go
+          go run github.com/dmarkham/enumer@latest -type=WebAPIErrorCode -trimprefix=WebAPIErrorCode_ ./protos/WebAPIErrorCode.go
       - name: Fix the linting issues
         uses: golangci/golangci-lint-action@v9
         with:
-          version: v2.6
+          version: v2.11.3
           args: --fix ./...
       - name: Commit and push changes
         uses: EndBug/add-and-commit@v9

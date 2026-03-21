@@ -47,6 +47,8 @@ const (
 	WebAPIErrorCode_GatewayPassCheckNotSupport                     WebAPIErrorCode = 901
 	WebAPIErrorCode_GatewayWaitingTicketTimeOut                    WebAPIErrorCode = 902
 	WebAPIErrorCode_ClientUpdateRequire                            WebAPIErrorCode = 903
+	WebAPIErrorCode_GatewayInvalidAuthTicket                       WebAPIErrorCode = 904
+	WebAPIErrorCode_GatewayExpiredAuthTicket                       WebAPIErrorCode = 905
 	WebAPIErrorCode_AccountCreateNoDevId                           WebAPIErrorCode = 1000
 	WebAPIErrorCode_AccountCreateDuplicatedDevId                   WebAPIErrorCode = 1001
 	WebAPIErrorCode_AccountAuthEmptyDevId                          WebAPIErrorCode = 1002
@@ -77,6 +79,8 @@ const (
 	WebAPIErrorCode_InappositeNicknameRestricted                   WebAPIErrorCode = 1027
 	WebAPIErrorCode_InappositeCommentRestricted                    WebAPIErrorCode = 1028
 	WebAPIErrorCode_InappositeCallnameRestricted                   WebAPIErrorCode = 1029
+	WebAPIErrorCode_AccountContentBan                              WebAPIErrorCode = 1030
+	WebAPIErrorCode_InvalidAccountOptionsRequest                   WebAPIErrorCode = 1031
 	WebAPIErrorCode_CharacterNotFound                              WebAPIErrorCode = 2000
 	WebAPIErrorCode_CharacterLocked                                WebAPIErrorCode = 2001
 	WebAPIErrorCode_CharacterAlreadyHas                            WebAPIErrorCode = 2002
@@ -374,6 +378,8 @@ const (
 	WebAPIErrorCode_BillingProductSelectConditionFailed            WebAPIErrorCode = 30028
 	WebAPIErrorCode_BillingProductSelectionSlotNotFound            WebAPIErrorCode = 30029
 	WebAPIErrorCode_BillingRewardParcelNotFound                    WebAPIErrorCode = 30030
+	WebAPIErrorCode_BillingCannotAcquireLock                       WebAPIErrorCode = 30031
+	WebAPIErrorCode_BillingPendingProductExists                    WebAPIErrorCode = 30032
 	WebAPIErrorCode_ClanNotFound                                   WebAPIErrorCode = 31000
 	WebAPIErrorCode_ClanSearchFailed                               WebAPIErrorCode = 31001
 	WebAPIErrorCode_ClanEmptySearchString                          WebAPIErrorCode = 31002
@@ -449,6 +455,8 @@ const (
 	WebAPIErrorCode_EventContentConcentrationAlreadyMatchedIndex   WebAPIErrorCode = 36020
 	WebAPIErrorCode_EventContentConcentrationCannotCompleteRound   WebAPIErrorCode = 36021
 	WebAPIErrorCode_EventContentConcentrationCannotSkipRound       WebAPIErrorCode = 36022
+	WebAPIErrorCode_EventContentClueSearchCannotSubmit             WebAPIErrorCode = 36023
+	WebAPIErrorCode_EventContentClueSearchCannotCompleteRound      WebAPIErrorCode = 36024
 	WebAPIErrorCode_MiniGameStageIsNotOpen                         WebAPIErrorCode = 37000
 	WebAPIErrorCode_MiniGameStageInvalidResult                     WebAPIErrorCode = 37001
 	WebAPIErrorCode_MiniGameShootingStageInvlid                    WebAPIErrorCode = 37002
@@ -521,6 +529,7 @@ const (
 	WebAPIErrorCode_WorldRaidCannotGemEnter                        WebAPIErrorCode = 41014
 	WebAPIErrorCode_WorldRaidNeedClearScenarioBoss                 WebAPIErrorCode = 41015
 	WebAPIErrorCode_WorldRaidBossIsAlive                           WebAPIErrorCode = 41016
+	WebAPIErrorCode_WorldRaidInvalidCarrierSkillLevel              WebAPIErrorCode = 41017
 	WebAPIErrorCode_ConquestDataNotFound                           WebAPIErrorCode = 42000
 	WebAPIErrorCode_ConquestAlreadyConquested                      WebAPIErrorCode = 42001
 	WebAPIErrorCode_ConquestNotFullyConquested                     WebAPIErrorCode = 42002
@@ -595,6 +604,10 @@ const (
 	WebAPIErrorCode_DailyRecordNotFound                            WebAPIErrorCode = 51000
 	WebAPIErrorCode_DailyRecordAlreadyExpired                      WebAPIErrorCode = 51001
 	WebAPIErrorCode_DailyRecordRewardNotExist                      WebAPIErrorCode = 51002
+	WebAPIErrorCode_PermanentRaidNotOpen                           WebAPIErrorCode = 52000
+	WebAPIErrorCode_PermanentRaidDataNotFound                      WebAPIErrorCode = 52001
+	WebAPIErrorCode_PermanentRaidBossIsLocked                      WebAPIErrorCode = 52002
+	WebAPIErrorCode_PermanentRaidBossIsAlreadyClosed               WebAPIErrorCode = 52003
 	WebAPIErrorCode_FieldDataNotFound                              WebAPIErrorCode = 60000
 	WebAPIErrorCode_FieldInteracionFailed                          WebAPIErrorCode = 60001
 	WebAPIErrorCode_FieldQuestClearFailed                          WebAPIErrorCode = 60002

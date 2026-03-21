@@ -18,10 +18,9 @@ const (
 	BattleTypes_TutorialAdventure   BattleTypes = 256
 	BattleTypes_Profiling           BattleTypes = 512
 	BattleTypes_SingleRaid          BattleTypes = 2048
-	BattleTypes_MultiRaid           BattleTypes = 4096
-	BattleTypes_PracticeRaid        BattleTypes = 8192
+	BattleTypes_PermanentRaid       BattleTypes = 8192
 	BattleTypes_EliminateRaid       BattleTypes = 16384
-	BattleTypes_Raid                BattleTypes = 30720
+	BattleTypes_Raid                BattleTypes = 26624
 	BattleTypes_MultiFloorRaid      BattleTypes = 32768
 	BattleTypes_MinigameDefense     BattleTypes = 1048576
 	BattleTypes_Arena               BattleTypes = 2097152
