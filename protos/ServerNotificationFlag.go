@@ -19,4 +19,5 @@ const (
 	ServerNotificationFlag_CanReceiveEliminateRaidReward      ServerNotificationFlag = 32768
 	ServerNotificationFlag_CanReceiveMultiFloorRaidReward     ServerNotificationFlag = 65536
 	ServerNotificationFlag_CanReceiveProductDailyRecordReward ServerNotificationFlag = 131072
+	ServerNotificationFlag_HasUnreadSemiPermanentMail         ServerNotificationFlag = 262144
 )
