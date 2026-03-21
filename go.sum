@@ -6,6 +6,8 @@ github.com/arisu-archive/plana-flatbuffers v0.9.0 h1:DPHIL4g1TzIyMkxiq8GKs6Fy+TI
 github.com/arisu-archive/plana-flatbuffers v0.9.0/go.mod h1:E5pKXYVOpec7iMo02TxBWtPVOJVvnrPI6Tiy2k6UoEE=
 github.com/arisu-archive/plana-flatbuffers v0.10.0 h1:zt36N41asmvVJpfyKxVeNJV2vFqB4jgvTaksshvTBOc=
 github.com/arisu-archive/plana-flatbuffers v0.10.0/go.mod h1:E5pKXYVOpec7iMo02TxBWtPVOJVvnrPI6Tiy2k6UoEE=
+github.com/arisu-archive/plana-flatbuffers v0.11.0 h1:7rJdqA+2soiLpU4F7CH0bkUdBte7at2z/6USpqRWCsI=
+github.com/arisu-archive/plana-flatbuffers v0.11.0/go.mod h1:E5pKXYVOpec7iMo02TxBWtPVOJVvnrPI6Tiy2k6UoEE=
 github.com/go-logr/logr v1.4.3 h1:CjnDlHq8ikf6E492q6eKboGOC0T8CDaOvkHCIg8idEI=
 github.com/go-logr/logr v1.4.3/go.mod h1:9T104GzyrTigFIr8wt5mBrctHMim0Nb2HLGrmQ40KvY=
 github.com/go-task/slim-sprig/v3 v3.0.0 h1:sUs3vkvUymDpBKi3qH1YSqBQk9+9D/8M2mN1vB6EwHI=
