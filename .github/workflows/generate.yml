@@ -108,6 +108,8 @@ jobs:
           go run github.com/arisu-archive/bluearchive-togo/cmd/ba-togo@latest convert -i ./output/DiffableCs/BlueArchive -o protos -n "MX.NetworkProtocol" -m "github.com/arisu-archive/plana-protos" --map "FlatData=github.com/arisu-archive/plana-flatbuffers/go/flatdata" --omit-empty --omit-zero
           echo -n "${{ needs.determine-version.outputs.version }}" > version.txt
           git config --global --unset url."git@github.com:".insteadOf "https://github.com/"
+          go run github.com/dmarkham/enumer@latest -type=Protocol -trimprefix=Protocol_ ./protos/Protocol.go
+          go run github.com/dmarkham/enumer@latest -type=WebAPIErrorCode -trimprefix=WebAPIErrorCode_ ./protos/WebAPIErrorCode.go
       - name: Fix the linting issues
         uses: golangci/golangci-lint-action@v9
         with:
