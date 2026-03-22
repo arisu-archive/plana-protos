@@ -7,6 +7,6 @@ import (
 
 type NotificationEventContentReddotResponse struct {
 	ResponsePacket
-	Reddots                 *mapx.OrderedMap[int64, []flatdata.NotificationEventReddot] `json:",omitempty,omitzero"`
-	EventContentUnlockCGDBs *mapx.OrderedMap[int64, []EventContentCollectionDB]         `json:",omitempty,omitzero"`
+	Reddots                 *mapx.OrderedMap[int64, []flatdata.NotificationEventReddot]
+	EventContentUnlockCGDBs *mapx.OrderedMap[int64, []EventContentCollectionDB]
 }

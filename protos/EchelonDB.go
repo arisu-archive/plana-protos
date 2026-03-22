@@ -10,10 +10,10 @@ type EchelonDB struct {
 	EchelonNumber                 int64                         `json:",omitempty,omitzero"`
 	ExtensionType                 flatdata.EchelonExtensionType `json:",omitempty,omitzero"`
 	LeaderServerId                int64                         `json:",omitempty,omitzero"`
-	MainSlotServerIds             []int64                       `json:",omitempty,omitzero"`
-	SupportSlotServerIds          []int64                       `json:",omitempty,omitzero"`
-	TSSInteractionServerId        int64                         `json:",omitempty,omitzero"`
-	UsingFlag                     EchelonDB_EchelonStatusFlag   `json:",omitempty,omitzero"`
-	SkillCardMulliganCharacterIds []int64                       `json:",omitempty,omitzero"`
-	CombatStyleIndex              []int32                       `json:",omitempty,omitzero"`
+	MainSlotServerIds             []int64
+	SupportSlotServerIds          []int64
+	TSSInteractionServerId        int64                       `json:",omitempty,omitzero"`
+	UsingFlag                     EchelonDB_EchelonStatusFlag `json:",omitempty,omitzero"`
+	SkillCardMulliganCharacterIds []int64
+	CombatStyleIndex              []int32
 }

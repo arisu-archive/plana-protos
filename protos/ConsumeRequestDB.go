@@ -5,7 +5,7 @@ import (
 )
 
 type ConsumeRequestDB struct {
-	ConsumeItemServerIdAndCounts      *mapx.OrderedMap[int64, int64] `json:",omitempty,omitzero"`
-	ConsumeEquipmentServerIdAndCounts *mapx.OrderedMap[int64, int64] `json:",omitempty,omitzero"`
-	ConsumeFurnitureServerIdAndCounts *mapx.OrderedMap[int64, int64] `json:",omitempty,omitzero"`
+	ConsumeItemServerIdAndCounts      *mapx.OrderedMap[int64, int64]
+	ConsumeEquipmentServerIdAndCounts *mapx.OrderedMap[int64, int64]
+	ConsumeFurnitureServerIdAndCounts *mapx.OrderedMap[int64, int64]
 }

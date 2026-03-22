@@ -5,7 +5,7 @@ import (
 )
 
 type WeekDungeonStageHistoryDB struct {
-	AccountServerId int64                           `json:",omitempty,omitzero"`
-	StageUniqueId   int64                           `json:",omitempty,omitzero"`
-	StarGoalRecord  *mapx.OrderedMap[string, int64] `json:",omitempty,omitzero"`
+	AccountServerId int64 `json:",omitempty,omitzero"`
+	StageUniqueId   int64 `json:",omitempty,omitzero"`
+	StarGoalRecord  *mapx.OrderedMap[string, int64]
 }

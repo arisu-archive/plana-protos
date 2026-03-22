@@ -6,5 +6,5 @@ import (
 
 type CafePresetDetailResponse struct {
 	ResponsePacket
-	DeployCountByFurnitureId *mapx.OrderedMap[int64, int64] `json:",omitempty,omitzero"`
+	DeployCountByFurnitureId *mapx.OrderedMap[int64, int64]
 }

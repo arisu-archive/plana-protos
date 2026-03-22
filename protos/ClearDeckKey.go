@@ -5,6 +5,6 @@ import (
 )
 
 type ClearDeckKey struct {
-	ContentType flatdata.ContentType `json:",omitempty,omitzero"`
-	Arguments   []int64              `json:",omitempty,omitzero"`
+	ContentType flatdata.ContentType
+	Arguments   []int64
 }

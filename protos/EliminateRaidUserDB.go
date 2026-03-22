@@ -6,5 +6,5 @@ import (
 
 type EliminateRaidUserDB struct {
 	RaidUserDB
-	BossGroupToRankingPoint *mapx.OrderedMap[string, int64] `json:",omitempty,omitzero"`
+	BossGroupToRankingPoint *mapx.OrderedMap[string, int64]
 }

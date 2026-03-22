@@ -6,5 +6,5 @@ import (
 
 type EliminateRaidGetBestTeamResponse struct {
 	ResponsePacket
-	RaidTeamSettingDBsDict *mapx.OrderedMap[string, []RaidTeamSettingDB] `json:",omitempty,omitzero"`
+	RaidTeamSettingDBsDict *mapx.OrderedMap[string, []RaidTeamSettingDB]
 }

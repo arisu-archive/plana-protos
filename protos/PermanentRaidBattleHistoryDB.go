@@ -9,8 +9,8 @@ type PermanentRaidBattleHistoryDB struct {
 	StartDate                     MxTime              `json:",omitempty,omitzero"`
 	EndDate                       MxTime              `json:",omitempty,omitzero"`
 	Status                        flatdata.RaidStatus `json:",omitempty,omitzero"`
-	RaidBattleDB                  RaidBattleDB        `json:",omitempty,omitzero"`
-	RaidBossDBs                   []RaidBossDB        `json:",omitempty,omitzero"`
-	ParticipateCharacterServerIds []int64             `json:",omitempty,omitzero"`
-	AssistUseInfo                 ClanAssistUseInfo   `json:",omitempty,omitzero"`
+	RaidBattleDB                  RaidBattleDB
+	RaidBossDBs                   []RaidBossDB
+	ParticipateCharacterServerIds []int64
+	AssistUseInfo                 ClanAssistUseInfo
 }

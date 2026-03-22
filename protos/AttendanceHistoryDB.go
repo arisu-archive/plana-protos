@@ -5,8 +5,8 @@ import (
 )
 
 type AttendanceHistoryDB struct {
-	ServerId               int64                           `json:",omitempty,omitzero"`
-	AttendanceBookUniqueId int64                           `json:",omitempty,omitzero"`
-	AttendedDay            *mapx.OrderedMap[int64, MxTime] `json:",omitempty,omitzero"`
-	Expired                bool                            `json:",omitempty,omitzero"`
+	ServerId               int64 `json:",omitempty,omitzero"`
+	AttendanceBookUniqueId int64 `json:",omitempty,omitzero"`
+	AttendedDay            *mapx.OrderedMap[int64, MxTime]
+	Expired                bool `json:",omitempty,omitzero"`
 }

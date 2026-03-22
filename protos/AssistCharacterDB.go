@@ -11,13 +11,13 @@ type AssistCharacterDB struct {
 	AccountId               int64                `json:",omitempty,omitzero"`
 	AssistRelation          AssistRelation       `json:",omitempty,omitzero"`
 	AssistCharacterServerId int64                `json:",omitempty,omitzero"`
-	NickName                string               `json:",omitempty,omitzero"`
-	EquipmentDBs            []EquipmentDB        `json:",omitempty,omitzero"`
-	WeaponDB                WeaponDB             `json:",omitempty,omitzero"`
-	GearDB                  GearDB               `json:",omitempty,omitzero"`
-	CostumeId               int64                `json:",omitempty,omitzero"`
-	CostumeDB               CostumeDB            `json:",omitempty,omitzero"`
-	IsMulligan              bool                 `json:",omitempty,omitzero"`
-	IsTSAInteraction        bool                 `json:",omitempty,omitzero"`
-	CombatStyleIndex        int32                `json:",omitempty,omitzero"`
+	NickName                string
+	EquipmentDBs            []EquipmentDB
+	WeaponDB                WeaponDB
+	GearDB                  GearDB
+	CostumeId               int64 `json:",omitempty,omitzero"`
+	CostumeDB               CostumeDB
+	IsMulligan              bool  `json:",omitempty,omitzero"`
+	IsTSAInteraction        bool  `json:",omitempty,omitzero"`
+	CombatStyleIndex        int32 `json:",omitempty,omitzero"`
 }

@@ -6,7 +6,7 @@ import (
 )
 
 type ConquestMainStorySummary struct {
-	EventContentId          int64                                                 `json:",omitempty,omitzero"`
-	Difficulty              flatdata.StageDifficulty                              `json:",omitempty,omitzero"`
-	ConquestStepSummaryDict *mapx.OrderedMap[int32, ConquestMainStoryStepSummary] `json:",omitempty,omitzero"`
+	EventContentId          int64                    `json:",omitempty,omitzero"`
+	Difficulty              flatdata.StageDifficulty `json:",omitempty,omitzero"`
+	ConquestStepSummaryDict *mapx.OrderedMap[int32, ConquestMainStoryStepSummary]
 }

@@ -2,6 +2,6 @@ package protos
 
 type ArenaDailyRewardResponse struct {
 	ResponsePacket
-	ParcelResult          ParcelResultDB `json:",omitempty,omitzero"`
-	DailyRewardActiveTime MxTime         `json:",omitempty,omitzero"`
+	ParcelResult          ParcelResultDB
+	DailyRewardActiveTime MxTime `json:",omitempty,omitzero"`
 }

@@ -18,22 +18,22 @@ type MissionInfo struct {
 	EndDday                       int64                                     `json:",omitempty,omitzero"`
 	TargetGroup                   flatdata.TargetGroup                      `json:",omitempty,omitzero"`
 	AccountLevel                  int64                                     `json:",omitempty,omitzero"`
-	PreMissionIds                 []int64                                   `json:",omitempty,omitzero"`
-	NextMissionId                 int64                                     `json:",omitempty,omitzero"`
-	SuddenMissionContentTypes     []flatdata.SuddenMissionContentType       `json:",omitempty,omitzero"`
-	CompleteConditionType         flatdata.MissionCompleteConditionType     `json:",omitempty,omitzero"`
-	CompleteConditionCount        int64                                     `json:",omitempty,omitzero"`
-	CompleteConditionParameters   []int64                                   `json:",omitempty,omitzero"`
-	Tags                          []flatdata.Tag                            `json:",omitempty,omitzero"`
-	CompleteConditionMissionIds   []int64                                   `json:",omitempty,omitzero"`
-	CompleteConditionMissionCount int64                                     `json:",omitempty,omitzero"`
-	CompleteConditionRewards      []ParcelInfo                              `json:",omitempty,omitzero"`
-	RewardIcon                    string                                    `json:",omitempty,omitzero"`
-	Rewards                       []ParcelInfo                              `json:",omitempty,omitzero"`
-	DateAutoRefer                 flatdata.ContentType                      `json:",omitempty,omitzero"`
-	ToastImagePath                string                                    `json:",omitempty,omitzero"`
-	DisplayOrder                  int64                                     `json:",omitempty,omitzero"`
-	HasFollowingMission           bool                                      `json:",omitempty,omitzero"`
-	Shortcuts                     []string                                  `json:",omitempty,omitzero"`
-	ChallengeStageId              int64                                     `json:",omitempty,omitzero"`
+	PreMissionIds                 []int64
+	NextMissionId                 int64 `json:",omitempty,omitzero"`
+	SuddenMissionContentTypes     []flatdata.SuddenMissionContentType
+	CompleteConditionType         flatdata.MissionCompleteConditionType `json:",omitempty,omitzero"`
+	CompleteConditionCount        int64                                 `json:",omitempty,omitzero"`
+	CompleteConditionParameters   []int64
+	Tags                          []flatdata.Tag
+	CompleteConditionMissionIds   []int64
+	CompleteConditionMissionCount int64 `json:",omitempty,omitzero"`
+	CompleteConditionRewards      []ParcelInfo
+	RewardIcon                    string
+	Rewards                       []ParcelInfo
+	DateAutoRefer                 flatdata.ContentType
+	ToastImagePath                string
+	DisplayOrder                  int64 `json:",omitempty,omitzero"`
+	HasFollowingMission           bool  `json:",omitempty,omitzero"`
+	Shortcuts                     []string
+	ChallengeStageId              int64 `json:",omitempty,omitzero"`
 }
