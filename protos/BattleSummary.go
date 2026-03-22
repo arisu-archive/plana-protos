@@ -6,7 +6,7 @@ type BattleSummary struct {
 	BattleType         BattleTypes        `json:",omitempty,omitzero"`
 	StageId            int64              `json:",omitempty,omitzero"`
 	GroundId           int64              `json:",omitempty,omitzero"`
-	Winner             GroupTag           `json:",omitempty,omitzero"`
+	Winner             string             `json:",omitempty,omitzero"`
 	EndType            BattleEndType      `json:",omitempty,omitzero"`
 	EndFrame           int32              `json:",omitempty,omitzero"`
 	Group01Summary     GroupSummary       `json:",omitempty,omitzero"`
