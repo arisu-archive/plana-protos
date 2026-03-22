@@ -10,5 +10,5 @@ type ConquestConquerWithBattleStartRequest struct {
 	Difficulty        flatdata.StageDifficulty `json:",omitempty,omitzero"`
 	TileUniqueId      int64                    `json:",omitempty,omitzero"`
 	EchelonNumber     *int64                   `json:",omitempty,omitzero"`
-	ClanAssistUseInfo ClanAssistUseInfo        `json:",omitempty,omitzero"`
+	ClanAssistUseInfo ClanAssistUseInfo
 }

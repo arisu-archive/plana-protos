@@ -12,5 +12,5 @@ type ShopInfoDB struct {
 	ShopGroupType       flatdata.ShopGroupType    `json:",omitempty,omitzero"`
 	NextAutoRefreshDate *MxTime                   `json:",omitempty,omitzero"`
 	LastAutoRefreshDate *MxTime                   `json:",omitempty,omitzero"`
-	ShopProductList     []ShopProductDB           `json:",omitempty,omitzero"`
+	ShopProductList     []ShopProductDB
 }

@@ -12,7 +12,7 @@ type CraftNodeDB struct {
 	NodeLevel          int64                  `json:",omitempty,omitzero"`
 	NodeRandomSeed     int32                  `json:",omitempty,omitzero"`
 	NodeRandomSequence int32                  `json:",omitempty,omitzero"`
-	LeafNodeIds        []int64                `json:",omitempty,omitzero"`
-	ResultId           int64                  `json:",omitempty,omitzero"`
-	CraftNodeResult    CraftNodeResult        `json:",omitempty,omitzero"`
+	LeafNodeIds        []int64
+	ResultId           int64 `json:",omitempty,omitzero"`
+	CraftNodeResult    CraftNodeResult
 }

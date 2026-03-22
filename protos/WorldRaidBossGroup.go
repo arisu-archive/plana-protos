@@ -6,8 +6,8 @@ import (
 
 type WorldRaidBossGroup struct {
 	ContentsValueChangeDB
-	ContentType   flatdata.ContentType `json:",omitempty,omitzero"`
-	GroupId       int64                `json:",omitempty,omitzero"`
-	BossSpawnTime MxTime               `json:",omitempty,omitzero"`
-	EliminateTime MxTime               `json:",omitempty,omitzero"`
+	ContentType   flatdata.ContentType
+	GroupId       int64  `json:",omitempty,omitzero"`
+	BossSpawnTime MxTime `json:",omitempty,omitzero"`
+	EliminateTime MxTime `json:",omitempty,omitzero"`
 }

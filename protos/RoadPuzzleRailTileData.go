@@ -9,5 +9,5 @@ type RoadPuzzleRailTileData struct {
 	Type          flatdata.RoadPuzzleRailTileType `json:",omitempty,omitzero"`
 	EntranceIndex int32                           `json:",omitempty,omitzero"`
 	ExitIndex     int32                           `json:",omitempty,omitzero"`
-	ResourcePath  string                          `json:",omitempty,omitzero"`
+	ResourcePath  string
 }

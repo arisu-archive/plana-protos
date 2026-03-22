@@ -7,7 +7,7 @@ type RaidPlayerInfoDB struct {
 	DamageAmount      int64  `json:",omitempty,omitzero"`
 	RaidEndRewardFlag int32  `json:",omitempty,omitzero"`
 	RaidPlayCount     int32  `json:",omitempty,omitzero"`
-	Nickname          string `json:",omitempty,omitzero"`
+	Nickname          string
 	CharacterId       int64  `json:",omitempty,omitzero"`
 	CostumeId         int64  `json:",omitempty,omitzero"`
 	AccountLevel      *int64 `json:",omitempty,omitzero"`

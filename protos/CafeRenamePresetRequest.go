@@ -8,5 +8,5 @@ type CafeRenamePresetRequest struct {
 	RequestPacket
 	PresetType flatdata.CafePresetType `json:",omitempty,omitzero"`
 	SlotId     int32                   `json:",omitempty,omitzero"`
-	PresetName string                  `json:",omitempty,omitzero"`
+	PresetName string
 }

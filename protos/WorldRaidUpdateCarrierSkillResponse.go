@@ -6,6 +6,6 @@ import (
 
 type WorldRaidUpdateCarrierSkillResponse struct {
 	ResponsePacket
-	ParcelResultDB ParcelResultDB                  `json:",omitempty,omitzero"`
-	CarrierSkills  *mapx.OrderedMap[string, int32] `json:",omitempty,omitzero"`
+	ParcelResultDB ParcelResultDB
+	CarrierSkills  *mapx.OrderedMap[string, int32]
 }

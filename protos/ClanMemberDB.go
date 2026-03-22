@@ -5,9 +5,9 @@ import (
 )
 
 type ClanMemberDB struct {
-	AccountId                   int64                    `json:",omitempty,omitzero"`
-	AccountLevel                int64                    `json:",omitempty,omitzero"`
-	AccountNickName             string                   `json:",omitempty,omitzero"`
+	AccountId                   int64 `json:",omitempty,omitzero"`
+	AccountLevel                int64 `json:",omitempty,omitzero"`
+	AccountNickName             string
 	ClanDBId                    int64                    `json:",omitempty,omitzero"`
 	RepresentCharacterUniqueId  int64                    `json:",omitempty,omitzero"`
 	RepresentCharacterCostumeId int64                    `json:",omitempty,omitzero"`
@@ -19,5 +19,5 @@ type ClanMemberDB struct {
 	LastLoginDate               MxTime                   `json:",omitempty,omitzero"`
 	GameLoginDate               MxTime                   `json:",omitempty,omitzero"`
 	AppliedDate                 MxTime                   `json:",omitempty,omitzero"`
-	AttachmentDB                AccountAttachmentDB      `json:",omitempty,omitzero"`
+	AttachmentDB                AccountAttachmentDB
 }

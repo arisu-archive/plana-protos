@@ -6,5 +6,5 @@ import (
 
 type ShopPickupSelectionGachaGetResponse struct {
 	ResponsePacket
-	PickupCharacterSelection *mapx.OrderedMap[int64, int64] `json:",omitempty,omitzero"`
+	PickupCharacterSelection *mapx.OrderedMap[int64, int64]
 }

@@ -6,6 +6,6 @@ import (
 
 type FriendSearchRequest struct {
 	RequestPacket
-	FriendCode  string                           `json:",omitempty,omitzero"`
+	FriendCode  string
 	LevelOption flatdata.FriendSearchLevelOption `json:",omitempty,omitzero"`
 }

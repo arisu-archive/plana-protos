@@ -2,11 +2,11 @@ package protos
 
 type MailReceiveSemiPermanentResponse struct {
 	ResponsePacket
-	MailDBId                           int64                       `json:",omitempty,omitzero"`
-	ParcelResultDB                     ParcelResultDB              `json:",omitempty,omitzero"`
-	AppliedMonthlyProductPurchaseDB    MonthlyProductPurchaseDB    `json:",omitempty,omitzero"`
-	AppliedDailyRecordDB               DailyRecordDB               `json:",omitempty,omitzero"`
-	AppliedBattlePassProductPurchaseDB BattlePassProductPurchaseDB `json:",omitempty,omitzero"`
-	AppliedBattlePassInfoDB            BattlePassInfoDB            `json:",omitempty,omitzero"`
-	BattlePassInfoDBs                  []BattlePassInfoDB          `json:",omitempty,omitzero"`
+	MailDBId                           int64 `json:",omitempty,omitzero"`
+	ParcelResultDB                     ParcelResultDB
+	AppliedMonthlyProductPurchaseDB    MonthlyProductPurchaseDB
+	AppliedDailyRecordDB               DailyRecordDB
+	AppliedBattlePassProductPurchaseDB BattlePassProductPurchaseDB
+	AppliedBattlePassInfoDB            BattlePassInfoDB
+	BattlePassInfoDBs                  []BattlePassInfoDB
 }

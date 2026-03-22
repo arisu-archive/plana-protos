@@ -6,8 +6,8 @@ import (
 )
 
 type EchelonPresetGroupDB struct {
-	GroupIndex    int32                                    `json:",omitempty,omitzero"`
-	ExtensionType flatdata.EchelonExtensionType            `json:",omitempty,omitzero"`
-	GroupLabel    string                                   `json:",omitempty,omitzero"`
-	PresetDBs     *mapx.OrderedMap[int32, EchelonPresetDB] `json:",omitempty,omitzero"`
+	GroupIndex    int32                         `json:",omitempty,omitzero"`
+	ExtensionType flatdata.EchelonExtensionType `json:",omitempty,omitzero"`
+	GroupLabel    string
+	PresetDBs     *mapx.OrderedMap[int32, EchelonPresetDB]
 }

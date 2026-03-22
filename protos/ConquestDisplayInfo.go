@@ -5,7 +5,7 @@ type ConquestDisplayInfo struct {
 	Type         ConquestDisplayType `json:",omitempty,omitzero"`
 	EntityId     int64               `json:",omitempty,omitzero"`
 	TileUniqueId int64               `json:",omitempty,omitzero"`
-	Parameter    string              `json:",omitempty,omitzero"`
-	DisplayOrder int32               `json:",omitempty,omitzero"`
-	DisplayOnce  bool                `json:",omitempty,omitzero"`
+	Parameter    string
+	DisplayOrder int32 `json:",omitempty,omitzero"`
+	DisplayOnce  bool  `json:",omitempty,omitzero"`
 }

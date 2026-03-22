@@ -6,5 +6,5 @@ import (
 
 type ShopListRequest struct {
 	RequestPacket
-	CategoryList []flatdata.ShopCategoryType `json:",omitempty,omitzero"`
+	CategoryList []flatdata.ShopCategoryType
 }

@@ -6,6 +6,6 @@ import (
 
 type OpenConditionEventListRequest struct {
 	RequestPacket
-	ConquestEventIds           []int64                          `json:",omitempty,omitzero"`
-	WorldRaidSeasonAndGroupIds *mapx.OrderedMap[int64, []int64] `json:",omitempty,omitzero"`
+	ConquestEventIds           []int64
+	WorldRaidSeasonAndGroupIds *mapx.OrderedMap[int64, []int64]
 }

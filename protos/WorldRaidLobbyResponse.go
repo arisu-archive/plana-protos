@@ -6,8 +6,8 @@ import (
 
 type WorldRaidLobbyResponse struct {
 	ResponsePacket
-	ClearHistoryDBs     []WorldRaidClearHistoryDB                     `json:",omitempty,omitzero"`
-	LocalBossDBs        []WorldRaidLocalBossDB                        `json:",omitempty,omitzero"`
-	BossGroups          *mapx.OrderedMap[int64, []WorldRaidBossGroup] `json:",omitempty,omitzero"`
-	WorldRaidProgressDB WorldRaidProgressDB                           `json:",omitempty,omitzero"`
+	ClearHistoryDBs     []WorldRaidClearHistoryDB
+	LocalBossDBs        []WorldRaidLocalBossDB
+	BossGroups          *mapx.OrderedMap[int64, []WorldRaidBossGroup]
+	WorldRaidProgressDB WorldRaidProgressDB
 }

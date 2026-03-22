@@ -6,5 +6,5 @@ import (
 
 type OpenConditionListResponse struct {
 	ResponsePacket
-	ConditionContents []flatdata.OpenConditionContent `json:",omitempty,omitzero"`
+	ConditionContents []flatdata.OpenConditionContent
 }

@@ -6,7 +6,7 @@ import (
 
 type ClanSettingRequest struct {
 	RequestPacket
-	ChangedClanName string                  `json:",omitempty,omitzero"`
-	ChangedNotice   string                  `json:",omitempty,omitzero"`
+	ChangedClanName string
+	ChangedNotice   string
 	ClanJoinOption  flatdata.ClanJoinOption `json:",omitempty,omitzero"`
 }

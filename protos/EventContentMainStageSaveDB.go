@@ -6,6 +6,6 @@ import (
 
 type EventContentMainStageSaveDB struct {
 	CampaignMainStageSaveDB
-	SelectedBuffDict           *mapx.OrderedMap[int64, int64] `json:",omitempty,omitzero"`
-	CurrentAppearedBuffGroupId int64                          `json:",omitempty,omitzero"`
+	SelectedBuffDict           *mapx.OrderedMap[int64, int64]
+	CurrentAppearedBuffGroupId int64 `json:",omitempty,omitzero"`
 }

@@ -6,5 +6,5 @@ import (
 
 type AuditGachaStatisticsResponse struct {
 	ResponsePacket
-	GachaResult *mapx.OrderedMap[int64, int64] `json:",omitempty,omitzero"`
+	GachaResult *mapx.OrderedMap[int64, int64]
 }

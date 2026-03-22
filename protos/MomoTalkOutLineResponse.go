@@ -6,6 +6,6 @@ import (
 
 type MomoTalkOutLineResponse struct {
 	ResponsePacket
-	MomoTalkOutLineDBs   []MomoTalkOutLineDB              `json:",omitempty,omitzero"`
-	FavorScheduleRecords *mapx.OrderedMap[int64, []int64] `json:",omitempty,omitzero"`
+	MomoTalkOutLineDBs   []MomoTalkOutLineDB
+	FavorScheduleRecords *mapx.OrderedMap[int64, []int64]
 }

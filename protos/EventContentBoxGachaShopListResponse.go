@@ -6,6 +6,6 @@ import (
 
 type EventContentBoxGachaShopListResponse struct {
 	ResponsePacket
-	BoxGachaDB             EventContentBoxGachaDB         `json:",omitempty,omitzero"`
-	BoxGachaGroupIdByCount *mapx.OrderedMap[int64, int64] `json:",omitempty,omitzero"`
+	BoxGachaDB             EventContentBoxGachaDB
+	BoxGachaGroupIdByCount *mapx.OrderedMap[int64, int64]
 }

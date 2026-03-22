@@ -2,7 +2,7 @@ package protos
 
 type CurrencyTransaction struct {
 	ParcelBase
-	CurrencyValue             CurrencyValue `json:"currencyValue,omitempty,omitzero"`
+	CurrencyValue             CurrencyValue `json:"currencyValue"`
 	Gold                      int64         `json:",omitempty,omitzero"`
 	Gem                       int64         `json:",omitempty,omitzero"`
 	GemBonus                  int64         `json:",omitempty,omitzero"`

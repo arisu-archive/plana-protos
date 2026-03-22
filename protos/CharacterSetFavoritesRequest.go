@@ -6,5 +6,5 @@ import (
 
 type CharacterSetFavoritesRequest struct {
 	RequestPacket
-	ActivateByServerIds *mapx.OrderedMap[int64, bool] `json:",omitempty,omitzero"`
+	ActivateByServerIds *mapx.OrderedMap[int64, bool]
 }
