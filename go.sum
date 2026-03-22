@@ -4,6 +4,8 @@ github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20251204154751-651482551f8
 github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20251204154751-651482551f83/go.mod h1:vOvsaBDrAONVArYo9bI/kX+GBw75mRP+J3RDeG9F3SM=
 github.com/arisu-archive/mapx v1.0.0 h1:snOMcgAUa5I0TAhMeyah8Yo6ZfNxs3LlNJaiz3uCgDU=
 github.com/arisu-archive/mapx v1.0.0/go.mod h1:5LgeqXk+dI+G0pVFd6e9W0XN4OZNnNt04mb2MsBmAX0=
+github.com/arisu-archive/mapx v1.1.0 h1:P64Cm983i6WhGPiy9m/zHRys08/MRpvwdy/eRgDxoQ8=
+github.com/arisu-archive/mapx v1.1.0/go.mod h1:5LgeqXk+dI+G0pVFd6e9W0XN4OZNnNt04mb2MsBmAX0=
 github.com/arisu-archive/plana-flatbuffers v0.11.0 h1:7rJdqA+2soiLpU4F7CH0bkUdBte7at2z/6USpqRWCsI=
 github.com/arisu-archive/plana-flatbuffers v0.11.0/go.mod h1:E5pKXYVOpec7iMo02TxBWtPVOJVvnrPI6Tiy2k6UoEE=
 github.com/go-logr/logr v1.4.3 h1:CjnDlHq8ikf6E492q6eKboGOC0T8CDaOvkHCIg8idEI=
