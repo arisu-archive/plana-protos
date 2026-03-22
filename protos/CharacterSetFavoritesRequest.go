@@ -1,6 +1,10 @@
 package protos
 
+import (
+	"github.com/arisu-archive/mapx"
+)
+
 type CharacterSetFavoritesRequest struct {
 	RequestPacket
-	ActivateByServerIds map[int64]bool `json:",omitempty,omitzero"`
+	ActivateByServerIds *mapx.OrderedMap[int64, bool] `json:",omitempty,omitzero"`
 }

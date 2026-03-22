@@ -110,6 +110,7 @@ jobs:
           git config --global --unset url."git@github.com:".insteadOf "https://github.com/"
           go run github.com/dmarkham/enumer@latest -type=Protocol -trimprefix=Protocol_ ./protos/Protocol.go
           go run github.com/dmarkham/enumer@latest -type=WebAPIErrorCode -trimprefix=WebAPIErrorCode_ ./protos/WebAPIErrorCode.go
+          go mod tidy
       - name: Fix the linting issues
         uses: golangci/golangci-lint-action@v9
         with:
@@ -118,7 +119,7 @@ jobs:
       - name: Commit and push changes
         uses: EndBug/add-and-commit@v9
         with:
-          add: "['./protos', 'version.txt']"
+          add: "['./protos', 'version.txt', 'go.mod', 'go.sum']"
           message: "chore(apk): generate protos for ${{ needs.determine-version.outputs.version }}"
           default_author: github_actions
           push: true

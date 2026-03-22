@@ -1,7 +1,11 @@
 package protos
 
+import (
+	"github.com/arisu-archive/mapx"
+)
+
 type OpenConditionEventListResponse struct {
 	ResponsePacket
-	ConquestTiles         map[int64][]ConquestTileDB       `json:",omitempty,omitzero"`
-	WorldRaidLocalBossDBs map[int64][]WorldRaidLocalBossDB `json:",omitempty,omitzero"`
+	ConquestTiles         *mapx.OrderedMap[int64, []ConquestTileDB]       `json:",omitempty,omitzero"`
+	WorldRaidLocalBossDBs *mapx.OrderedMap[int64, []WorldRaidLocalBossDB] `json:",omitempty,omitzero"`
 }

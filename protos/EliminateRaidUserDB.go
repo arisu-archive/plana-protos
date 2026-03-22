@@ -1,6 +1,10 @@
 package protos
 
+import (
+	"github.com/arisu-archive/mapx"
+)
+
 type EliminateRaidUserDB struct {
 	RaidUserDB
-	BossGroupToRankingPoint map[string]int64 `json:",omitempty,omitzero"`
+	BossGroupToRankingPoint *mapx.OrderedMap[string, int64] `json:",omitempty,omitzero"`
 }

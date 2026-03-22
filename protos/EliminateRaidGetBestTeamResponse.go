@@ -1,6 +1,10 @@
 package protos
 
+import (
+	"github.com/arisu-archive/mapx"
+)
+
 type EliminateRaidGetBestTeamResponse struct {
 	ResponsePacket
-	RaidTeamSettingDBsDict map[string][]RaidTeamSettingDB `json:",omitempty,omitzero"`
+	RaidTeamSettingDBsDict *mapx.OrderedMap[string, []RaidTeamSettingDB] `json:",omitempty,omitzero"`
 }
