@@ -5,7 +5,7 @@ go 1.25.0
 toolchain go1.26.1
 
 require (
-	github.com/arisu-archive/mapx v1.0.0
+	github.com/arisu-archive/mapx v1.1.0
 	github.com/arisu-archive/plana-flatbuffers v0.11.0
 )
 
