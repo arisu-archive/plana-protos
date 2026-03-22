@@ -14,7 +14,6 @@ type TBGBoardSaveDB struct {
 	MainMap                        TBGHexaMapDB
 	HiddenMap                      TBGHexaMapDB
 	Player                         TBGPlayerDB
-	Encounter                      TBGEncounterDB
 	BestClearRecord                *mapx.OrderedMap[int32, TBGThemaClearRecord]
 	HiddenTreasureRecord           []int32
 	HiddenPotalOpenConditionRecord []int32
