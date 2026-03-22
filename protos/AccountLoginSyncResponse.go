@@ -2,7 +2,6 @@ package protos
 
 type AccountLoginSyncResponse struct {
 	ResponsePacket
-	Responses                                ResponsePacket
 	CafeGetInfoResponse                      CafeGetInfoResponse
 	AccountCurrencySyncResponse              AccountCurrencySyncResponse
 	CharacterListResponse                    CharacterListResponse
