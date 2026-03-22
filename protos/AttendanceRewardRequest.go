@@ -1,8 +1,12 @@
 package protos
 
+import (
+	"github.com/arisu-archive/mapx"
+)
+
 type AttendanceRewardRequest struct {
 	RequestPacket
-	DayByBookUniqueId      map[int64]int64 `json:",omitempty,omitzero"`
-	AttendanceBookUniqueId int64           `json:",omitempty,omitzero"`
-	Day                    int64           `json:",omitempty,omitzero"`
+	DayByBookUniqueId      *mapx.OrderedMap[int64, int64] `json:",omitempty,omitzero"`
+	AttendanceBookUniqueId int64                          `json:",omitempty,omitzero"`
+	Day                    int64                          `json:",omitempty,omitzero"`
 }

@@ -1,6 +1,10 @@
 package protos
 
+import (
+	"github.com/arisu-archive/mapx"
+)
+
 type ShopPickupSelectionGachaGetResponse struct {
 	ResponsePacket
-	PickupCharacterSelection map[int64]int64 `json:",omitempty,omitzero"`
+	PickupCharacterSelection *mapx.OrderedMap[int64, int64] `json:",omitempty,omitzero"`
 }
