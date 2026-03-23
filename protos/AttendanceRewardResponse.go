@@ -4,5 +4,5 @@ type AttendanceRewardResponse struct {
 	ResponsePacket
 	AttendanceBookRewards []AttendanceBookReward
 	AttendanceHistoryDBs  []AttendanceHistoryDB
-	ParcelResultDB        ParcelResultDB
+	ParcelResultDB        *ParcelResultDB `json:",omitempty,omitzero"`
 }

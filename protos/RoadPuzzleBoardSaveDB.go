@@ -5,9 +5,9 @@ import (
 )
 
 type RoadPuzzleBoardSaveDB struct {
-	UniqueId             int64 `json:",omitempty,omitzero"`
-	Round                int32 `json:",omitempty,omitzero"`
-	RecentRandomRailTile RoadPuzzleRailTileData
+	UniqueId             int64                   `json:",omitempty,omitzero"`
+	Round                int32                   `json:",omitempty,omitzero"`
+	RecentRandomRailTile *RoadPuzzleRailTileData `json:",omitempty,omitzero"`
 	RemainingTiles       *mapx.OrderedMap[string, int32]
 	PlacedRailTiles      []RoadPuzzleRailTileData
 	RewardTiles          []RoadPuzzleTileRewardData

@@ -14,6 +14,6 @@ type CafeDB struct {
 	IsNew                 bool    `json:",omitempty,omitzero"`
 	CafeVisitCharacterDBs *mapx.OrderedMap[int64, CafeDB_CafeCharacterDB]
 	FurnitureDBs          []FurnitureDB
-	ProductionAppliedTime MxTime `json:",omitempty,omitzero"`
-	ProductionDB          CafeProductionDB
+	ProductionAppliedTime MxTime            `json:",omitempty,omitzero"`
+	ProductionDB          *CafeProductionDB `json:",omitempty,omitzero"`
 }

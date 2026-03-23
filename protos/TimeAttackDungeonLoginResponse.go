@@ -2,5 +2,5 @@ package protos
 
 type TimeAttackDungeonLoginResponse struct {
 	ResponsePacket
-	PreviousRoomDB TimeAttackDungeonRoomDB
+	PreviousRoomDB *TimeAttackDungeonRoomDB `json:",omitempty,omitzero"`
 }

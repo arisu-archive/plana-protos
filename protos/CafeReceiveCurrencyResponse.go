@@ -2,7 +2,7 @@ package protos
 
 type CafeReceiveCurrencyResponse struct {
 	ResponsePacket
-	CafeDB         CafeDB
+	CafeDB         *CafeDB `json:",omitempty,omitzero"`
 	CafeDBs        []CafeDB
-	ParcelResultDB ParcelResultDB
+	ParcelResultDB *ParcelResultDB `json:",omitempty,omitzero"`
 }

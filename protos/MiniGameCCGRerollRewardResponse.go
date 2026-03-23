@@ -2,5 +2,5 @@ package protos
 
 type MiniGameCCGRerollRewardResponse struct {
 	ResponsePacket
-	StageDB MiniGameCCGStagePlayDB
+	StageDB *MiniGameCCGStagePlayDB `json:",omitempty,omitzero"`
 }

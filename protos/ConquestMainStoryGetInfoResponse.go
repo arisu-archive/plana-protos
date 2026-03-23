@@ -6,7 +6,7 @@ import (
 
 type ConquestMainStoryGetInfoResponse struct {
 	ResponsePacket
-	ConquestInfoDB       ConquestInfoDB
+	ConquestInfoDB       *ConquestInfoDB `json:",omitempty,omitzero"`
 	ConquestedTileDBs    []ConquestTileDB
 	DifficultyToStepDict *mapx.OrderedMap[string, int32]
 	IsFirstEnter         bool `json:",omitempty,omitzero"`

@@ -2,5 +2,5 @@ package protos
 
 type StickerLoginResponse struct {
 	ResponsePacket
-	StickerBookDB StickerBookDB
+	StickerBookDB *StickerBookDB `json:",omitempty,omitzero"`
 }

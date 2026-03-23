@@ -2,5 +2,5 @@ package protos
 
 type ItemSellResponse struct {
 	ResponsePacket
-	AccountCurrencyDB AccountCurrencyDB
+	AccountCurrencyDB *AccountCurrencyDB `json:",omitempty,omitzero"`
 }

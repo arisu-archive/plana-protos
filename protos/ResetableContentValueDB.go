@@ -1,7 +1,7 @@
 package protos
 
 type ResetableContentValueDB struct {
-	ResetableContentId ResetableContentId
-	ContentValue       int64  `json:",omitempty,omitzero"`
-	LastUpdateTime     MxTime `json:",omitempty,omitzero"`
+	ResetableContentId *ResetableContentId `json:",omitempty,omitzero"`
+	ContentValue       int64               `json:",omitempty,omitzero"`
+	LastUpdateTime     MxTime              `json:",omitempty,omitzero"`
 }

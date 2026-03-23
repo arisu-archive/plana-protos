@@ -2,6 +2,6 @@ package protos
 
 type MomoTalkReadResponse struct {
 	ResponsePacket
-	MomoTalkOutLineDB MomoTalkOutLineDB
+	MomoTalkOutLineDB *MomoTalkOutLineDB `json:",omitempty,omitzero"`
 	MomoTalkChoiceDBs []MomoTalkChoiceDB
 }

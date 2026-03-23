@@ -2,6 +2,6 @@ package protos
 
 type CafeOpenResponse struct {
 	ResponsePacket
-	OpenedCafeDB CafeDB
+	OpenedCafeDB *CafeDB `json:",omitempty,omitzero"`
 	FurnitureDBs []FurnitureDB
 }

@@ -2,5 +2,5 @@ package protos
 
 type EchelonPresetSaveResponse struct {
 	ResponsePacket
-	PresetDB EchelonPresetDB
+	PresetDB *EchelonPresetDB `json:",omitempty,omitzero"`
 }

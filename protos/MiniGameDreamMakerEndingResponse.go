@@ -2,8 +2,8 @@ package protos
 
 type MiniGameDreamMakerEndingResponse struct {
 	ResponsePacket
-	InfoDB         MiniGameDreamMakerInfoDB
+	InfoDB         *MiniGameDreamMakerInfoDB `json:",omitempty,omitzero"`
 	ParameterDBs   []MiniGameDreamMakerParameterDB
-	EndingDB       MiniGameDreamMakerEndingDB
-	ParcelResultDB ParcelResultDB
+	EndingDB       *MiniGameDreamMakerEndingDB `json:",omitempty,omitzero"`
+	ParcelResultDB *ParcelResultDB             `json:",omitempty,omitzero"`
 }

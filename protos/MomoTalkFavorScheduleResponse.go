@@ -6,6 +6,6 @@ import (
 
 type MomoTalkFavorScheduleResponse struct {
 	ResponsePacket
-	ParcelResultDB       ParcelResultDB
+	ParcelResultDB       *ParcelResultDB `json:",omitempty,omitzero"`
 	FavorScheduleRecords *mapx.OrderedMap[int64, []int64]
 }

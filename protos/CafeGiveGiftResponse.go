@@ -2,6 +2,6 @@ package protos
 
 type CafeGiveGiftResponse struct {
 	ResponsePacket
-	ParcelResultDB  ParcelResultDB
-	ConsumeResultDB ConsumeResultDB
+	ParcelResultDB  *ParcelResultDB  `json:",omitempty,omitzero"`
+	ConsumeResultDB *ConsumeResultDB `json:",omitempty,omitzero"`
 }

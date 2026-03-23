@@ -2,5 +2,5 @@ package protos
 
 type EventContentPortalResponse struct {
 	ResponsePacket
-	SaveDataDB EventContentMainStageSaveDB
+	SaveDataDB *EventContentMainStageSaveDB `json:",omitempty,omitzero"`
 }

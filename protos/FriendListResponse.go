@@ -2,7 +2,7 @@ package protos
 
 type FriendListResponse struct {
 	ResponsePacket
-	FriendIdCardDB           FriendIdCardDB
+	FriendIdCardDB           *FriendIdCardDB `json:",omitempty,omitzero"`
 	IdCardBackgroundDBs      []IdCardBackgroundDB
 	FriendDBs                []FriendDB
 	SentRequestFriendDBs     []FriendDB

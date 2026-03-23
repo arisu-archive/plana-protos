@@ -13,7 +13,7 @@ type ConquestStageSaveDB struct {
 	TilePresetId            int64                     `json:",omitempty,omitzero"`
 	ConquestTileType        flatdata.ConquestTileType `json:",omitempty,omitzero"`
 	UseManageEchelon        bool                      `json:",omitempty,omitzero"`
-	AssistCharacterDB       AssistCharacterDB
-	EchelonSlotType         int32 `json:",omitempty,omitzero"`
-	EchelonSlotIndex        int32 `json:",omitempty,omitzero"`
+	AssistCharacterDB       *AssistCharacterDB        `json:",omitempty,omitzero"`
+	EchelonSlotType         int32                     `json:",omitempty,omitzero"`
+	EchelonSlotIndex        int32                     `json:",omitempty,omitzero"`
 }

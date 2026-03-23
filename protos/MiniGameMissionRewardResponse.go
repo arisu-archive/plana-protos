@@ -2,6 +2,6 @@ package protos
 
 type MiniGameMissionRewardResponse struct {
 	ResponsePacket
-	AddedHistoryDB MissionHistoryDB
-	ParcelResultDB ParcelResultDB
+	AddedHistoryDB *MissionHistoryDB `json:",omitempty,omitzero"`
+	ParcelResultDB *ParcelResultDB   `json:",omitempty,omitzero"`
 }

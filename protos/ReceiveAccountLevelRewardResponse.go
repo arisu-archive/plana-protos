@@ -3,5 +3,5 @@ package protos
 type ReceiveAccountLevelRewardResponse struct {
 	ResponsePacket
 	ReceivedAccountLevelRewardIds []int64
-	ParcelResultDB                ParcelResultDB
+	ParcelResultDB                *ParcelResultDB `json:",omitempty,omitzero"`
 }

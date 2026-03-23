@@ -2,6 +2,6 @@ package protos
 
 type CharacterGearUnlockResponse struct {
 	ResponsePacket
-	GearDB      GearDB
-	CharacterDB CharacterDB
+	GearDB      *GearDB      `json:",omitempty,omitzero"`
+	CharacterDB *CharacterDB `json:",omitempty,omitzero"`
 }

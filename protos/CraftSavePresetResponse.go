@@ -2,5 +2,5 @@ package protos
 
 type CraftSavePresetResponse struct {
 	ResponsePacket
-	PresetSlotDB CraftPresetSlotDB
+	PresetSlotDB *CraftPresetSlotDB `json:",omitempty,omitzero"`
 }

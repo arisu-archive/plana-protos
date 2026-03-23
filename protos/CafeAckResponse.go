@@ -2,5 +2,5 @@ package protos
 
 type CafeAckResponse struct {
 	ResponsePacket
-	CafeDB CafeDB
+	CafeDB *CafeDB `json:",omitempty,omitzero"`
 }

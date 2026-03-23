@@ -2,8 +2,8 @@ package protos
 
 type CommonCheatResponse struct {
 	ResponsePacket
-	Account                 AccountDB
-	AccountCurrency         AccountCurrencyDB
+	Account                 *AccountDB         `json:",omitempty,omitzero"`
+	AccountCurrency         *AccountCurrencyDB `json:",omitempty,omitzero"`
 	CharacterDBs            []CharacterDB
 	EquipmentDBs            []EquipmentDB
 	WeaponDBs               []WeaponDB

@@ -2,5 +2,5 @@ package protos
 
 type ArenaBattleResultRequest struct {
 	RequestPacket
-	ArenaBattleDB ArenaBattleDB
+	ArenaBattleDB *ArenaBattleDB `json:",omitempty,omitzero"`
 }

@@ -3,5 +3,5 @@ package protos
 type CampaignRetreatResponse struct {
 	ResponsePacket
 	ReleasedEchelonNumbers []int64
-	ParcelResultDB         ParcelResultDB
+	ParcelResultDB         *ParcelResultDB `json:",omitempty,omitzero"`
 }

@@ -2,5 +2,5 @@ package protos
 
 type CharacterUnlockWeaponResponse struct {
 	ResponsePacket
-	WeaponDB WeaponDB
+	WeaponDB *WeaponDB `json:",omitempty,omitzero"`
 }

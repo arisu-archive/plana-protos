@@ -3,7 +3,7 @@ package protos
 type EquipmentBatchGrowthResponse struct {
 	ResponsePacket
 	EquipmentDBs    []EquipmentDB
-	GearDB          GearDB
-	ParcelResultDB  ParcelResultDB
-	ConsumeResultDB ConsumeResultDB
+	GearDB          *GearDB          `json:",omitempty,omitzero"`
+	ParcelResultDB  *ParcelResultDB  `json:",omitempty,omitzero"`
+	ConsumeResultDB *ConsumeResultDB `json:",omitempty,omitzero"`
 }

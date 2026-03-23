@@ -3,5 +3,5 @@ package protos
 type EchelonListResponse struct {
 	ResponsePacket
 	EchelonDBs     []EchelonDB
-	ArenaEchelonDB EchelonDB
+	ArenaEchelonDB *EchelonDB `json:",omitempty,omitzero"`
 }

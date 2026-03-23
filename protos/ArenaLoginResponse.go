@@ -2,5 +2,5 @@ package protos
 
 type ArenaLoginResponse struct {
 	ResponsePacket
-	ArenaPlayerInfoDB ArenaPlayerInfoDB
+	ArenaPlayerInfoDB *ArenaPlayerInfoDB `json:",omitempty,omitzero"`
 }

@@ -2,6 +2,6 @@ package protos
 
 type PermanentRaidEnterBattleResponse struct {
 	ResponsePacket
-	BattleHistoryDB   PermanentRaidBattleHistoryDB
-	AssistCharacterDB AssistCharacterDB
+	BattleHistoryDB   *PermanentRaidBattleHistoryDB `json:",omitempty,omitzero"`
+	AssistCharacterDB *AssistCharacterDB            `json:",omitempty,omitzero"`
 }

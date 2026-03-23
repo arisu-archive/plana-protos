@@ -6,20 +6,20 @@ import (
 )
 
 type HeroSummary struct {
-	ServerId                  int64 `json:",omitempty,omitzero"`
-	OwnerAccountId            int64 `json:",omitempty,omitzero"`
-	BattleEntityId            EntityId
-	CharacterId               int64 `json:",omitempty,omitzero"`
-	CostumeId                 int64 `json:",omitempty,omitzero"`
-	Grade                     int32 `json:",omitempty,omitzero"`
-	Level                     int32 `json:",omitempty,omitzero"`
+	ServerId                  int64     `json:",omitempty,omitzero"`
+	OwnerAccountId            int64     `json:",omitempty,omitzero"`
+	BattleEntityId            *EntityId `json:",omitempty,omitzero"`
+	CharacterId               int64     `json:",omitempty,omitzero"`
+	CostumeId                 int64     `json:",omitempty,omitzero"`
+	Grade                     int32     `json:",omitempty,omitzero"`
+	Level                     int32     `json:",omitempty,omitzero"`
 	PotentialStatLevel        *mapx.OrderedMap[string, int32]
-	ExSkillLevel              int32 `json:",omitempty,omitzero"`
-	PublicSkillLevel          int32 `json:",omitempty,omitzero"`
-	PassiveSkillLevel         int32 `json:",omitempty,omitzero"`
-	ExtraPassiveSkillLevel    int32 `json:",omitempty,omitzero"`
-	FavorRank                 int32 `json:",omitempty,omitzero"`
-	StatSnapshotCollection    StatSnapshotCollection
+	ExSkillLevel              int32                     `json:",omitempty,omitzero"`
+	PublicSkillLevel          int32                     `json:",omitempty,omitzero"`
+	PassiveSkillLevel         int32                     `json:",omitempty,omitzero"`
+	ExtraPassiveSkillLevel    int32                     `json:",omitempty,omitzero"`
+	FavorRank                 int32                     `json:",omitempty,omitzero"`
+	StatSnapshotCollection    *StatSnapshotCollection   `json:",omitempty,omitzero"`
 	HPRateBefore              int64                     `json:",omitempty,omitzero"`
 	HPRateAfter               int64                     `json:",omitempty,omitzero"`
 	CrowdControlCount         int32                     `json:",omitempty,omitzero"`
@@ -41,5 +41,5 @@ type HeroSummary struct {
 	CharacterWeapon           *WeaponSetting `json:",omitempty,omitzero"`
 	CharacterGear             *GearSetting   `json:",omitempty,omitzero"`
 	SkillCount                *mapx.OrderedMap[string, int32]
-	KillLog                   KillLogCollection
+	KillLog                   *KillLogCollection `json:",omitempty,omitzero"`
 }

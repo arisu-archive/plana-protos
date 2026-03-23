@@ -2,6 +2,6 @@ package protos
 
 type CraftShiftingCompleteProcessResponse struct {
 	ResponsePacket
-	CraftInfoDB    ShiftingCraftInfoDB
-	ParcelResultDB ParcelResultDB
+	CraftInfoDB    *ShiftingCraftInfoDB `json:",omitempty,omitzero"`
+	ParcelResultDB *ParcelResultDB      `json:",omitempty,omitzero"`
 }

@@ -2,6 +2,6 @@ package protos
 
 type CampaignRestartMainStageResponse struct {
 	ResponsePacket
-	ParcelResultDB ParcelResultDB
-	SaveDataDB     CampaignMainStageSaveDB
+	ParcelResultDB *ParcelResultDB          `json:",omitempty,omitzero"`
+	SaveDataDB     *CampaignMainStageSaveDB `json:",omitempty,omitzero"`
 }

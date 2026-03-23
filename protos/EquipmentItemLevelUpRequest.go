@@ -4,5 +4,5 @@ type EquipmentItemLevelUpRequest struct {
 	RequestPacket
 	TargetServerId   int64 `json:",omitempty,omitzero"`
 	ConsumeServerIds []int64
-	ConsumeRequestDB ConsumeRequestDB
+	ConsumeRequestDB *ConsumeRequestDB `json:",omitempty,omitzero"`
 }

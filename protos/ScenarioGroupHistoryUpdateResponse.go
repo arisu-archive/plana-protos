@@ -2,5 +2,5 @@ package protos
 
 type ScenarioGroupHistoryUpdateResponse struct {
 	ResponsePacket
-	ScenarioGroupHistoryDB ScenarioGroupHistoryDB
+	ScenarioGroupHistoryDB *ScenarioGroupHistoryDB `json:",omitempty,omitzero"`
 }

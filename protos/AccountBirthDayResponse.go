@@ -2,5 +2,5 @@ package protos
 
 type AccountBirthDayResponse struct {
 	ResponsePacket
-	AccountDB AccountDB
+	AccountDB *AccountDB `json:",omitempty,omitzero"`
 }

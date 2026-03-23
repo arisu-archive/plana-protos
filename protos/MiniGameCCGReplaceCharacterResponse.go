@@ -2,6 +2,6 @@ package protos
 
 type MiniGameCCGReplaceCharacterResponse struct {
 	ResponsePacket
-	SaveDB         MiniGameCCGSaveDB
-	CCGCharacterDB MiniGameCCGCharacterDB
+	SaveDB         *MiniGameCCGSaveDB      `json:",omitempty,omitzero"`
+	CCGCharacterDB *MiniGameCCGCharacterDB `json:",omitempty,omitzero"`
 }

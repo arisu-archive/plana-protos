@@ -19,5 +19,5 @@ type ClanMemberDB struct {
 	LastLoginDate               MxTime                   `json:",omitempty,omitzero"`
 	GameLoginDate               MxTime                   `json:",omitempty,omitzero"`
 	AppliedDate                 MxTime                   `json:",omitempty,omitzero"`
-	AttachmentDB                AccountAttachmentDB
+	AttachmentDB                *AccountAttachmentDB     `json:",omitempty,omitzero"`
 }

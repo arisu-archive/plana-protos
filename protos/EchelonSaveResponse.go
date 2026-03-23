@@ -2,5 +2,5 @@ package protos
 
 type EchelonSaveResponse struct {
 	ResponsePacket
-	EchelonDB EchelonDB
+	EchelonDB *EchelonDB `json:",omitempty,omitzero"`
 }

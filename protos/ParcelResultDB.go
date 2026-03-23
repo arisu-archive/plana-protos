@@ -5,9 +5,9 @@ import (
 )
 
 type ParcelResultDB struct {
-	AccountDB                       AccountDB
+	AccountDB                       *AccountDB `json:",omitempty,omitzero"`
 	AcademyLocationDBs              []AcademyLocationDB
-	AccountCurrencyDB               AccountCurrencyDB
+	AccountCurrencyDB               *AccountCurrencyDB `json:",omitempty,omitzero"`
 	CharacterDBs                    []CharacterDB
 	WeaponDBs                       []WeaponDB
 	CostumeDBs                      []CostumeDB

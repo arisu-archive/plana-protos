@@ -2,5 +2,5 @@ package protos
 
 type ShopBeforehandGachaSaveResponse struct {
 	ResponsePacket
-	SelectGachaSnapshot BeforehandGachaSnapshotDB
+	SelectGachaSnapshot *BeforehandGachaSnapshotDB `json:",omitempty,omitzero"`
 }

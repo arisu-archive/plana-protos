@@ -2,6 +2,6 @@ package protos
 
 type ScenarioWithdrawEchelonResponse struct {
 	ResponsePacket
-	SaveDataDB         StoryStrategyStageSaveDB
+	SaveDataDB         *StoryStrategyStageSaveDB `json:",omitempty,omitzero"`
 	WithdrawEchelonDBs []EchelonDB
 }

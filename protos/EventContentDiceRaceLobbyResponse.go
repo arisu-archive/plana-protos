@@ -2,5 +2,5 @@ package protos
 
 type EventContentDiceRaceLobbyResponse struct {
 	ResponsePacket
-	DiceRaceDB EventContentDiceRaceDB
+	DiceRaceDB *EventContentDiceRaceDB `json:",omitempty,omitzero"`
 }

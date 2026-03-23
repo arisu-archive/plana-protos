@@ -2,5 +2,5 @@ package protos
 
 type CampaignEnterMainStageStrategySkipResponse struct {
 	ResponsePacket
-	ParcelResultDB ParcelResultDB
+	ParcelResultDB *ParcelResultDB `json:",omitempty,omitzero"`
 }

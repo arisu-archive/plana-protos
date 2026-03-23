@@ -6,7 +6,7 @@ import (
 )
 
 type RaidDB struct {
-	Owner                         RaidMemberDescription
+	Owner                         *RaidMemberDescription `json:",omitempty,omitzero"`
 	ContentType                   flatdata.ContentType
 	ServerId                      int64  `json:",omitempty,omitzero"`
 	UniqueId                      int64  `json:",omitempty,omitzero"`

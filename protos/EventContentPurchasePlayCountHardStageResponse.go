@@ -2,6 +2,6 @@ package protos
 
 type EventContentPurchasePlayCountHardStageResponse struct {
 	ResponsePacket
-	AccountCurrencyDB      AccountCurrencyDB
-	CampaignStageHistoryDB CampaignStageHistoryDB
+	AccountCurrencyDB      *AccountCurrencyDB      `json:",omitempty,omitzero"`
+	CampaignStageHistoryDB *CampaignStageHistoryDB `json:",omitempty,omitzero"`
 }

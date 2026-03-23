@@ -2,7 +2,7 @@ package protos
 
 type MiniGameDreamMakerGetInfoResponse struct {
 	ResponsePacket
-	InfoDB                       MiniGameDreamMakerInfoDB
+	InfoDB                       *MiniGameDreamMakerInfoDB `json:",omitempty,omitzero"`
 	ParameterDBs                 []MiniGameDreamMakerParameterDB
 	EndingDBs                    []MiniGameDreamMakerEndingDB
 	EventContentCollectionDBs    []EventContentCollectionDB

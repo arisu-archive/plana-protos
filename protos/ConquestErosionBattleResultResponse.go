@@ -2,8 +2,8 @@ package protos
 
 type ConquestErosionBattleResultResponse struct {
 	ResponsePacket
-	ParcelResultDB               ParcelResultDB
+	ParcelResultDB               *ParcelResultDB `json:",omitempty,omitzero"`
 	ConquestEventObjectDBWrapper []ConquestEventObjectDB
-	ConquestInfoDB               ConquestInfoDB
+	ConquestInfoDB               *ConquestInfoDB `json:",omitempty,omitzero"`
 	DisplayInfos                 []ConquestDisplayInfo
 }

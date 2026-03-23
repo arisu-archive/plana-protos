@@ -15,13 +15,13 @@ type HexaUnit struct {
 	StrategySightRange                        int32 `json:",omitempty,omitzero"`
 	Id                                        int64 `json:",omitempty,omitzero"`
 	Rotate                                    Vector3
-	Location                                  HexLocation
-	AIDestination                             HexLocation
-	IsActionComplete                          bool  `json:",omitempty,omitzero"`
-	IsPlayer                                  bool  `json:",omitempty,omitzero"`
-	IsFixedEchelon                            bool  `json:",omitempty,omitzero"`
-	MovementOrder                             int32 `json:",omitempty,omitzero"`
+	Location                                  *HexLocation `json:",omitempty,omitzero"`
+	AIDestination                             *HexLocation `json:",omitempty,omitzero"`
+	IsActionComplete                          bool         `json:",omitempty,omitzero"`
+	IsPlayer                                  bool         `json:",omitempty,omitzero"`
+	IsFixedEchelon                            bool         `json:",omitempty,omitzero"`
+	MovementOrder                             int32        `json:",omitempty,omitzero"`
 	RewardParcelInfosWithDropTacticEntityType *mapx.OrderedMap[string, []ParcelInfo]
-	SkillCardHand                             SkillCardHand
-	PlayAnimation                             bool `json:",omitempty,omitzero"`
+	SkillCardHand                             *SkillCardHand `json:",omitempty,omitzero"`
+	PlayAnimation                             bool           `json:",omitempty,omitzero"`
 }

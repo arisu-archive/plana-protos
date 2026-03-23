@@ -9,6 +9,6 @@ type ConquestConquerDeployEchelonRequest struct {
 	EventContentId    int64                    `json:",omitempty,omitzero"`
 	Difficulty        flatdata.StageDifficulty `json:",omitempty,omitzero"`
 	TileUniqueId      int64                    `json:",omitempty,omitzero"`
-	EchelonDB         EchelonDB
-	ClanAssistUseInfo ClanAssistUseInfo
+	EchelonDB         *EchelonDB               `json:",omitempty,omitzero"`
+	ClanAssistUseInfo *ClanAssistUseInfo       `json:",omitempty,omitzero"`
 }

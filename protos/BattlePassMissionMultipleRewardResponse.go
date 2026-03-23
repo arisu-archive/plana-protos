@@ -3,6 +3,6 @@ package protos
 type BattlePassMissionMultipleRewardResponse struct {
 	ResponsePacket
 	AddedHistoryDBs []MissionHistoryDB
-	ParcelResultDB  ParcelResultDB
-	BattlePassInfo  BattlePassInfoDB
+	ParcelResultDB  *ParcelResultDB   `json:",omitempty,omitzero"`
+	BattlePassInfo  *BattlePassInfoDB `json:",omitempty,omitzero"`
 }

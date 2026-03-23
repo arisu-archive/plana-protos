@@ -2,7 +2,7 @@ package protos
 
 type CharacterFavorGrowthResponse struct {
 	ResponsePacket
-	CharacterDB                  CharacterDB
+	CharacterDB                  *CharacterDB `json:",omitempty,omitzero"`
 	ConsumeStackableItemDBResult []ItemDB
-	ParcelResultDB               ParcelResultDB
+	ParcelResultDB               *ParcelResultDB `json:",omitempty,omitzero"`
 }

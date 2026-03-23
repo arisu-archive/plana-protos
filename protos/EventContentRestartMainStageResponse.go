@@ -2,6 +2,6 @@ package protos
 
 type EventContentRestartMainStageResponse struct {
 	ResponsePacket
-	ParcelResultDB ParcelResultDB
-	SaveDataDB     EventContentMainStageSaveDB
+	ParcelResultDB *ParcelResultDB              `json:",omitempty,omitzero"`
+	SaveDataDB     *EventContentMainStageSaveDB `json:",omitempty,omitzero"`
 }
