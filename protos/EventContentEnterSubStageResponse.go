@@ -2,7 +2,7 @@ package protos
 
 type EventContentEnterSubStageResponse struct {
 	ResponsePacket
-	ParcelResultDB         ParcelResultDB
-	SaveDataDB             EventContentSubStageSaveDB
-	CampaignStageHistoryDB CampaignStageHistoryDB
+	ParcelResultDB         *ParcelResultDB             `json:",omitempty,omitzero"`
+	SaveDataDB             *EventContentSubStageSaveDB `json:",omitempty,omitzero"`
+	CampaignStageHistoryDB *CampaignStageHistoryDB     `json:",omitempty,omitzero"`
 }

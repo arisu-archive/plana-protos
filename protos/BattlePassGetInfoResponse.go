@@ -2,5 +2,5 @@ package protos
 
 type BattlePassGetInfoResponse struct {
 	ResponsePacket
-	BattlePassInfo BattlePassInfoDB
+	BattlePassInfo *BattlePassInfoDB `json:",omitempty,omitzero"`
 }

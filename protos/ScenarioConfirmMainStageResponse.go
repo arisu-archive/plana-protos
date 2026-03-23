@@ -2,7 +2,7 @@ package protos
 
 type ScenarioConfirmMainStageResponse struct {
 	ResponsePacket
-	ParcelResultDB ParcelResultDB
-	SaveDataDB     StoryStrategyStageSaveDB
+	ParcelResultDB *ParcelResultDB           `json:",omitempty,omitzero"`
+	SaveDataDB     *StoryStrategyStageSaveDB `json:",omitempty,omitzero"`
 	ScenarioIds    []int64
 }

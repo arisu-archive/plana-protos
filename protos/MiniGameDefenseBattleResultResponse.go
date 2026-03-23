@@ -2,6 +2,6 @@ package protos
 
 type MiniGameDefenseBattleResultResponse struct {
 	ResponsePacket
-	ParcelResultDB ParcelResultDB
-	StageHistoryDB MiniGameDefenseStageHistoryDB
+	ParcelResultDB *ParcelResultDB                `json:",omitempty,omitzero"`
+	StageHistoryDB *MiniGameDefenseStageHistoryDB `json:",omitempty,omitzero"`
 }

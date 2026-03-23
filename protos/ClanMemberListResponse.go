@@ -2,6 +2,6 @@ package protos
 
 type ClanMemberListResponse struct {
 	ResponsePacket
-	ClanDB        ClanDB
+	ClanDB        *ClanDB `json:",omitempty,omitzero"`
 	ClanMemberDBs []ClanMemberDB
 }

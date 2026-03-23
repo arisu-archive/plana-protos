@@ -2,6 +2,6 @@ package protos
 
 type CampaignWithdrawEchelonResponse struct {
 	ResponsePacket
-	SaveDataDB         CampaignMainStageSaveDB
+	SaveDataDB         *CampaignMainStageSaveDB `json:",omitempty,omitzero"`
 	WithdrawEchelonDBs []EchelonDB
 }

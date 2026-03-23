@@ -2,5 +2,5 @@ package protos
 
 type ClanSettingResponse struct {
 	ResponsePacket
-	ClanDB ClanDB
+	ClanDB *ClanDB `json:",omitempty,omitzero"`
 }

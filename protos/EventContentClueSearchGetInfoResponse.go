@@ -2,5 +2,5 @@ package protos
 
 type EventContentClueSearchGetInfoResponse struct {
 	ResponsePacket
-	SaveDB ClueSearchSaveDB
+	SaveDB *ClueSearchSaveDB `json:",omitempty,omitzero"`
 }

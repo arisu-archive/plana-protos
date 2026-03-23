@@ -2,7 +2,7 @@ package protos
 
 type WeekDungeonBattleResultResponse struct {
 	ResponsePacket
-	WeekDungeonStageHistoryDB WeekDungeonStageHistoryDB
+	WeekDungeonStageHistoryDB *WeekDungeonStageHistoryDB `json:",omitempty,omitzero"`
 	LevelUpCharacterDBs       []CharacterDB
-	ParcelResultDB            ParcelResultDB
+	ParcelResultDB            *ParcelResultDB `json:",omitempty,omitzero"`
 }

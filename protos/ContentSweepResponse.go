@@ -5,6 +5,6 @@ type ContentSweepResponse struct {
 	ClearParcels             [][]ParcelInfo
 	BonusParcels             []ParcelInfo
 	EventContentBonusParcels [][]ParcelInfo
-	ParcelResult             ParcelResultDB
-	CampaignStageHistoryDB   CampaignStageHistoryDB
+	ParcelResult             *ParcelResultDB         `json:",omitempty,omitzero"`
+	CampaignStageHistoryDB   *CampaignStageHistoryDB `json:",omitempty,omitzero"`
 }

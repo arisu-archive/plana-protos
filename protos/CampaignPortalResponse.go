@@ -2,5 +2,5 @@ package protos
 
 type CampaignPortalResponse struct {
 	ResponsePacket
-	CampaignMainStageSaveDB CampaignMainStageSaveDB
+	CampaignMainStageSaveDB *CampaignMainStageSaveDB `json:",omitempty,omitzero"`
 }

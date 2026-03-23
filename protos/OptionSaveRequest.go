@@ -2,5 +2,5 @@ package protos
 
 type OptionSaveRequest struct {
 	RequestPacket
-	OptionDB OptionDB
+	OptionDB *OptionDB `json:",omitempty,omitzero"`
 }

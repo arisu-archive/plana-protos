@@ -2,5 +2,5 @@ package protos
 
 type SingleRaidUserDB struct {
 	RaidUserDB
-	RaidTeamSettingDB RaidTeamSettingDB
+	RaidTeamSettingDB *RaidTeamSettingDB `json:",omitempty,omitzero"`
 }

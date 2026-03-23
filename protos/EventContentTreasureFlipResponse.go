@@ -2,6 +2,6 @@ package protos
 
 type EventContentTreasureFlipResponse struct {
 	ResponsePacket
-	BoardHistoryDB EventContentTreasureHistoryDB
-	ParcelResultDB ParcelResultDB
+	BoardHistoryDB *EventContentTreasureHistoryDB `json:",omitempty,omitzero"`
+	ParcelResultDB *ParcelResultDB                `json:",omitempty,omitzero"`
 }

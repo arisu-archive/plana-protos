@@ -2,6 +2,6 @@ package protos
 
 type ShopBuyGacha3Response struct {
 	ShopBuyGacha2Response
-	FreeRecruitHistoryDB     ShopFreeRecruitHistoryDB
+	FreeRecruitHistoryDB     *ShopFreeRecruitHistoryDB `json:",omitempty,omitzero"`
 	PickupFirstGetHistoryDBs []PickupFirstGetHistoryDB
 }

@@ -2,5 +2,5 @@ package protos
 
 type CampaignTutorialStageResultRequest struct {
 	RequestPacket
-	Summary BattleSummary
+	Summary *BattleSummary `json:",omitempty,omitzero"`
 }

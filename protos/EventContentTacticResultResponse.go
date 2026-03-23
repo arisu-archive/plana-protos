@@ -6,14 +6,14 @@ import (
 
 type EventContentTacticResultResponse struct {
 	ResponsePacket
-	TacticRank                int64 `json:",omitempty,omitzero"`
-	CampaignStageHistoryDB    CampaignStageHistoryDB
+	TacticRank                int64                   `json:",omitempty,omitzero"`
+	CampaignStageHistoryDB    *CampaignStageHistoryDB `json:",omitempty,omitzero"`
 	LevelUpCharacterDBs       []CharacterDB
 	FirstClearReward          []ParcelInfo
-	StrategyObject            Strategy
+	StrategyObject            *Strategy `json:",omitempty,omitzero"`
 	StrategyObjectRewards     *mapx.OrderedMap[int64, []ParcelInfo]
 	BonusReward               []ParcelInfo
-	ParcelResultDB            ParcelResultDB
-	SaveDataDB                EventContentMainStageSaveDB
+	ParcelResultDB            *ParcelResultDB              `json:",omitempty,omitzero"`
+	SaveDataDB                *EventContentMainStageSaveDB `json:",omitempty,omitzero"`
 	EventContentCollectionDBs []EventContentCollectionDB
 }

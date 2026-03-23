@@ -2,7 +2,7 @@ package protos
 
 type MiniGameTableBoardMoveResponse struct {
 	ResponsePacket
-	PlayerDB       TBGPlayerDB
-	SaveDB         TBGBoardSaveDB
-	ParcelResultDB ParcelResultDB
+	PlayerDB       *TBGPlayerDB    `json:",omitempty,omitzero"`
+	SaveDB         *TBGBoardSaveDB `json:",omitempty,omitzero"`
+	ParcelResultDB *ParcelResultDB `json:",omitempty,omitzero"`
 }

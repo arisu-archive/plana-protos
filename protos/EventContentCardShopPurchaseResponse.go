@@ -2,7 +2,7 @@ package protos
 
 type EventContentCardShopPurchaseResponse struct {
 	ResponsePacket
-	ParcelResultDB             ParcelResultDB
-	CardShopElementDB          CardShopElementDB
+	ParcelResultDB             *ParcelResultDB    `json:",omitempty,omitzero"`
+	CardShopElementDB          *CardShopElementDB `json:",omitempty,omitzero"`
 	CardShopPurchaseHistoryDBs []CardShopPurchaseHistoryDB
 }

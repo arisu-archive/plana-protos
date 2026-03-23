@@ -11,5 +11,5 @@ type RaidCreateBattleRequest struct {
 	Tags          []int32
 	IsPublic      bool                `json:",omitempty,omitzero"`
 	Difficulty    flatdata.Difficulty `json:",omitempty,omitzero"`
-	AssistUseInfo ClanAssistUseInfo
+	AssistUseInfo *ClanAssistUseInfo  `json:",omitempty,omitzero"`
 }

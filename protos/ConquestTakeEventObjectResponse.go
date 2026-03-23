@@ -2,6 +2,6 @@ package protos
 
 type ConquestTakeEventObjectResponse struct {
 	ResponsePacket
-	ParcelResultDB               ParcelResultDB
+	ParcelResultDB               *ParcelResultDB `json:",omitempty,omitzero"`
 	ConquestEventObjectDBWrapper ConquestEventObjectDB
 }

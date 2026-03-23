@@ -4,5 +4,5 @@ type PermanentRaidLobbyResponse struct {
 	ResponsePacket
 	BossManageDBs       []PermanentRaidBossManageDB
 	BestScoreHistoryDBs []PermanentRaidBestScoreHistoryDB
-	BattleHistoryDB     PermanentRaidBattleHistoryDB
+	BattleHistoryDB     *PermanentRaidBattleHistoryDB `json:",omitempty,omitzero"`
 }

@@ -2,6 +2,6 @@ package protos
 
 type CafeRelocateFurnitureResponse struct {
 	ResponsePacket
-	CafeDB               CafeDB
-	RelocatedFurnitureDB FurnitureDB
+	CafeDB               *CafeDB      `json:",omitempty,omitzero"`
+	RelocatedFurnitureDB *FurnitureDB `json:",omitempty,omitzero"`
 }

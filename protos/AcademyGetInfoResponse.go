@@ -2,6 +2,6 @@ package protos
 
 type AcademyGetInfoResponse struct {
 	ResponsePacket
-	AcademyDB          AcademyDB
+	AcademyDB          *AcademyDB `json:",omitempty,omitzero"`
 	AcademyLocationDBs []AcademyLocationDB
 }

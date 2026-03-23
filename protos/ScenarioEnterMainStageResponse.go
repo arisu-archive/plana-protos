@@ -2,5 +2,5 @@ package protos
 
 type ScenarioEnterMainStageResponse struct {
 	ResponsePacket
-	SaveDataDB StoryStrategyStageSaveDB
+	SaveDataDB *StoryStrategyStageSaveDB `json:",omitempty,omitzero"`
 }

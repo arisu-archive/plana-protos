@@ -1,6 +1,6 @@
 package protos
 
 type RoadPuzzleTileRewardData struct {
-	Location   HexLocation
-	RewardInfo ParcelInfo
+	Location   *HexLocation `json:",omitempty,omitzero"`
+	RewardInfo *ParcelInfo  `json:",omitempty,omitzero"`
 }

@@ -2,9 +2,9 @@ package protos
 
 type ClanLobbyResponse struct {
 	ResponsePacket
-	IrcConfig             IrcServerConfig
-	AccountClanDB         ClanDB
+	IrcConfig             *IrcServerConfig `json:",omitempty,omitzero"`
+	AccountClanDB         *ClanDB          `json:",omitempty,omitzero"`
 	DefaultExposedClanDBs []ClanDB
-	AccountClanMemberDB   ClanMemberDB
+	AccountClanMemberDB   *ClanMemberDB `json:",omitempty,omitzero"`
 	ClanMemberDBs         []ClanMemberDB
 }

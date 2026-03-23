@@ -2,7 +2,7 @@ package protos
 
 type ClanCreateResponse struct {
 	ResponsePacket
-	ClanDB            ClanDB
-	ClanMemberDB      ClanMemberDB
-	AccountCurrencyDB AccountCurrencyDB
+	ClanDB            *ClanDB            `json:",omitempty,omitzero"`
+	ClanMemberDB      *ClanMemberDB      `json:",omitempty,omitzero"`
+	AccountCurrencyDB *AccountCurrencyDB `json:",omitempty,omitzero"`
 }

@@ -2,7 +2,7 @@ package protos
 
 type PermanentRaidEndBattleRequest struct {
 	RequestPacket
-	EchelonId     int32 `json:",omitempty,omitzero"`
-	Summary       BattleSummary
-	AssistUseInfo ClanAssistUseInfo
+	EchelonId     int32              `json:",omitempty,omitzero"`
+	Summary       *BattleSummary     `json:",omitempty,omitzero"`
+	AssistUseInfo *ClanAssistUseInfo `json:",omitempty,omitzero"`
 }

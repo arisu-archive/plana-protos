@@ -4,5 +4,5 @@ type EventContentScenarioGroupHistoryUpdateResponse struct {
 	ResponsePacket
 	ScenarioGroupHistoryDBs   []ScenarioGroupHistoryDB
 	EventContentCollectionDBs []EventContentCollectionDB
-	ParcelResultDB            ParcelResultDB
+	ParcelResultDB            *ParcelResultDB `json:",omitempty,omitzero"`
 }

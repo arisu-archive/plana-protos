@@ -2,5 +2,5 @@ package protos
 
 type ScenarioDeployEchelonResponse struct {
 	ResponsePacket
-	SaveDataDB StoryStrategyStageSaveDB
+	SaveDataDB *StoryStrategyStageSaveDB `json:",omitempty,omitzero"`
 }

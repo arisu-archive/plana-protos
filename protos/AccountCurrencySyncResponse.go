@@ -6,6 +6,6 @@ import (
 
 type AccountCurrencySyncResponse struct {
 	ResponsePacket
-	AccountCurrencyDB AccountCurrencyDB
+	AccountCurrencyDB *AccountCurrencyDB `json:",omitempty,omitzero"`
 	ExpiredCurrency   *mapx.OrderedMap[string, int64]
 }

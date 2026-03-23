@@ -2,5 +2,5 @@ package protos
 
 type RaidBattleUpdateResponse struct {
 	ResponsePacket
-	RaidBattleDB RaidBattleDB
+	RaidBattleDB *RaidBattleDB `json:",omitempty,omitzero"`
 }

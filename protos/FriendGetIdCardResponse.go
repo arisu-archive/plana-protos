@@ -2,5 +2,5 @@ package protos
 
 type FriendGetIdCardResponse struct {
 	ResponsePacket
-	FriendIdCardDB FriendIdCardDB
+	FriendIdCardDB *FriendIdCardDB `json:",omitempty,omitzero"`
 }

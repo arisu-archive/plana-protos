@@ -2,6 +2,6 @@ package protos
 
 type CraftRewardResponse struct {
 	ResponsePacket
-	ParcelResultDB ParcelResultDB
+	ParcelResultDB *ParcelResultDB `json:",omitempty,omitzero"`
 	CraftInfos     []CraftInfoDB
 }

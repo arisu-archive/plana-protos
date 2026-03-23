@@ -2,6 +2,6 @@ package protos
 
 type CampaignChapterClearRewardResponse struct {
 	ResponsePacket
-	CampaignChapterClearRewardHistoryDB CampaignChapterClearRewardHistoryDB
-	ParcelResultDB                      ParcelResultDB
+	CampaignChapterClearRewardHistoryDB *CampaignChapterClearRewardHistoryDB `json:",omitempty,omitzero"`
+	ParcelResultDB                      *ParcelResultDB                      `json:",omitempty,omitzero"`
 }

@@ -2,6 +2,6 @@ package protos
 
 type CafeSummonCharacterResponse struct {
 	ResponsePacket
-	CafeDB  CafeDB
+	CafeDB  *CafeDB `json:",omitempty,omitzero"`
 	CafeDBs []CafeDB
 }

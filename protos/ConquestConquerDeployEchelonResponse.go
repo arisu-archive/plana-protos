@@ -3,5 +3,5 @@ package protos
 type ConquestConquerDeployEchelonResponse struct {
 	ResponsePacket
 	ConquestEchelonDBs []ConquestEchelonDB
-	ConquestInfoDB     ConquestInfoDB
+	ConquestInfoDB     *ConquestInfoDB `json:",omitempty,omitzero"`
 }

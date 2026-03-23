@@ -2,7 +2,7 @@ package protos
 
 type MiniGameCCGCompleteGameResponse struct {
 	ResponsePacket
-	OldSaveDB      MiniGameCCGSaveDB
-	ParcelResultDB ParcelResultDB
+	OldSaveDB      *MiniGameCCGSaveDB `json:",omitempty,omitzero"`
+	ParcelResultDB *ParcelResultDB    `json:",omitempty,omitzero"`
 	RewardParcels  []ParcelInfo
 }

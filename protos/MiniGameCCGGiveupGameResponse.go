@@ -2,5 +2,5 @@ package protos
 
 type MiniGameCCGGiveupGameResponse struct {
 	ResponsePacket
-	SaveDB MiniGameCCGSaveDB
+	SaveDB *MiniGameCCGSaveDB `json:",omitempty,omitzero"`
 }

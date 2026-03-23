@@ -2,6 +2,6 @@ package protos
 
 type MiniGameDreamMakerNewGameResponse struct {
 	ResponsePacket
-	InfoDB       MiniGameDreamMakerInfoDB
+	InfoDB       *MiniGameDreamMakerInfoDB `json:",omitempty,omitzero"`
 	ParameterDBs []MiniGameDreamMakerParameterDB
 }

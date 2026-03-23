@@ -2,5 +2,5 @@ package protos
 
 type EventContentConcentrationGetInfoResponse struct {
 	ResponsePacket
-	SaveDB EventContentConcentrationSaveDB
+	SaveDB *EventContentConcentrationSaveDB `json:",omitempty,omitzero"`
 }

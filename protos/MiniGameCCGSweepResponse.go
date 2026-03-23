@@ -3,5 +3,5 @@ package protos
 type MiniGameCCGSweepResponse struct {
 	ResponsePacket
 	Rewards        [][]ParcelInfo
-	ParcelResultDB ParcelResultDB
+	ParcelResultDB *ParcelResultDB `json:",omitempty,omitzero"`
 }

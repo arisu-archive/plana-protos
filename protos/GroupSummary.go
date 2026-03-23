@@ -5,8 +5,8 @@ import (
 )
 
 type GroupSummary struct {
-	TeamId                 int64 `json:",omitempty,omitzero"`
-	LeaderEntityId         EntityId
+	TeamId                 int64     `json:",omitempty,omitzero"`
+	LeaderEntityId         *EntityId `json:",omitempty,omitzero"`
 	Heroes                 []HeroSummary
 	Supporters             []HeroSummary
 	CarrierSkillSupporters []HeroSummary
@@ -14,5 +14,5 @@ type GroupSummary struct {
 	TSSInteractionServerId int64 `json:",omitempty,omitzero"`
 	TSSInteractionUniqueId int64 `json:",omitempty,omitzero"`
 	AssistRelations        *mapx.OrderedMap[int64, AssistRelation]
-	SkillCostSummary       SkillCostSummary
+	SkillCostSummary       *SkillCostSummary `json:",omitempty,omitzero"`
 }

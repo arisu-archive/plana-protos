@@ -9,5 +9,5 @@ type WorldRaidLobbyResponse struct {
 	ClearHistoryDBs     []WorldRaidClearHistoryDB
 	LocalBossDBs        []WorldRaidLocalBossDB
 	BossGroups          *mapx.OrderedMap[int64, []WorldRaidBossGroup]
-	WorldRaidProgressDB WorldRaidProgressDB
+	WorldRaidProgressDB *WorldRaidProgressDB `json:",omitempty,omitzero"`
 }

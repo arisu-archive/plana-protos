@@ -6,9 +6,9 @@ import (
 
 type EliminateRaidLobbyResponse struct {
 	ResponsePacket
-	SeasonType        flatdata.RaidSeasonType `json:",omitempty,omitzero"`
-	RaidGiveUpDB      RaidGiveUpDB
-	RaidLobbyInfoDB   EliminateRaidLobbyInfoDB
-	AccountCurrencyDB AccountCurrencyDB
-	ParcelResultDB    ParcelResultDB
+	SeasonType        flatdata.RaidSeasonType   `json:",omitempty,omitzero"`
+	RaidGiveUpDB      *RaidGiveUpDB             `json:",omitempty,omitzero"`
+	RaidLobbyInfoDB   *EliminateRaidLobbyInfoDB `json:",omitempty,omitzero"`
+	AccountCurrencyDB *AccountCurrencyDB        `json:",omitempty,omitzero"`
+	ParcelResultDB    *ParcelResultDB           `json:",omitempty,omitzero"`
 }

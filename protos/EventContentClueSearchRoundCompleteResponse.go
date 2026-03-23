@@ -2,6 +2,6 @@ package protos
 
 type EventContentClueSearchRoundCompleteResponse struct {
 	ResponsePacket
-	SaveDB         ClueSearchSaveDB
-	ParcelResultDB ParcelResultDB
+	SaveDB         *ClueSearchSaveDB `json:",omitempty,omitzero"`
+	ParcelResultDB *ParcelResultDB   `json:",omitempty,omitzero"`
 }

@@ -2,5 +2,5 @@ package protos
 
 type MiniGameTableBoardSyncResponse struct {
 	ResponsePacket
-	SaveDB TBGBoardSaveDB
+	SaveDB *TBGBoardSaveDB `json:",omitempty,omitzero"`
 }

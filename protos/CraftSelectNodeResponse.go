@@ -2,5 +2,5 @@ package protos
 
 type CraftSelectNodeResponse struct {
 	ResponsePacket
-	SelectedNodeDB CraftNodeDB
+	SelectedNodeDB *CraftNodeDB `json:",omitempty,omitzero"`
 }

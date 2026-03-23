@@ -2,6 +2,6 @@ package protos
 
 type MiniGameCCGSelectCampActionResponse struct {
 	ResponsePacket
-	StageDB MiniGameCCGStagePlayDB
-	SaveDB  MiniGameCCGSaveDB
+	StageDB *MiniGameCCGStagePlayDB `json:",omitempty,omitzero"`
+	SaveDB  *MiniGameCCGSaveDB      `json:",omitempty,omitzero"`
 }

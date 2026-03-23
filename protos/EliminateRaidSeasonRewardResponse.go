@@ -2,6 +2,6 @@ package protos
 
 type EliminateRaidSeasonRewardResponse struct {
 	ResponsePacket
-	ParcelResultDB   ParcelResultDB
+	ParcelResultDB   *ParcelResultDB `json:",omitempty,omitzero"`
 	ReceiveRewardIds []int64
 }

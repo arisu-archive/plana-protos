@@ -2,7 +2,7 @@ package protos
 
 type ConquestReceiveRewardsResponse struct {
 	ResponsePacket
-	ParcelResultDB  ParcelResultDB
-	ConquestInfoDB  ConquestInfoDB
+	ParcelResultDB  *ParcelResultDB `json:",omitempty,omitzero"`
+	ConquestInfoDB  *ConquestInfoDB `json:",omitempty,omitzero"`
 	ConquestTileDBs []ConquestTileDB
 }

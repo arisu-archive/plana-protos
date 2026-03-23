@@ -2,5 +2,5 @@ package protos
 
 type CampaignEnterMainStageResponse struct {
 	ResponsePacket
-	SaveDataDB CampaignMainStageSaveDB
+	SaveDataDB *CampaignMainStageSaveDB `json:",omitempty,omitzero"`
 }

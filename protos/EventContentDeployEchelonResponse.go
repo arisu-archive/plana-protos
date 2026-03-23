@@ -2,5 +2,5 @@ package protos
 
 type EventContentDeployEchelonResponse struct {
 	ResponsePacket
-	SaveDataDB EventContentMainStageSaveDB
+	SaveDataDB *EventContentMainStageSaveDB `json:",omitempty,omitzero"`
 }

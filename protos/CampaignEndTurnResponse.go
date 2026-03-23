@@ -2,6 +2,6 @@ package protos
 
 type CampaignEndTurnResponse struct {
 	ResponsePacket
-	SaveDataDB        CampaignMainStageSaveDB
-	AccountCurrencyDB AccountCurrencyDB
+	SaveDataDB        *CampaignMainStageSaveDB `json:",omitempty,omitzero"`
+	AccountCurrencyDB *AccountCurrencyDB       `json:",omitempty,omitzero"`
 }

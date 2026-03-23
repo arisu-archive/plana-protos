@@ -2,5 +2,5 @@ package protos
 
 type TimeAttackDungeonEnterBattleResponse struct {
 	ResponsePacket
-	AssistCharacterDB AssistCharacterDB
+	AssistCharacterDB *AssistCharacterDB `json:",omitempty,omitzero"`
 }

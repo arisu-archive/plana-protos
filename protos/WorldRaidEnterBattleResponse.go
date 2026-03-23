@@ -2,6 +2,6 @@ package protos
 
 type WorldRaidEnterBattleResponse struct {
 	ResponsePacket
-	RaidBattleDB       RaidBattleDB
+	RaidBattleDB       *RaidBattleDB `json:",omitempty,omitzero"`
 	AssistCharacterDBs []AssistCharacterDB
 }

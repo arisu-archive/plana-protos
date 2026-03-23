@@ -6,7 +6,7 @@ import (
 
 type ParcelCost struct {
 	ParcelInfos      []ParcelInfo
-	Currency         CurrencyTransaction
+	Currency         *CurrencyTransaction `json:",omitempty,omitzero"`
 	EquipmentDBs     []EquipmentDB
 	ItemDBs          []ItemDB
 	FurnitureDBs     []FurnitureDB

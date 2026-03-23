@@ -2,9 +2,9 @@ package protos
 
 type ShopBuyRefreshMerchandiseResponse struct {
 	ResponsePacket
-	AccountCurrencyDB AccountCurrencyDB
-	ConsumeResultDB   ConsumeResultDB
-	ParcelResultDB    ParcelResultDB
+	AccountCurrencyDB *AccountCurrencyDB `json:",omitempty,omitzero"`
+	ConsumeResultDB   *ConsumeResultDB   `json:",omitempty,omitzero"`
+	ParcelResultDB    *ParcelResultDB    `json:",omitempty,omitzero"`
 	ShopProductDB     []ShopProductDB
-	MailDB            MailDB
+	MailDB            *MailDB `json:",omitempty,omitzero"`
 }

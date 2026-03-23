@@ -2,5 +2,5 @@ package protos
 
 type ClearDeckListRequest struct {
 	RequestPacket
-	ClearDeckKey ClearDeckKey
+	ClearDeckKey *ClearDeckKey `json:",omitempty,omitzero"`
 }

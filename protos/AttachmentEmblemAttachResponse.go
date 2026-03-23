@@ -2,5 +2,5 @@ package protos
 
 type AttachmentEmblemAttachResponse struct {
 	ResponsePacket
-	AttachmentDB AccountAttachmentDB
+	AttachmentDB *AccountAttachmentDB `json:",omitempty,omitzero"`
 }
