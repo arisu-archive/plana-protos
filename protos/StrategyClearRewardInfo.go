@@ -5,10 +5,10 @@ import (
 )
 
 type StrategyClearRewardInfo struct {
-	FirstClearReward        []ParcelInfo
-	ThreeStarReward         []ParcelInfo
-	StrategyObjectRewards   *mapx.OrderedMap[int64, []ParcelInfo]
+	FirstClearReward        []*ParcelInfo
+	ThreeStarReward         []*ParcelInfo
+	StrategyObjectRewards   *mapx.OrderedMap[int64, []*ParcelInfo]
 	ParcelResultDB          *ParcelResultDB `json:",omitempty,omitzero"`
-	EventContentBonusReward []ParcelInfo
+	EventContentBonusReward []*ParcelInfo
 	CampaignStageHistoryDB  *CampaignStageHistoryDB `json:",omitempty,omitzero"`
 }

@@ -8,6 +8,6 @@ type CheatCharacterCustomPreset struct {
 	PublicSkillLevel    int32 `json:",omitempty,omitzero"`
 	PassiveSkillLevel   int32 `json:",omitempty,omitzero"`
 	ExPassiveSkillLevel int32 `json:",omitempty,omitzero"`
-	Equipments          []CheatEquipmentCustomPreset
+	Equipments          []*CheatEquipmentCustomPreset
 	Weapon              *CheatWeaponCustomPreset `json:",omitempty,omitzero"`
 }

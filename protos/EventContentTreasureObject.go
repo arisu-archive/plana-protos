@@ -5,5 +5,5 @@ type EventContentTreasureObject struct {
 	RewardId      int64 `json:",omitempty,omitzero"`
 	Rotation      int32 `json:",omitempty,omitzero"`
 	IsHiddenImage bool  `json:",omitempty,omitzero"`
-	Cells         []EventContentTreasureCell
+	Cells         []*EventContentTreasureCell
 }

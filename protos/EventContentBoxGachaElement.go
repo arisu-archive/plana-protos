@@ -7,5 +7,5 @@ type EventContentBoxGachaElement struct {
 	GroupId        int64 `json:",omitempty,omitzero"`
 	UniqueId       int64 `json:",omitempty,omitzero"`
 	IsPrize        bool  `json:",omitempty,omitzero"`
-	Rewards        []ParcelInfo
+	Rewards        []*ParcelInfo
 }

@@ -7,7 +7,7 @@ import (
 type MiniGameCCGSummary struct {
 	RandomSeed        int32 `json:",omitempty,omitzero"`
 	IsPlayerWin       bool  `json:",omitempty,omitzero"`
-	Strikers          []MiniGameCCGCharacterDB
+	Strikers          []*MiniGameCCGCharacterDB
 	TotalUsedCost     int32 `json:",omitempty,omitzero"`
 	TotalDamageAmount int32 `json:",omitempty,omitzero"`
 	TotalKillCount    int32 `json:",omitempty,omitzero"`

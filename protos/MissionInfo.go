@@ -27,9 +27,9 @@ type MissionInfo struct {
 	Tags                          []flatdata.Tag
 	CompleteConditionMissionIds   []int64
 	CompleteConditionMissionCount int64 `json:",omitempty,omitzero"`
-	CompleteConditionRewards      []ParcelInfo
+	CompleteConditionRewards      []*ParcelInfo
 	RewardIcon                    string
-	Rewards                       []ParcelInfo
+	Rewards                       []*ParcelInfo
 	DateAutoRefer                 flatdata.ContentType
 	ToastImagePath                string
 	DisplayOrder                  int64 `json:",omitempty,omitzero"`

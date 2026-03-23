@@ -5,5 +5,5 @@ type EventContentTreasureHistoryDB struct {
 	Round          int32                             `json:",omitempty,omitzero"`
 	Board          *EventContentTreasureBoardHistory `json:",omitempty,omitzero"`
 	IsComplete     bool                              `json:",omitempty,omitzero"`
-	HintTreasures  []EventContentTreasureObject
+	HintTreasures  []*EventContentTreasureObject
 }

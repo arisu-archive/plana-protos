@@ -2,10 +2,10 @@ package protos
 
 type ConquestUpgradeBaseResponse struct {
 	ResponsePacket
-	UpgradeRewards               []ParcelInfo
+	UpgradeRewards               []*ParcelInfo
 	ParcelResultDB               *ParcelResultDB `json:",omitempty,omitzero"`
 	ConquestTileDB               *ConquestTileDB `json:",omitempty,omitzero"`
 	ConquestInfoDB               *ConquestInfoDB `json:",omitempty,omitzero"`
 	ConquestEventObjectDBWrapper []ConquestEventObjectDB
-	DisplayInfos                 []ConquestDisplayInfo
+	DisplayInfos                 []*ConquestDisplayInfo
 }

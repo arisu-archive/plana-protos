@@ -5,10 +5,10 @@ import (
 )
 
 type ParcelCost struct {
-	ParcelInfos      []ParcelInfo
+	ParcelInfos      []*ParcelInfo
 	Currency         *CurrencyTransaction `json:",omitempty,omitzero"`
-	EquipmentDBs     []EquipmentDB
-	ItemDBs          []ItemDB
-	FurnitureDBs     []FurnitureDB
+	EquipmentDBs     []*EquipmentDB
+	ItemDBs          []*ItemDB
+	FurnitureDBs     []*FurnitureDB
 	ConsumeCondition flatdata.ConsumeCondition `json:",omitempty,omitzero"`
 }

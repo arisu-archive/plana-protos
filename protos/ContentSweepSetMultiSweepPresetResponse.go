@@ -2,5 +2,5 @@ package protos
 
 type ContentSweepSetMultiSweepPresetResponse struct {
 	ResponsePacket
-	MultiSweepPresetDBs []MultiSweepPresetDB
+	MultiSweepPresetDBs []*MultiSweepPresetDB
 }

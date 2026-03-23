@@ -2,5 +2,5 @@ package protos
 
 type EventContentCardShopShuffleResponse struct {
 	ResponsePacket
-	CardShopElementDBs []CardShopElementDB
+	CardShopElementDBs []*CardShopElementDB
 }

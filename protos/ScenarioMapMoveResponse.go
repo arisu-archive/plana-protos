@@ -6,5 +6,5 @@ type ScenarioMapMoveResponse struct {
 	ScenarioIds               []int64
 	EchelonEntityId           int64     `json:",omitempty,omitzero"`
 	StrategyObject            *Strategy `json:",omitempty,omitzero"`
-	StrategyObjectParcelInfos []ParcelInfo
+	StrategyObjectParcelInfos []*ParcelInfo
 }

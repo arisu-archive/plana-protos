@@ -2,5 +2,5 @@ package protos
 
 type CharacterGearListResponse struct {
 	ResponsePacket
-	GearDBs []GearDB
+	GearDBs []*GearDB
 }

@@ -22,5 +22,5 @@ type AttendanceBookReward struct {
 	ExpiryDate        int64                        `json:",omitempty,omitzero"`
 	MailType          flatdata.MailType            `json:",omitempty,omitzero"`
 	DailyRewardIcons  *mapx.OrderedMap[int64, string]
-	DailyRewards      *mapx.OrderedMap[int64, []ParcelInfo]
+	DailyRewards      *mapx.OrderedMap[int64, []*ParcelInfo]
 }

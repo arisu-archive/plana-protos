@@ -9,7 +9,7 @@ type RoadPuzzleBoardSaveDB struct {
 	Round                int32                   `json:",omitempty,omitzero"`
 	RecentRandomRailTile *RoadPuzzleRailTileData `json:",omitempty,omitzero"`
 	RemainingTiles       *mapx.OrderedMap[string, int32]
-	PlacedRailTiles      []RoadPuzzleRailTileData
-	RewardTiles          []RoadPuzzleTileRewardData
+	PlacedRailTiles      []*RoadPuzzleRailTileData
+	RewardTiles          []*RoadPuzzleTileRewardData
 	IsTrainReadyToDepart bool `json:",omitempty,omitzero"`
 }

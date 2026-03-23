@@ -117,7 +117,7 @@ jobs:
           version: v2.11.4
           args: --fix ./...
       - name: Commit and push changes
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           add: "['./protos', 'version.txt', 'go.mod', 'go.sum']"
           message: "chore(apk): generate protos for ${{ needs.determine-version.outputs.version }}"

@@ -21,7 +21,7 @@ type HexaUnit struct {
 	IsPlayer                                  bool         `json:",omitempty,omitzero"`
 	IsFixedEchelon                            bool         `json:",omitempty,omitzero"`
 	MovementOrder                             int32        `json:",omitempty,omitzero"`
-	RewardParcelInfosWithDropTacticEntityType *mapx.OrderedMap[string, []ParcelInfo]
+	RewardParcelInfosWithDropTacticEntityType *mapx.OrderedMap[string, []*ParcelInfo]
 	SkillCardHand                             *SkillCardHand `json:",omitempty,omitzero"`
 	PlayAnimation                             bool           `json:",omitempty,omitzero"`
 }

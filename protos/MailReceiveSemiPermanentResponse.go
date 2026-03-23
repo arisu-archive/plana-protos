@@ -8,5 +8,5 @@ type MailReceiveSemiPermanentResponse struct {
 	AppliedDailyRecordDB               *DailyRecordDB               `json:",omitempty,omitzero"`
 	AppliedBattlePassProductPurchaseDB *BattlePassProductPurchaseDB `json:",omitempty,omitzero"`
 	AppliedBattlePassInfoDB            *BattlePassInfoDB            `json:",omitempty,omitzero"`
-	BattlePassInfoDBs                  []BattlePassInfoDB
+	BattlePassInfoDBs                  []*BattlePassInfoDB
 }

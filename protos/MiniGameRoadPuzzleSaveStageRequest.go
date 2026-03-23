@@ -5,5 +5,5 @@ type MiniGameRoadPuzzleSaveStageRequest struct {
 	EventContentId int64 `json:",omitempty,omitzero"`
 	UniqueId       int64 `json:",omitempty,omitzero"`
 	Round          int64 `json:",omitempty,omitzero"`
-	PlaceRailTiles []RoadPuzzleRailTileData
+	PlaceRailTiles []*RoadPuzzleRailTileData
 }

@@ -9,5 +9,5 @@ type EchelonPresetGroupDB struct {
 	GroupIndex    int32                         `json:",omitempty,omitzero"`
 	ExtensionType flatdata.EchelonExtensionType `json:",omitempty,omitzero"`
 	GroupLabel    string
-	PresetDBs     *mapx.OrderedMap[int32, EchelonPresetDB]
+	PresetDBs     *mapx.OrderedMap[int32, *EchelonPresetDB]
 }

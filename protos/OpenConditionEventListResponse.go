@@ -6,6 +6,6 @@ import (
 
 type OpenConditionEventListResponse struct {
 	ResponsePacket
-	ConquestTiles         *mapx.OrderedMap[int64, []ConquestTileDB]
-	WorldRaidLocalBossDBs *mapx.OrderedMap[int64, []WorldRaidLocalBossDB]
+	ConquestTiles         *mapx.OrderedMap[int64, []*ConquestTileDB]
+	WorldRaidLocalBossDBs *mapx.OrderedMap[int64, []*WorldRaidLocalBossDB]
 }

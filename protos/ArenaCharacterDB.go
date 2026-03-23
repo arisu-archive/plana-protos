@@ -15,7 +15,7 @@ type ArenaCharacterDB struct {
 	ExtraPassiveSkillLevel int32 `json:",omitempty,omitzero"`
 	LeaderSkillLevel       int32 `json:",omitempty,omitzero"`
 	SlotIndex              int32 `json:",omitempty,omitzero"`
-	EquipmentDBs           []EquipmentDB
+	EquipmentDBs           []*EquipmentDB
 	FavorRankInfo          *mapx.OrderedMap[int64, int64]
 	PotentialStats         *mapx.OrderedMap[int32, int32]
 	CombatStyleIndex       int32      `json:",omitempty,omitzero"`

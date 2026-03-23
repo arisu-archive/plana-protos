@@ -10,5 +10,5 @@ type WorldRaidBattleResultRequest struct {
 	IsPractice     bool           `json:",omitempty,omitzero"`
 	IsTicket       bool           `json:",omitempty,omitzero"`
 	Summary        *BattleSummary `json:",omitempty,omitzero"`
-	AssistUseInfos []ClanAssistUseInfo
+	AssistUseInfos []*ClanAssistUseInfo
 }

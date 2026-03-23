@@ -2,6 +2,6 @@ package protos
 
 type ArenaHistoryResponse struct {
 	ResponsePacket
-	ArenaHistoryDBs     []ArenaHistoryDB
-	ArenaDamageReportDB []ArenaDamageReportDB
+	ArenaHistoryDBs     []*ArenaHistoryDB
+	ArenaDamageReportDB []*ArenaDamageReportDB
 }

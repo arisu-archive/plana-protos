@@ -5,5 +5,5 @@ type MultiFloorRaidEnterBattleRequest struct {
 	SeasonId       int64 `json:",omitempty,omitzero"`
 	Difficulty     int32 `json:",omitempty,omitzero"`
 	EchelonId      int32 `json:",omitempty,omitzero"`
-	AssistUseInfos []ClanAssistUseInfo
+	AssistUseInfos []*ClanAssistUseInfo
 }

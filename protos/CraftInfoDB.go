@@ -5,5 +5,5 @@ type CraftInfoDB struct {
 	StartTime         MxTime `json:",omitempty,omitzero"`
 	EndTime           MxTime `json:",omitempty,omitzero"`
 	CraftSlotOpenDate MxTime `json:",omitempty,omitzero"`
-	Nodes             []CraftNodeDB
+	Nodes             []*CraftNodeDB
 }

@@ -8,5 +8,5 @@ type TimeAttackDungeonRoomDB struct {
 	RewardDate        MxTime `json:",omitempty,omitzero"`
 	IsPractice        bool   `json:",omitempty,omitzero"`
 	SweepHistoryDates []MxTime
-	BattleHistoryDBs  []TimeAttackDungeonBattleHistoryDB
+	BattleHistoryDBs  []*TimeAttackDungeonBattleHistoryDB
 }

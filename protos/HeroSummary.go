@@ -34,10 +34,10 @@ type HeroSummary struct {
 	DeadFrame                 int32                     `json:",omitempty,omitzero"`
 	DamageGivenAbsorbedSum    int64                     `json:",omitempty,omitzero"`
 	TacticEntityType          flatdata.TacticEntityType `json:",omitempty,omitzero"`
-	GivenNumericLogs          []BattleNumericLog
-	TakenNumericLogs          []BattleNumericLog
-	ObstacleBattleNumericLogs []BattleNumericLog
-	Equipments                []EquipmentSetting
+	GivenNumericLogs          []*BattleNumericLog
+	TakenNumericLogs          []*BattleNumericLog
+	ObstacleBattleNumericLogs []*BattleNumericLog
+	Equipments                []*EquipmentSetting
 	CharacterWeapon           *WeaponSetting `json:",omitempty,omitzero"`
 	CharacterGear             *GearSetting   `json:",omitempty,omitzero"`
 	SkillCount                *mapx.OrderedMap[string, int32]

@@ -6,5 +6,5 @@ type MultiFloorRaidEndBattleRequest struct {
 	Difficulty     int32          `json:",omitempty,omitzero"`
 	Summary        *BattleSummary `json:",omitempty,omitzero"`
 	EchelonId      int32          `json:",omitempty,omitzero"`
-	AssistUseInfos []ClanAssistUseInfo
+	AssistUseInfos []*ClanAssistUseInfo
 }

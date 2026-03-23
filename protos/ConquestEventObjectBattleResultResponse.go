@@ -6,5 +6,5 @@ type ConquestEventObjectBattleResultResponse struct {
 	ConquestEventObjectDBWrapper []ConquestEventObjectDB
 	ConquestInfoDB               *ConquestInfoDB `json:",omitempty,omitzero"`
 	ConquestTileDB               *ConquestTileDB `json:",omitempty,omitzero"`
-	DisplayInfos                 []ConquestDisplayInfo
+	DisplayInfos                 []*ConquestDisplayInfo
 }

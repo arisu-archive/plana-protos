@@ -5,5 +5,5 @@ type ConquestErosionBattleResultResponse struct {
 	ParcelResultDB               *ParcelResultDB `json:",omitempty,omitzero"`
 	ConquestEventObjectDBWrapper []ConquestEventObjectDB
 	ConquestInfoDB               *ConquestInfoDB `json:",omitempty,omitzero"`
-	DisplayInfos                 []ConquestDisplayInfo
+	DisplayInfos                 []*ConquestDisplayInfo
 }

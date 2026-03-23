@@ -6,7 +6,7 @@ import (
 
 type TimeAttackDungeonLobbyResponse struct {
 	ResponsePacket
-	RoomDBs                 *mapx.OrderedMap[int64, TimeAttackDungeonRoomDB]
+	RoomDBs                 *mapx.OrderedMap[int64, *TimeAttackDungeonRoomDB]
 	PreviousRoomDB          *TimeAttackDungeonRoomDB `json:",omitempty,omitzero"`
 	ParcelResultDB          *ParcelResultDB          `json:",omitempty,omitzero"`
 	AchieveSeasonBestRecord bool                     `json:",omitempty,omitzero"`

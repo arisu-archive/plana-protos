@@ -9,5 +9,5 @@ type EventContentLocationDB struct {
 	Rank                  int64 `json:",omitempty,omitzero"`
 	Exp                   int64 `json:",omitempty,omitzero"`
 	ScheduleCount         int64 `json:",omitempty,omitzero"`
-	ZoneVisitCharacterDBs *mapx.OrderedMap[int64, []VisitingCharacterDB]
+	ZoneVisitCharacterDBs *mapx.OrderedMap[int64, []*VisitingCharacterDB]
 }

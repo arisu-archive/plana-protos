@@ -2,6 +2,6 @@ package protos
 
 type CraftCompleteProcessAllResponse struct {
 	ResponsePacket
-	CraftInfoDBs []CraftInfoDB
+	CraftInfoDBs []*CraftInfoDB
 	TicketItemDB *ItemDB `json:",omitempty,omitzero"`
 }

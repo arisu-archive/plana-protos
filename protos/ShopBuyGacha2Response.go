@@ -5,7 +5,7 @@ type ShopBuyGacha2Response struct {
 	UpdateTime     MxTime `json:",omitempty,omitzero"`
 	GemBonusRemain int64  `json:",omitempty,omitzero"`
 	GemPaidRemain  int64  `json:",omitempty,omitzero"`
-	ConsumedItems  []ItemDB
-	GachaResults   []GachaResult
-	AcquiredItems  []ItemDB
+	ConsumedItems  []*ItemDB
+	GachaResults   []*GachaResult
+	AcquiredItems  []*ItemDB
 }

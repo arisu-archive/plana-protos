@@ -1,9 +1,9 @@
 package protos
 
 type RaidMemberCollectionItem struct {
-	RaidMemberDescription
+	*RaidMemberDescription
 	TotalDamage int64
-	RaidDamages []RaidDamage
+	RaidDamages []*RaidDamage
 }
 
 type RaidMemberCollection []RaidMemberCollectionItem

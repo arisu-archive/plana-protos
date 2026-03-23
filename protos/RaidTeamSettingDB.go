@@ -9,8 +9,8 @@ type RaidTeamSettingDB struct {
 	TryNumber                     int64                         `json:",omitempty,omitzero"`
 	EchelonType                   flatdata.EchelonType          `json:",omitempty,omitzero"`
 	EchelonExtensionType          flatdata.EchelonExtensionType `json:",omitempty,omitzero"`
-	MainCharacterDBs              []RaidCharacterDB
-	SupportCharacterDBs           []RaidCharacterDB
+	MainCharacterDBs              []*RaidCharacterDB
+	SupportCharacterDBs           []*RaidCharacterDB
 	SkillCardMulliganCharacterIds []int64
 	TSSInteractionUniqueId        int64 `json:",omitempty,omitzero"`
 	LeaderCharacterUniqueId       int64 `json:",omitempty,omitzero"`

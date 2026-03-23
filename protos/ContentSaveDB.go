@@ -11,7 +11,7 @@ type ContentSaveDB struct {
 	CreateTime                  MxTime `json:",omitempty,omitzero"`
 	StageUniqueId               int64  `json:",omitempty,omitzero"`
 	LastEnterStageEchelonNumber int64  `json:",omitempty,omitzero"`
-	StageEntranceFee            []ParcelInfo
+	StageEntranceFee            []*ParcelInfo
 	EnemyKillCountByUniqueId    *mapx.OrderedMap[int64, int64]
 	TacticClearTimeMscSum       int64 `json:",omitempty,omitzero"`
 	AccountLevelWhenCreateDB    int64 `json:",omitempty,omitzero"`

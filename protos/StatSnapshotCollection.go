@@ -1,3 +1,3 @@
 package protos
 
-type StatSnapshotCollection []StatSnapshot
+type StatSnapshotCollection []*StatSnapshot

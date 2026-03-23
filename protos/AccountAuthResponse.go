@@ -9,21 +9,21 @@ type AccountAuthResponse struct {
 	UpdateRequired                      bool  `json:",omitempty,omitzero"`
 	TTSCdnUri                           string
 	AccountDB                           *AccountDB `json:",omitempty,omitzero"`
-	AttendanceBookRewards               []AttendanceBookReward
-	AttendanceHistoryDBs                []AttendanceHistoryDB
-	RepurchasableMonthlyProductCountDBs []PurchaseCountDB
-	MonthlyProductParcel                []ParcelInfo
-	MonthlyProductMail                  []ParcelInfo
-	BiweeklyProductParcel               []ParcelInfo
-	BiweeklyProductMail                 []ParcelInfo
-	WeeklyProductParcel                 []ParcelInfo
-	WeeklyProductMail                   []ParcelInfo
+	AttendanceBookRewards               []*AttendanceBookReward
+	AttendanceHistoryDBs                []*AttendanceHistoryDB
+	RepurchasableMonthlyProductCountDBs []*PurchaseCountDB
+	MonthlyProductParcel                []*ParcelInfo
+	MonthlyProductMail                  []*ParcelInfo
+	BiweeklyProductParcel               []*ParcelInfo
+	BiweeklyProductMail                 []*ParcelInfo
+	WeeklyProductParcel                 []*ParcelInfo
+	WeeklyProductMail                   []*ParcelInfo
 	EncryptedUID                        string
 	AccountRestrictionsDB               *AccountRestrictionsDB `json:",omitempty,omitzero"`
-	IssueAlertInfos                     []IssueAlertInfoDB
-	DailyRecordDBs                      []DailyRecordDB
+	IssueAlertInfos                     []*IssueAlertInfoDB
+	DailyRecordDBs                      []*DailyRecordDB
 	OptionDB                            *OptionDB `json:",omitempty,omitzero"`
 	IsArenaAnonymous                    bool      `json:",omitempty,omitzero"`
-	AccountLimitedFlashSaleDBs          []AccountLimitedFlashSaleDB
+	AccountLimitedFlashSaleDBs          []*AccountLimitedFlashSaleDB
 	NewlyAddedShopCashIds               []int64
 }

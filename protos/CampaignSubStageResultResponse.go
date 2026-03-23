@@ -4,8 +4,8 @@ type CampaignSubStageResultResponse struct {
 	ResponsePacket
 	TacticRank             int64                   `json:",omitempty,omitzero"`
 	CampaignStageHistoryDB *CampaignStageHistoryDB `json:",omitempty,omitzero"`
-	LevelUpCharacterDBs    []CharacterDB
+	LevelUpCharacterDBs    []*CharacterDB
 	ParcelResultDB         *ParcelResultDB `json:",omitempty,omitzero"`
-	FirstClearReward       []ParcelInfo
-	ThreeStarReward        []ParcelInfo
+	FirstClearReward       []*ParcelInfo
+	ThreeStarReward        []*ParcelInfo
 }
