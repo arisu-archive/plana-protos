@@ -5,6 +5,6 @@ type ShopBuyRefreshMerchandiseResponse struct {
 	AccountCurrencyDB *AccountCurrencyDB `json:",omitempty,omitzero"`
 	ConsumeResultDB   *ConsumeResultDB   `json:",omitempty,omitzero"`
 	ParcelResultDB    *ParcelResultDB    `json:",omitempty,omitzero"`
-	ShopProductDB     []ShopProductDB
+	ShopProductDB     []*ShopProductDB
 	MailDB            *MailDB `json:",omitempty,omitzero"`
 }

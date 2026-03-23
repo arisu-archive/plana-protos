@@ -12,8 +12,8 @@ type CafeDB struct {
 	LastUpdate            MxTime  `json:",omitempty,omitzero"`
 	LastSummonDate        *MxTime `json:",omitempty,omitzero"`
 	IsNew                 bool    `json:",omitempty,omitzero"`
-	CafeVisitCharacterDBs *mapx.OrderedMap[int64, CafeDB_CafeCharacterDB]
-	FurnitureDBs          []FurnitureDB
+	CafeVisitCharacterDBs *mapx.OrderedMap[int64, *CafeDB_CafeCharacterDB]
+	FurnitureDBs          []*FurnitureDB
 	ProductionAppliedTime MxTime            `json:",omitempty,omitzero"`
 	ProductionDB          *CafeProductionDB `json:",omitempty,omitzero"`
 }

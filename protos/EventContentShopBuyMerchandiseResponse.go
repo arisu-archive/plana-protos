@@ -7,5 +7,5 @@ type EventContentShopBuyMerchandiseResponse struct {
 	ParcelResultDB            *ParcelResultDB    `json:",omitempty,omitzero"`
 	MailDB                    *MailDB            `json:",omitempty,omitzero"`
 	ShopProductDB             *ShopProductDB     `json:",omitempty,omitzero"`
-	EventContentCollectionDBs []EventContentCollectionDB
+	EventContentCollectionDBs []*EventContentCollectionDB
 }

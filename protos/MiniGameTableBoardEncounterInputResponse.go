@@ -7,5 +7,5 @@ type MiniGameTableBoardEncounterInputResponse struct {
 	PlayerAddDotEffectResult  *int32             `json:",omitempty,omitzero"`
 	PlayerDicePlayResult      *TBGDiceRollResult `json:",omitempty,omitzero"`
 	ParcelResultDB            *ParcelResultDB    `json:",omitempty,omitzero"`
-	EventContentCollectionDBs []EventContentCollectionDB
+	EventContentCollectionDBs []*EventContentCollectionDB
 }

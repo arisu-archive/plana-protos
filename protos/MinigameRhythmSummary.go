@@ -16,6 +16,6 @@ type MinigameRhythmSummary struct {
 	GameEndTime          MxTime  `json:",omitempty,omitzero"`
 	RhythmGamePlayTime   float32 `json:",omitempty,omitzero"`
 	StdDev               float32 `json:",omitempty,omitzero"`
-	MinigameJudgeRecords []MinigameJudgeRecord
+	MinigameJudgeRecords []*MinigameJudgeRecord
 	IsAutoPlay           bool `json:",omitempty,omitzero"`
 }

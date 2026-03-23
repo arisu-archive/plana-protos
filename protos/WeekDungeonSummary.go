@@ -6,5 +6,5 @@ import (
 
 type WeekDungeonSummary struct {
 	DungeonType flatdata.WeekDungeonType `json:",omitempty,omitzero"`
-	FindGifts   []FindGiftSummary
+	FindGifts   []*FindGiftSummary
 }

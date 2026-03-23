@@ -7,6 +7,6 @@ import (
 
 type TBGHexaMapDB struct {
 	MapType    flatdata.TBGThemaType `json:",omitempty,omitzero"`
-	Objects    *mapx.OrderedMap[int64, TBGHexaObjectDB]
+	Objects    *mapx.OrderedMap[int64, *TBGHexaObjectDB]
 	IsTutorial bool `json:",omitempty,omitzero"`
 }

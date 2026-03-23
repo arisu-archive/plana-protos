@@ -1,3 +1,3 @@
 package protos
 
-type RaidBossResultCollection []RaidBossResult
+type RaidBossResultCollection []*RaidBossResult

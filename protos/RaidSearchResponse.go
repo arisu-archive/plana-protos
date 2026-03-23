@@ -2,5 +2,5 @@ package protos
 
 type RaidSearchResponse struct {
 	ResponsePacket
-	RaidDBs []RaidDB
+	RaidDBs []*RaidDB
 }

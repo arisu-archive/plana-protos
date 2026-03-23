@@ -1,3 +1,3 @@
 package protos
 
-type CostRegenSnapshotCollection []SkillCostRegenSnapshot
+type CostRegenSnapshotCollection []*SkillCostRegenSnapshot

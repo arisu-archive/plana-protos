@@ -2,6 +2,6 @@ package protos
 
 type CafeApplyPresetResponse struct {
 	ResponsePacket
-	CafeDBs      []CafeDB
-	FurnitureDBs []FurnitureDB
+	CafeDBs      []*CafeDB
+	FurnitureDBs []*FurnitureDB
 }

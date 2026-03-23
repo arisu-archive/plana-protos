@@ -5,7 +5,7 @@ import (
 )
 
 type ClearDeckDB struct {
-	ClearDeckCharacterDBs  []ClearDeckCharacterDB
+	ClearDeckCharacterDBs  []*ClearDeckCharacterDB
 	MulliganUniqueIds      []int64
 	LeaderUniqueId         int64                `json:",omitempty,omitzero"`
 	TSSInteractionUniqueId int64                `json:",omitempty,omitzero"`

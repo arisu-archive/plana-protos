@@ -10,7 +10,7 @@ type TBGPlayerDB struct {
 	HitPoint             int32        `json:",omitempty,omitzero"`
 	DiceId               int64        `json:",omitempty,omitzero"`
 	DiceProbModifyParams *mapx.OrderedMap[string, int32]
-	Items                []TBGItemDB
+	Items                []*TBGItemDB
 	TemporaryItem        *TBGItemDB `json:",omitempty,omitzero"`
-	ItemEffects          []TBGItemEffectDB
+	ItemEffects          []*TBGItemEffectDB
 }

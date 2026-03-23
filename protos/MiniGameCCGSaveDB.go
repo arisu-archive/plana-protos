@@ -10,18 +10,18 @@ type MiniGameCCGSaveDB struct {
 	CCGId                int64 `json:",omitempty,omitzero"`
 	GameOver             bool  `json:",omitempty,omitzero"`
 	Clear                bool  `json:",omitempty,omitzero"`
-	Strikers             []MiniGameCCGCharacterDB
-	Specials             []MiniGameCCGCharacterDB
+	Strikers             []*MiniGameCCGCharacterDB
+	Specials             []*MiniGameCCGCharacterDB
 	OverflowedStrikerIds []int64
 	OverflowedSpecialIds []int64
-	Deck                 []MiniGameCCGCardDB
+	Deck                 []*MiniGameCCGCardDB
 	LevelId              int64                   `json:",omitempty,omitzero"`
 	CurrentNodeId        int64                   `json:",omitempty,omitzero"`
 	RewardPoint          int32                   `json:",omitempty,omitzero"`
 	CurrentStageIndex    int32                   `json:",omitempty,omitzero"`
 	LastStageIndex       int32                   `json:",omitempty,omitzero"`
 	CurrentStageDB       *MiniGameCCGStagePlayDB `json:",omitempty,omitzero"`
-	ClearedHistoryDBs    []MiniGameCCGPlayHistory
+	ClearedHistoryDBs    []*MiniGameCCGPlayHistory
 	Perks                []int64
 	TotalUsedCost        int32 `json:",omitempty,omitzero"`
 	TotalDamageAmount    int32 `json:",omitempty,omitzero"`

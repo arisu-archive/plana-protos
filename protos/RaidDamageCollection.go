@@ -1,3 +1,3 @@
 package protos
 
-type RaidDamageCollection []RaidDamage
+type RaidDamageCollection []*RaidDamage

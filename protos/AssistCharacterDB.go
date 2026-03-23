@@ -12,7 +12,7 @@ type AssistCharacterDB struct {
 	AssistRelation          AssistRelation       `json:",omitempty,omitzero"`
 	AssistCharacterServerId int64                `json:",omitempty,omitzero"`
 	NickName                string
-	EquipmentDBs            []EquipmentDB
+	EquipmentDBs            []*EquipmentDB
 	WeaponDB                *WeaponDB  `json:",omitempty,omitzero"`
 	GearDB                  *GearDB    `json:",omitempty,omitzero"`
 	CostumeId               int64      `json:",omitempty,omitzero"`

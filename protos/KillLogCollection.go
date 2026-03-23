@@ -1,3 +1,3 @@
 package protos
 
-type KillLogCollection = []KillLog
+type KillLogCollection = []*KillLog

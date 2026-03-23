@@ -9,7 +9,7 @@ type ConquestMainStoryConquerWithBattleResultResponse struct {
 	ParcelResultDB           *ParcelResultDB `json:",omitempty,omitzero"`
 	ConquestTileDB           *ConquestTileDB `json:",omitempty,omitzero"`
 	ConquestInfoDB           *ConquestInfoDB `json:",omitempty,omitzero"`
-	DisplayInfos             []ConquestDisplayInfo
+	DisplayInfos             []*ConquestDisplayInfo
 	StepAfterBattle          int32 `json:",omitempty,omitzero"`
-	DisplayParcelByRewardTag *mapx.OrderedMap[string, []ParcelInfo]
+	DisplayParcelByRewardTag *mapx.OrderedMap[string, []*ParcelInfo]
 }

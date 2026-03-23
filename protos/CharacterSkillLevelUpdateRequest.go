@@ -5,5 +5,5 @@ type CharacterSkillLevelUpdateRequest struct {
 	TargetCharacterDBId int64     `json:",omitempty,omitzero"`
 	SkillSlot           SkillSlot `json:",omitempty,omitzero"`
 	Level               int32     `json:",omitempty,omitzero"`
-	ReplaceInfos        []SelectTicketReplaceInfo
+	ReplaceInfos        []*SelectTicketReplaceInfo
 }

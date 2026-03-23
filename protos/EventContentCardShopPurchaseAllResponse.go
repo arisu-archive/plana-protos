@@ -7,7 +7,7 @@ import (
 type EventContentCardShopPurchaseAllResponse struct {
 	ResponsePacket
 	ParcelResultDB             *ParcelResultDB `json:",omitempty,omitzero"`
-	CardShopElementDBs         []CardShopElementDB
-	CardShopPurchaseHistoryDBs []CardShopPurchaseHistoryDB
-	RewardHistory              *mapx.OrderedMap[int64, []ParcelInfo]
+	CardShopElementDBs         []*CardShopElementDB
+	CardShopPurchaseHistoryDBs []*CardShopPurchaseHistoryDB
+	RewardHistory              *mapx.OrderedMap[int64, []*ParcelInfo]
 }

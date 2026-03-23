@@ -14,7 +14,7 @@ type TBGBoardSaveDB struct {
 	MainMap                        *TBGHexaMapDB         `json:",omitempty,omitzero"`
 	HiddenMap                      *TBGHexaMapDB         `json:",omitempty,omitzero"`
 	Player                         *TBGPlayerDB          `json:",omitempty,omitzero"`
-	BestClearRecord                *mapx.OrderedMap[int32, TBGThemaClearRecord]
+	BestClearRecord                *mapx.OrderedMap[int32, *TBGThemaClearRecord]
 	HiddenTreasureRecord           []int32
 	HiddenPotalOpenConditionRecord []int32
 }

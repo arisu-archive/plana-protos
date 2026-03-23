@@ -2,5 +2,5 @@ package protos
 
 type GuideMissionSeasonListResponse struct {
 	ResponsePacket
-	GuideMissionSeasonDBs []GuideMissionSeasonDB
+	GuideMissionSeasonDBs []*GuideMissionSeasonDB
 }

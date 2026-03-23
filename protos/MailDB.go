@@ -17,6 +17,6 @@ type MailDB struct {
 	OrderId           *int64  `json:",omitempty,omitzero"`
 	ProductId         *int64  `json:",omitempty,omitzero"`
 	IsCashMail        bool    `json:",omitempty,omitzero"`
-	ParcelInfos       []ParcelInfo
-	RemainParcelInfos []ParcelInfo
+	ParcelInfos       []*ParcelInfo
+	RemainParcelInfos []*ParcelInfo
 }

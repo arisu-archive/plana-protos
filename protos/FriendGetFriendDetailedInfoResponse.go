@@ -18,5 +18,5 @@ type FriendGetFriendDetailedInfoResponse struct {
 	RaidTier                       *int32                 `json:",omitempty,omitzero"`
 	DetailedAccountInfoDB          *DetailedAccountInfoDB `json:",omitempty,omitzero"`
 	AttachmentDB                   *AccountAttachmentDB   `json:",omitempty,omitzero"`
-	AssistCharacterDBs             []AssistCharacterDB
+	AssistCharacterDBs             []*AssistCharacterDB
 }

@@ -10,6 +10,6 @@ type TimeAttackDungeonBattleHistoryDB struct {
 	DefaultPoint        int64                          `json:",omitempty,omitzero"`
 	ClearTimePoint      int64                          `json:",omitempty,omitzero"`
 	EndFrame            int64                          `json:",omitempty,omitzero"`
-	MainCharacterDBs    []TimeAttackDungeonCharacterDB
-	SupportCharacterDBs []TimeAttackDungeonCharacterDB
+	MainCharacterDBs    []*TimeAttackDungeonCharacterDB
+	SupportCharacterDBs []*TimeAttackDungeonCharacterDB
 }

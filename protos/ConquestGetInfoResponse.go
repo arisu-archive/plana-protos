@@ -7,10 +7,10 @@ import (
 type ConquestGetInfoResponse struct {
 	ResponsePacket
 	ConquestInfoDB           *ConquestInfoDB `json:",omitempty,omitzero"`
-	ConquestedTileDBs        []ConquestTileDB
+	ConquestedTileDBs        []*ConquestTileDB
 	ConquestObjectDBsWrapper []ConquestEventObjectDB
-	ConquestEchelonDBs       []ConquestEchelonDB
+	ConquestEchelonDBs       []*ConquestEchelonDB
 	DifficultyToStepDict     *mapx.OrderedMap[string, int32]
 	IsFirstEnter             bool `json:",omitempty,omitzero"`
-	DisplayInfos             []ConquestDisplayInfo
+	DisplayInfos             []*ConquestDisplayInfo
 }

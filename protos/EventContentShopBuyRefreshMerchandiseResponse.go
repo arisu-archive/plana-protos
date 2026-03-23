@@ -6,6 +6,6 @@ type EventContentShopBuyRefreshMerchandiseResponse struct {
 	ConsumeResultDB           *ConsumeResultDB   `json:",omitempty,omitzero"`
 	ParcelResultDB            *ParcelResultDB    `json:",omitempty,omitzero"`
 	MailDB                    *MailDB            `json:",omitempty,omitzero"`
-	ShopProductDB             []ShopProductDB
-	EventContentCollectionDBs []EventContentCollectionDB
+	ShopProductDB             []*ShopProductDB
+	EventContentCollectionDBs []*EventContentCollectionDB
 }

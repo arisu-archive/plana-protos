@@ -2,6 +2,6 @@ package protos
 
 type EquipmentBatchGrowthRequest struct {
 	RequestPacket
-	EquipmentBatchGrowthRequestDBs []EquipmentBatchGrowthRequestDB
+	EquipmentBatchGrowthRequestDBs []*EquipmentBatchGrowthRequestDB
 	GearTierUpRequestDB            *GearTierUpRequestDB `json:",omitempty,omitzero"`
 }

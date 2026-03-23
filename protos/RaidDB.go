@@ -18,7 +18,7 @@ type RaidDB struct {
 	SecretCode                    string
 	RaidState                     flatdata.RaidStatus `json:",omitempty,omitzero"`
 	IsPractice                    bool                `json:",omitempty,omitzero"`
-	RaidBossDBs                   []RaidBossDB
+	RaidBossDBs                   []*RaidBossDB
 	ParticipateCharacterServerIds *mapx.OrderedMap[int64, []int64]
 	IsEnterRoom                   bool  `json:",omitempty,omitzero"`
 	AccountLevelWhenCreateDB      int64 `json:",omitempty,omitzero"`

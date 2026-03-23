@@ -4,5 +4,5 @@ type AcademyAttendScheduleResponse struct {
 	ResponsePacket
 	ParcelResultDB *ParcelResultDB `json:",omitempty,omitzero"`
 	AcademyDB      *AcademyDB      `json:",omitempty,omitzero"`
-	ExtraRewards   []ParcelInfo
+	ExtraRewards   []*ParcelInfo
 }
