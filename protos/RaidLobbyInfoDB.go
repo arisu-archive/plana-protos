@@ -27,5 +27,6 @@ type RaidLobbyInfoDB struct {
 	NextSeasonEndDate             MxTime             `json:",omitempty,omitzero"`
 	NextSettlementEndDate         MxTime             `json:",omitempty,omitzero"`
 	ClanAssistUseInfo             *ClanAssistUseInfo `json:",omitempty,omitzero"`
+	ClanAssistCharacterDBId       int64              `json:",omitempty,omitzero"`
 	RemainFailCompensation        *mapx.OrderedMap[int32, bool]
 }

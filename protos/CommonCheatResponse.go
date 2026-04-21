@@ -18,6 +18,7 @@ type CommonCheatResponse struct {
 	StickerDBs              []*StickerDB
 	MemoryLobbyDBs          []*MemoryLobbyDB
 	ScenarioCollectionDBs   []*ScenarioCollectionDB
+	SNSPostDBs              []*SNSPostDB
 	CheatFlags              CheatFlags `json:",omitempty,omitzero"`
 	DebugPopupMessage       string
 }

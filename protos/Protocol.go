@@ -492,4 +492,5 @@ const (
 	Protocol_PermanentRaid_EnterBattle                 Protocol = 54001
 	Protocol_PermanentRaid_EndBattle                   Protocol = 54002
 	Protocol_PermanentRaid_GiveUp                      Protocol = 54003
+	Protocol_SNS_PostRead                              Protocol = 55000
 )

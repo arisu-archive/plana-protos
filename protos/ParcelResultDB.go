@@ -22,6 +22,7 @@ type ParcelResultDB struct {
 	EmblemDBs                       []*EmblemDB
 	StickerDBs                      []*StickerDB
 	MemoryLobbyDBs                  []*MemoryLobbyDB
+	SNSPostDBs                      []*SNSPostDB
 	CharacterNewUniqueIds           []int64
 	SecretStoneCharacterIdAndCounts *mapx.OrderedMap[int64, int32]
 	DisplaySequence                 []*ParcelInfo

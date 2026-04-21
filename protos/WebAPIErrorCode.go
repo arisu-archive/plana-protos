@@ -608,6 +608,7 @@ const (
 	WebAPIErrorCode_PermanentRaidDataNotFound                      WebAPIErrorCode = 52001
 	WebAPIErrorCode_PermanentRaidBossIsLocked                      WebAPIErrorCode = 52002
 	WebAPIErrorCode_PermanentRaidBossIsAlreadyClosed               WebAPIErrorCode = 52003
+	WebAPIErrorCode_SNSPostNotExistToRead                          WebAPIErrorCode = 53000
 	WebAPIErrorCode_FieldDataNotFound                              WebAPIErrorCode = 60000
 	WebAPIErrorCode_FieldInteracionFailed                          WebAPIErrorCode = 60001
 	WebAPIErrorCode_FieldQuestClearFailed                          WebAPIErrorCode = 60002
