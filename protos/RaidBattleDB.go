@@ -12,7 +12,7 @@ type RaidBattleDB struct {
 	CurrentBossGroggy  int64 `json:",omitempty,omitzero"`
 	CurrentBossAIPhase int64 `json:",omitempty,omitzero"`
 	BIEchelon          string
-	IsClear            bool `json:",omitempty,omitzero"`
-	RaidMembers        RaidMemberCollection
+	IsClear            bool                  `json:",omitempty,omitzero"`
+	RaidMembers        *RaidMemberCollection `json:",omitempty,omitzero"`
 	SubPartsHPs        []int64
 }

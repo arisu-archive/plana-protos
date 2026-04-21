@@ -2,8 +2,6 @@ github.com/Masterminds/semver/v3 v3.4.0 h1:Zog+i5UMtVoCU8oKka5P7i9q9HgrJeGzI9SA1
 github.com/Masterminds/semver/v3 v3.4.0/go.mod h1:4V+yj/TJE1HU9XfppCwVMZq3I84lprf4nC11bSS5beM=
 github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20251204154751-651482551f83 h1:MHtBId/Qdcmt+dLY2uiHxOMxRzi4u1jnq4IxcD7ii4E=
 github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20251204154751-651482551f83/go.mod h1:vOvsaBDrAONVArYo9bI/kX+GBw75mRP+J3RDeG9F3SM=
-github.com/arisu-archive/mapx v1.0.0 h1:snOMcgAUa5I0TAhMeyah8Yo6ZfNxs3LlNJaiz3uCgDU=
-github.com/arisu-archive/mapx v1.0.0/go.mod h1:5LgeqXk+dI+G0pVFd6e9W0XN4OZNnNt04mb2MsBmAX0=
 github.com/arisu-archive/mapx v1.1.0 h1:P64Cm983i6WhGPiy9m/zHRys08/MRpvwdy/eRgDxoQ8=
 github.com/arisu-archive/mapx v1.1.0/go.mod h1:5LgeqXk+dI+G0pVFd6e9W0XN4OZNnNt04mb2MsBmAX0=
 github.com/arisu-archive/plana-flatbuffers v0.11.0 h1:7rJdqA+2soiLpU4F7CH0bkUdBte7at2z/6USpqRWCsI=

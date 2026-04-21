@@ -13,4 +13,5 @@ type ClearDeckCharacterDB struct {
 	SquadType        flatdata.SquadType `json:",omitempty,omitzero"`
 	WeaponStarGrade  int32              `json:",omitempty,omitzero"`
 	CombatStyleIndex int32              `json:",omitempty,omitzero"`
+	IsAssist         bool               `json:",omitempty,omitzero"`
 }
