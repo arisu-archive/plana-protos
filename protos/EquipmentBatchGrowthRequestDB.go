@@ -7,4 +7,5 @@ type EquipmentBatchGrowthRequestDB struct {
 	AfterLevel        int64 `json:",omitempty,omitzero"`
 	AfterExp          int64 `json:",omitempty,omitzero"`
 	ReplaceInfos      []*SelectTicketReplaceInfo
+	ItemChangeInfos   []*EquipmentChangePieceInfo
 }

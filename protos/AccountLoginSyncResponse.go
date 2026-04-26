@@ -32,4 +32,5 @@ type AccountLoginSyncResponse struct {
 	FriendCode                               string
 	PickupFirstGetHistoryDBs                 []*PickupFirstGetHistoryDB
 	AccountLevelRewardIds                    []int64
+	SNSPostDBs                               []*SNSPostDB
 }

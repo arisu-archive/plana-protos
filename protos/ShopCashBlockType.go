@@ -4,6 +4,7 @@ type ShopCashBlockType int32
 
 const (
 	ShopCashBlockType_None          ShopCashBlockType = -9999
+	ShopCashBlockType_PCStore       ShopCashBlockType = -5
 	ShopCashBlockType_PaymentCenter ShopCashBlockType = -4
 	ShopCashBlockType_GooglePlay    ShopCashBlockType = -3
 	ShopCashBlockType_AppStore      ShopCashBlockType = -2
