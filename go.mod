@@ -6,10 +6,10 @@ toolchain go1.26.2
 
 require (
 	github.com/arisu-archive/mapx v1.1.0
-	github.com/arisu-archive/plana-flatbuffers v0.11.0
+	github.com/arisu-archive/plana-flatbuffers v0.12.0
 )
 
 require (
-	github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20251204154751-651482551f83 // indirect
+	github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20260406083956-7eadd04b03be // indirect
 	github.com/google/flatbuffers v25.12.19+incompatible // indirect
 )
