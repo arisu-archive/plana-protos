@@ -14,12 +14,12 @@ type HeroSummary struct {
 	Grade                     int32     `json:",omitempty,omitzero"`
 	Level                     int32     `json:",omitempty,omitzero"`
 	PotentialStatLevel        *mapx.OrderedMap[string, int32]
-	ExSkillLevel              int32                     `json:",omitempty,omitzero"`
-	PublicSkillLevel          int32                     `json:",omitempty,omitzero"`
-	PassiveSkillLevel         int32                     `json:",omitempty,omitzero"`
-	ExtraPassiveSkillLevel    int32                     `json:",omitempty,omitzero"`
-	FavorRank                 int32                     `json:",omitempty,omitzero"`
-	StatSnapshotCollection    *StatSnapshotCollection   `json:",omitempty,omitzero"`
+	ExSkillLevel              int32 `json:",omitempty,omitzero"`
+	PublicSkillLevel          int32 `json:",omitempty,omitzero"`
+	PassiveSkillLevel         int32 `json:",omitempty,omitzero"`
+	ExtraPassiveSkillLevel    int32 `json:",omitempty,omitzero"`
+	FavorRank                 int32 `json:",omitempty,omitzero"`
+	StatSnapshotCollection    StatSnapshotCollection
 	HPRateBefore              int64                     `json:",omitempty,omitzero"`
 	HPRateAfter               int64                     `json:",omitempty,omitzero"`
 	CrowdControlCount         int32                     `json:",omitempty,omitzero"`
@@ -41,5 +41,5 @@ type HeroSummary struct {
 	CharacterWeapon           *WeaponSetting `json:",omitempty,omitzero"`
 	CharacterGear             *GearSetting   `json:",omitempty,omitzero"`
 	SkillCount                *mapx.OrderedMap[string, int32]
-	KillLog                   *KillLogCollection `json:",omitempty,omitzero"`
+	KillLog                   KillLogCollection
 }
