@@ -24,7 +24,10 @@ func (mt *MxTime) UnmarshalJSON(data []byte) error {
 	s := strings.Trim(string(data), "\"")
 	parsedTime, err := time.Parse("2006-01-02T15:04:05", s)
 	if err != nil {
-		return fmt.Errorf("failed to unmarshal mx time: %w", err)
+		parsedTime, err = time.Parse(time.RFC3339, s)
+		if err != nil {
+			return fmt.Errorf("failed to unmarshal mx time: %w", err)
+		}
 	}
 	*mt = MxTime(parsedTime)
 	return nil
