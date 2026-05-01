@@ -6,7 +6,7 @@ import (
 
 type ClanSearchRequest struct {
 	RequestPacket
-	SearchString   string
+	SearchString   string                  `json:",omitempty,omitzero"`
 	ClanJoinOption flatdata.ClanJoinOption `json:",omitempty,omitzero"`
-	ClanUniqueCode string
+	ClanUniqueCode string                  `json:",omitempty,omitzero"`
 }

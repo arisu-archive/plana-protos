@@ -20,5 +20,5 @@ type CommonCheatResponse struct {
 	ScenarioCollectionDBs   []*ScenarioCollectionDB
 	SNSPostDBs              []*SNSPostDB
 	CheatFlags              CheatFlags `json:",omitempty,omitzero"`
-	DebugPopupMessage       string
+	DebugPopupMessage       string     `json:",omitempty,omitzero"`
 }

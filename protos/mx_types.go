@@ -7,6 +7,16 @@ import (
 	"time"
 )
 
+// ResponsePacket represents a generic response packet structure.
+func (r *ResponsePacket) GetResponsePacket() *ResponsePacket {
+	return r
+}
+
+// SetResponsePacket sets the response packet data.
+func (r *ResponsePacket) SetResponsePacket(nr ResponsePacket) {
+	*r = nr
+}
+
 // MxTime represents a custom time type for MX protocol.
 type MxTime time.Time
 

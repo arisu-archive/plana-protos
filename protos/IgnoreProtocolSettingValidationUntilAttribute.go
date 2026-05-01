@@ -1,5 +1,5 @@
 package protos
 
 type IgnoreProtocolSettingValidationUntilAttribute struct {
-	Date string
+	Date string `json:",omitempty,omitzero"`
 }

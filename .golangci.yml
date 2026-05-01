@@ -177,8 +177,7 @@ linters:
         - name: add-constant
           disabled: true
         - name: line-length-limit
-          arguments:
-            - 120
+          disabled: true
         - name: function-result-limit
           arguments:
             - 3

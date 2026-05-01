@@ -2,5 +2,5 @@ package protos
 
 type UseCouponRequest struct {
 	RequestPacket
-	CouponSerial string
+	CouponSerial string `json:",omitempty,omitzero"`
 }
