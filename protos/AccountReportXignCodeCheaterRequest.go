@@ -2,5 +2,5 @@ package protos
 
 type AccountReportXignCodeCheaterRequest struct {
 	RequestPacket
-	ErrorCode string
+	ErrorCode string `json:",omitempty,omitzero"`
 }

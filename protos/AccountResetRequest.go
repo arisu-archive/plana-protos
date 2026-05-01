@@ -2,5 +2,5 @@ package protos
 
 type AccountResetRequest struct {
 	RequestPacket
-	DevId string
+	DevId string `json:",omitempty,omitzero"`
 }

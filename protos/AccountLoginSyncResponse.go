@@ -29,7 +29,7 @@ type AccountLoginSyncResponse struct {
 	MultiFloorRaidSyncResponse               *MultiFloorRaidSyncResponse               `json:",omitempty,omitzero"`
 	MultiFloorRaidLoginResponse              *MultiFloorRaidLoginResponse              `json:",omitempty,omitzero"`
 	FriendCount                              int64                                     `json:",omitempty,omitzero"`
-	FriendCode                               string
+	FriendCode                               string                                    `json:",omitempty,omitzero"`
 	PickupFirstGetHistoryDBs                 []*PickupFirstGetHistoryDB
 	AccountLevelRewardIds                    []int64
 	SNSPostDBs                               []*SNSPostDB

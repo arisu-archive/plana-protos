@@ -2,6 +2,6 @@ package protos
 
 type RaidSearchRequest struct {
 	RequestPacket
-	SecretCode string
+	SecretCode string `json:",omitempty,omitzero"`
 	Tags       []string
 }

@@ -2,5 +2,5 @@ package protos
 
 type AccountNicknameRequest struct {
 	RequestPacket
-	Nickname string
+	Nickname string `json:",omitempty,omitzero"`
 }

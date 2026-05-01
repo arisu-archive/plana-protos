@@ -5,9 +5,9 @@ import (
 )
 
 type ClanMemberDB struct {
-	AccountId                   int64 `json:",omitempty,omitzero"`
-	AccountLevel                int64 `json:",omitempty,omitzero"`
-	AccountNickName             string
+	AccountId                   int64                    `json:",omitempty,omitzero"`
+	AccountLevel                int64                    `json:",omitempty,omitzero"`
+	AccountNickName             string                   `json:",omitempty,omitzero"`
 	ClanDBId                    int64                    `json:",omitempty,omitzero"`
 	RepresentCharacterUniqueId  int64                    `json:",omitempty,omitzero"`
 	RepresentCharacterCostumeId int64                    `json:",omitempty,omitzero"`
