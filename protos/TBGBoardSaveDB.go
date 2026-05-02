@@ -6,15 +6,16 @@ import (
 )
 
 type TBGBoardSaveDB struct {
-	AccountId                      int64                 `json:",omitempty,omitzero"`
-	EventContentId                 int64                 `json:",omitempty,omitzero"`
-	Round                          int32                 `json:",omitempty,omitzero"`
-	ThemaIndex                     int32                 `json:",omitempty,omitzero"`
-	CurrentThemaMapType            flatdata.TBGThemaType `json:",omitempty,omitzero"`
-	MainMap                        *TBGHexaMapDB         `json:",omitempty,omitzero"`
-	HiddenMap                      *TBGHexaMapDB         `json:",omitempty,omitzero"`
-	Player                         *TBGPlayerDB          `json:",omitempty,omitzero"`
-	BestClearRecord                *mapx.OrderedMap[int32, *TBGThemaClearRecord]
-	HiddenTreasureRecord           []int32
-	HiddenPotalOpenConditionRecord []int32
+	AccountId                      int64                                         `json:"aid,omitempty,omitzero"`
+	EventContentId                 int64                                         `json:"ecid,omitempty,omitzero"`
+	Round                          int32                                         `json:"rnd,omitempty,omitzero"`
+	ThemaIndex                     int32                                         `json:"idx,omitempty,omitzero"`
+	CurrentThemaMapType            flatdata.TBGThemaType                         `json:"map_type,omitempty,omitzero"`
+	MainMap                        *TBGHexaMapDB                                 `json:"map_main,omitempty,omitzero"`
+	HiddenMap                      *TBGHexaMapDB                                 `json:"map_hidden,omitempty,omitzero"`
+	Player                         *TBGPlayerDB                                  `json:"usr,omitempty,omitzero"`
+	Encounter                      TBGEncounterDBPoly                            `json:"enc"`
+	BestClearRecord                *mapx.OrderedMap[int32, *TBGThemaClearRecord] `json:"clearlog"`
+	HiddenTreasureRecord           []int32                                       `json:"htr_idx"`
+	HiddenPotalOpenConditionRecord []int32                                       `json:"hcr_idx"`
 }

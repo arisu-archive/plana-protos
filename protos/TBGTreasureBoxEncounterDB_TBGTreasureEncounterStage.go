@@ -1,0 +1,12 @@
+package protos
+
+type TBGTreasureBoxEncounterDB_TBGTreasureEncounterStage int32
+
+const (
+	TBGTreasureBoxEncounterDB_TBGTreasureEncounterStage_None              TBGTreasureBoxEncounterDB_TBGTreasureEncounterStage = 0
+	TBGTreasureBoxEncounterDB_TBGTreasureEncounterStage_PreReceiveReward  TBGTreasureBoxEncounterDB_TBGTreasureEncounterStage = 1
+	TBGTreasureBoxEncounterDB_TBGTreasureEncounterStage_PostReceiveReward TBGTreasureBoxEncounterDB_TBGTreasureEncounterStage = 2
+	TBGTreasureBoxEncounterDB_TBGTreasureEncounterStage_ExitTreasureFake  TBGTreasureBoxEncounterDB_TBGTreasureEncounterStage = 3
+	TBGTreasureBoxEncounterDB_TBGTreasureEncounterStage_ExitToClearThema  TBGTreasureBoxEncounterDB_TBGTreasureEncounterStage = 4
+	TBGTreasureBoxEncounterDB_TBGTreasureEncounterStage_ExitToContinue    TBGTreasureBoxEncounterDB_TBGTreasureEncounterStage = 5
+)

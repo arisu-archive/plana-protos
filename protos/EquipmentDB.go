@@ -7,36 +7,36 @@ import (
 
 type EquipmentDB struct {
 	ConsumableItemBaseDB
-	Level                  EquipmentDB_LevelDefault `json:",omitzero"`
-	Exp                    EquipmentDB_ExpDefault   `json:",omitzero"`
-	Tier                   EquipmentDB_TierDefault  `json:",omitzero"`
-	BoundCharacterServerId int64                    `json:",omitempty,omitzero"`
+	Level                  EquipmentDBLevelDefault `json:",omitzero"`
+	Exp                    EquipmentDBExpDefault   `json:",omitzero"`
+	Tier                   EquipmentDBTierDefault  `json:",omitzero"`
+	BoundCharacterServerId int64                   `json:",omitempty,omitzero"`
 }
 
-type EquipmentDB_LevelDefault int32
+type EquipmentDBLevelDefault int32
 
-func (s EquipmentDB_LevelDefault) IsZero() bool {
-	return s == EquipmentDB_LevelDefault(1)
+func (s EquipmentDBLevelDefault) IsZero() bool {
+	return s == EquipmentDBLevelDefault(1)
 }
 
-type EquipmentDB_ExpDefault int64
+type EquipmentDBExpDefault int64
 
-func (s EquipmentDB_ExpDefault) IsZero() bool {
-	return s == EquipmentDB_ExpDefault(0)
+func (s EquipmentDBExpDefault) IsZero() bool {
+	return s == EquipmentDBExpDefault(0)
 }
 
-type EquipmentDB_TierDefault int32
+type EquipmentDBTierDefault int32
 
-func (s EquipmentDB_TierDefault) IsZero() bool {
-	return s == EquipmentDB_TierDefault(1)
+func (s EquipmentDBTierDefault) IsZero() bool {
+	return s == EquipmentDBTierDefault(1)
 }
 
 func (x *EquipmentDB) UnmarshalJSON(data []byte) error {
 	type aliasEquipmentDB EquipmentDB
 	v := aliasEquipmentDB{
-		Level: EquipmentDB_LevelDefault(1),
-		Exp:   EquipmentDB_ExpDefault(0),
-		Tier:  EquipmentDB_TierDefault(1),
+		Level: EquipmentDBLevelDefault(1),
+		Exp:   EquipmentDBExpDefault(0),
+		Tier:  EquipmentDBTierDefault(1),
 	}
 	if err := json.Unmarshal(data, &v); err != nil {
 		return fmt.Errorf("unmarshal EquipmentDB: %w", err)
