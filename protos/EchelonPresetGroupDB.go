@@ -9,29 +9,29 @@ import (
 )
 
 type EchelonPresetGroupDB struct {
-	GroupIndex    EchelonPresetGroupDB_GroupIndexDefault    `json:",omitzero"`
-	ExtensionType EchelonPresetGroupDB_ExtensionTypeDefault `json:",omitzero"`
-	GroupLabel    string                                    `json:",omitempty,omitzero"`
+	GroupIndex    EchelonPresetGroupDBGroupIndexDefault    `json:",omitzero"`
+	ExtensionType EchelonPresetGroupDBExtensionTypeDefault `json:",omitzero"`
+	GroupLabel    string                                   `json:",omitempty,omitzero"`
 	PresetDBs     *mapx.OrderedMap[int32, *EchelonPresetDB]
 }
 
-type EchelonPresetGroupDB_GroupIndexDefault int32
+type EchelonPresetGroupDBGroupIndexDefault int32
 
-func (s EchelonPresetGroupDB_GroupIndexDefault) IsZero() bool {
-	return s == EchelonPresetGroupDB_GroupIndexDefault(-1)
+func (s EchelonPresetGroupDBGroupIndexDefault) IsZero() bool {
+	return s == EchelonPresetGroupDBGroupIndexDefault(-1)
 }
 
-type EchelonPresetGroupDB_ExtensionTypeDefault flatdata.EchelonExtensionType
+type EchelonPresetGroupDBExtensionTypeDefault flatdata.EchelonExtensionType
 
-func (s EchelonPresetGroupDB_ExtensionTypeDefault) IsZero() bool {
-	return s == EchelonPresetGroupDB_ExtensionTypeDefault(flatdata.EchelonExtensionTypeBase)
+func (s EchelonPresetGroupDBExtensionTypeDefault) IsZero() bool {
+	return s == EchelonPresetGroupDBExtensionTypeDefault(flatdata.EchelonExtensionTypeBase)
 }
 
 func (x *EchelonPresetGroupDB) UnmarshalJSON(data []byte) error {
 	type aliasEchelonPresetGroupDB EchelonPresetGroupDB
 	v := aliasEchelonPresetGroupDB{
-		GroupIndex:    EchelonPresetGroupDB_GroupIndexDefault(-1),
-		ExtensionType: EchelonPresetGroupDB_ExtensionTypeDefault(flatdata.EchelonExtensionTypeBase),
+		GroupIndex:    EchelonPresetGroupDBGroupIndexDefault(-1),
+		ExtensionType: EchelonPresetGroupDBExtensionTypeDefault(flatdata.EchelonExtensionTypeBase),
 	}
 	if err := json.Unmarshal(data, &v); err != nil { //nolint:musttag // alias inherits json tags from the source struct via `type aliasT T`; linter walks the AST and misses the inheritance.
 		return fmt.Errorf("unmarshal EchelonPresetGroupDB: %w", err)
