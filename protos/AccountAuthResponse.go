@@ -2,12 +2,12 @@ package protos
 
 type AccountAuthResponse struct {
 	ResponsePacket
-	CurrentVersion                      int64      `json:",omitempty,omitzero"`
-	MinimumVersion                      int64      `json:",omitempty,omitzero"`
-	IsDevelopment                       bool       `json:",omitempty,omitzero"`
-	BattleValidation                    bool       `json:",omitempty,omitzero"`
-	UpdateRequired                      bool       `json:",omitempty,omitzero"`
-	TTSCdnUri                           string     `json:",omitempty,omitzero"`
+	CurrentVersion                      int64 `json:",omitempty,omitzero"`
+	MinimumVersion                      int64 `json:",omitempty,omitzero"`
+	IsDevelopment                       bool  `json:",omitempty,omitzero"`
+	BattleValidation                    bool  `json:",omitempty,omitzero"`
+	UpdateRequired                      bool  `json:",omitempty,omitzero"`
+	TTSCdnUri                           string
 	AccountDB                           *AccountDB `json:",omitempty,omitzero"`
 	AttendanceBookRewards               []*AttendanceBookReward
 	AttendanceHistoryDBs                []*AttendanceHistoryDB
@@ -18,7 +18,7 @@ type AccountAuthResponse struct {
 	BiweeklyProductMail                 []*ParcelInfo
 	WeeklyProductParcel                 []*ParcelInfo
 	WeeklyProductMail                   []*ParcelInfo
-	EncryptedUID                        string                 `json:",omitempty,omitzero"`
+	EncryptedUID                        string
 	AccountRestrictionsDB               *AccountRestrictionsDB `json:",omitempty,omitzero"`
 	IssueAlertInfos                     []*IssueAlertInfoDB
 	DailyRecordDBs                      []*DailyRecordDB
@@ -26,4 +26,7 @@ type AccountAuthResponse struct {
 	IsArenaAnonymous                    bool      `json:",omitempty,omitzero"`
 	AccountLimitedFlashSaleDBs          []*AccountLimitedFlashSaleDB
 	NewlyAddedShopCashIds               []int64
+	WelcomeCampaignInfo                 *WelcomeCampaignDB `json:",omitempty,omitzero"`
+	StreakRecordDBs                     []*StreakRecordDB
+	SeasonRecordDBs                     []*AttendanceSeasonRecordDB
 }

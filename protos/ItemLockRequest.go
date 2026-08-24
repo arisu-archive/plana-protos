@@ -1,7 +1,11 @@
 package protos
 
+import (
+	"github.com/arisu-archive/plana-flatbuffers/go/flatdata"
+)
+
 type ItemLockRequest struct {
 	RequestPacket
-	TargetServerId int64 `json:",omitempty,omitzero"`
-	IsLocked       bool  `json:",omitempty,omitzero"`
+	TargetType flatdata.ParcelType `json:",omitempty,omitzero"`
+	UniqueIds  []int64
 }

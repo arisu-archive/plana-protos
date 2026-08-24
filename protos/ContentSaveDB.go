@@ -13,11 +13,11 @@ type ContentSaveDB struct {
 	LastEnterStageEchelonNumber int64  `json:",omitempty,omitzero"`
 	StageEntranceFee            []*ParcelInfo
 	EnemyKillCountByUniqueId    *mapx.OrderedMap[int64, int64]
-	TacticClearTimeMscSum       int64  `json:",omitempty,omitzero"`
-	AccountLevelWhenCreateDB    int64  `json:",omitempty,omitzero"`
-	BIEchelon                   string `json:",omitempty,omitzero"`
-	BIEchelon1                  string `json:",omitempty,omitzero"`
-	BIEchelon2                  string `json:",omitempty,omitzero"`
-	BIEchelon3                  string `json:",omitempty,omitzero"`
-	BIEchelon4                  string `json:",omitempty,omitzero"`
+	TacticClearTimeMscSum       int64 `json:",omitempty,omitzero"`
+	AccountLevelWhenCreateDB    int64 `json:",omitempty,omitzero"`
+	BIEchelon                   string
+	BIEchelon1                  string
+	BIEchelon2                  string
+	BIEchelon3                  string
+	BIEchelon4                  string
 }

@@ -13,6 +13,7 @@ type CommonCheatResponse struct {
 	ScenarioHistoryDBs      []*ScenarioHistoryDB
 	ScenarioGroupHistoryDBs []*ScenarioGroupHistoryDB
 	EmblemDBs               []*EmblemDB
+	StudentFrameDBs         []*StudentFrameDB
 	AttendanceBookRewards   []*AttendanceBookReward
 	AttendanceHistoryDBs    []*AttendanceHistoryDB
 	StickerDBs              []*StickerDB
@@ -20,5 +21,5 @@ type CommonCheatResponse struct {
 	ScenarioCollectionDBs   []*ScenarioCollectionDB
 	SNSPostDBs              []*SNSPostDB
 	CheatFlags              CheatFlags `json:",omitempty,omitzero"`
-	DebugPopupMessage       string     `json:",omitempty,omitzero"`
+	DebugPopupMessage       string
 }

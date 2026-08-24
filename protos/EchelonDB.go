@@ -12,6 +12,7 @@ type EchelonDB struct {
 	LeaderServerId                int64                         `json:",omitempty,omitzero"`
 	MainSlotServerIds             []int64
 	SupportSlotServerIds          []int64
+	APCSlotServerIds              []int64
 	TSSInteractionServerId        int64                       `json:",omitempty,omitzero"`
 	UsingFlag                     EchelonDB_EchelonStatusFlag `json:",omitempty,omitzero"`
 	SkillCardMulliganCharacterIds []int64

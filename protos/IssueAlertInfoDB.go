@@ -7,6 +7,6 @@ type IssueAlertInfoDB struct {
 	EndDate        MxTime             `json:",omitempty,omitzero"`
 	DisplayOrder   byte               `json:",omitempty,omitzero"`
 	PublishId      int32              `json:",omitempty,omitzero"`
-	Url            string             `json:",omitempty,omitzero"`
-	Subject        string             `json:",omitempty,omitzero"`
+	Url            string
+	Subject        string
 }

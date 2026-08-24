@@ -6,13 +6,13 @@ import (
 
 type RaidBattleDB struct {
 	ContentType        flatdata.ContentType
-	RaidUniqueId       int64  `json:",omitempty,omitzero"`
-	RaidBossIndex      int32  `json:",omitempty,omitzero"`
-	CurrentBossHP      int64  `json:",omitempty,omitzero"`
-	CurrentBossGroggy  int64  `json:",omitempty,omitzero"`
-	CurrentBossAIPhase int64  `json:",omitempty,omitzero"`
-	BIEchelon          string `json:",omitempty,omitzero"`
-	IsClear            bool   `json:",omitempty,omitzero"`
+	RaidUniqueId       int64 `json:",omitempty,omitzero"`
+	RaidBossIndex      int32 `json:",omitempty,omitzero"`
+	CurrentBossHP      int64 `json:",omitempty,omitzero"`
+	CurrentBossGroggy  int64 `json:",omitempty,omitzero"`
+	CurrentBossAIPhase int64 `json:",omitempty,omitzero"`
+	BIEchelon          string
+	IsClear            bool `json:",omitempty,omitzero"`
 	RaidMembers        RaidMemberCollection
 	SubPartsHPs        []int64
 }

@@ -2,7 +2,8 @@ package protos
 
 type CafeGetInfoResponse struct {
 	ResponsePacket
-	CafeDB       *CafeDB `json:",omitempty,omitzero"`
-	CafeDBs      []*CafeDB
-	FurnitureDBs []*FurnitureDB
+	CafeDB                   *CafeDB `json:",omitempty,omitzero"`
+	CafeDBs                  []*CafeDB
+	FurnitureDBs             []*FurnitureDB
+	LockedFurnitureUniqueIds []int64
 }

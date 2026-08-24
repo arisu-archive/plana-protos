@@ -2,12 +2,12 @@ package protos
 
 type QueuingGetAuthTicketResponse struct {
 	ResponsePacket
-	EncryptedKey              string `json:",omitempty,omitzero"`
-	SignedKey                 string `json:",omitempty,omitzero"`
-	EncryptedIV               string `json:",omitempty,omitzero"`
-	SignedIV                  string `json:",omitempty,omitzero"`
-	EncryptedSqlCipherKey     string `json:",omitempty,omitzero"`
-	EncryptedSqlCipherLicense string `json:",omitempty,omitzero"`
-	Birth                     string `json:",omitempty,omitzero"`
-	AuthTicket                string `json:",omitempty,omitzero"`
+	EncryptedKey              string
+	SignedKey                 string
+	EncryptedIV               string
+	SignedIV                  string
+	EncryptedSqlCipherKey     string
+	EncryptedSqlCipherLicense string
+	Birth                     string
+	AuthTicket                string
 }
