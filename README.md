@@ -2,7 +2,7 @@
 
 # Plana Protos
 
-[![Yostar Version](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Farisu-archive%2Fplana-protos%2Fmaster%2Fversion.txt&query=%24&prefix=v&style=for-the-badge&logo=googleplay&label=Yostar&color=7d3cc8)](version.txt) [![Go Report Card](https://goreportcard.com/badge/github.com/arisu-archive/plana-protos?style=for-the-badge)](https://goreportcard.com/report/github.com/arisu-archive/plana-protos)
+[![Yostar Version](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Farisu-archive%2Fplana-protos%2Fmaster%2Fversion.txt&query=%24&prefix=v&style=for-the-badge&logo=googleplay&label=Yostar&color=7d3cc8)](version.txt) [![Latest Release](https://img.shields.io/github/v/release/arisu-archive/plana-protos?style=for-the-badge&logo=github&label=Release)](https://github.com/arisu-archive/plana-protos/releases)
 [![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://pkg.go.dev/github.com/arisu-archive/plana-protos/protos) [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
 **Generated Go models for the Japanese Blue Archive network protocol.**
