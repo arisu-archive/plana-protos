@@ -230,11 +230,11 @@ formatters:
         - alias
         - localmodule
     gofumpt:
-      module-path: github.com/arisu-archive/arona-protos
+      module-path: github.com/arisu-archive/plana-protos
       extra-rules: true
     goimports:
       local-prefixes:
-        - github.com/arisu-archive/arona-protos
+        - github.com/arisu-archive/plana-protos
   exclusions:
     generated: lax
     paths:
