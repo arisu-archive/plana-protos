@@ -1,7 +1,7 @@
 name: Generate protocols from Decompiled Code
 on:
   schedule:
-    - cron: "0 */2 * * 3"
+    - cron: "0 */2 * * *"
   workflow_dispatch:
     inputs:
       force_update:
@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
-          ref: develop
+          ref: master
           sparse-checkout: |
             version.txt
           sparse-checkout-cone-mode: false
@@ -85,7 +85,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
-          ref: develop
+          ref: master
           sparse-checkout-cone-mode: false
           fetch-depth: 0
       - name: Setup SSH agent
@@ -120,16 +120,16 @@ jobs:
         uses: EndBug/add-and-commit@v10
         with:
           add: "['./protos', 'version.txt', 'go.mod', 'go.sum']"
-          message: "chore(apk): generate protos for ${{ needs.determine-version.outputs.version }}"
+          message: "feat(apk): generate protos for ${{ needs.determine-version.outputs.version }}"
           default_author: github_actions
           push: true
-          new_branch: chore/generate-protos-${{ needs.determine-version.outputs.version }}
+          new_branch: feat/generate-protos-${{ needs.determine-version.outputs.version }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - name: Create pull request
         run: |
-          gh pr create -B develop -H "chore/generate-protos-${{ needs.determine-version.outputs.version }}" \
-                        --title 'chore(protos): generate protos for ${{ needs.determine-version.outputs.version }}' \
+          gh pr create -B master -H "feat/generate-protos-${{ needs.determine-version.outputs.version }}" \
+                        --title 'feat(protos): generate protos for ${{ needs.determine-version.outputs.version }}' \
                         --body '* Version: ${{ needs.determine-version.outputs.version }}' \
                         --label needs-review \
                         --label auto-release
