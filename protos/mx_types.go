@@ -7,16 +7,6 @@ import (
 	"time"
 )
 
-// ResponsePacket represents a generic response packet structure.
-func (r *ResponsePacket) GetResponsePacket() *ResponsePacket {
-	return r
-}
-
-// SetResponsePacket sets the response packet data.
-func (r *ResponsePacket) SetResponsePacket(nr ResponsePacket) {
-	*r = nr
-}
-
 // MxTime represents a custom time type for MX protocol.
 type MxTime time.Time
 
@@ -34,10 +24,7 @@ func (mt *MxTime) UnmarshalJSON(data []byte) error {
 	s := strings.Trim(string(data), "\"")
 	parsedTime, err := time.Parse("2006-01-02T15:04:05", s)
 	if err != nil {
-		parsedTime, err = time.Parse(time.RFC3339, s)
-		if err != nil {
-			return fmt.Errorf("failed to unmarshal mx time: %w", err)
-		}
+		return fmt.Errorf("failed to unmarshal mx time: %w", err)
 	}
 	*mt = MxTime(parsedTime)
 	return nil

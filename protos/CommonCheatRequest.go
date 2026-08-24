@@ -2,6 +2,6 @@ package protos
 
 type CommonCheatRequest struct {
 	RequestPacket
-	Cheat                 string `json:",omitempty,omitzero"`
+	Cheat                 string
 	CharacterCustomPreset []*CheatCharacterCustomPreset
 }

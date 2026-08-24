@@ -21,4 +21,5 @@ type CharacterDB struct {
 	IsFavorite             bool  `json:",omitempty,omitzero"`
 	EquipmentServerIds     []int64
 	PotentialStats         *mapx.OrderedMap[int32, int32]
+	EngraveFlagByTreeType  *mapx.OrderedMap[int32, int32] `json:"engraveFlagByTreeType"`
 }

@@ -45,6 +45,7 @@ const (
 	Protocol_Character_SetCostume                      Protocol = 2009
 	Protocol_Character_BatchSkillLevelUpdate           Protocol = 2010
 	Protocol_Character_PotentialGrowth                 Protocol = 2011
+	Protocol_Character_AllocateEngraveNode             Protocol = 2012
 	Protocol_Equipment_List                            Protocol = 3000
 	Protocol_Equipment_Sell                            Protocol = 3001
 	Protocol_Equipment_Equip                           Protocol = 3002
@@ -98,6 +99,7 @@ const (
 	Protocol_Mission_MultipleGuideReward               Protocol = 8004
 	Protocol_Mission_Sync                              Protocol = 8005
 	Protocol_Mission_GuideMissionSeasonList            Protocol = 8006
+	Protocol_Mission_NotifyUIEntered                   Protocol = 8007
 	Protocol_Attendance_List                           Protocol = 9000
 	Protocol_Attendance_Check                          Protocol = 9001
 	Protocol_Attendance_Reward                         Protocol = 9002
@@ -118,6 +120,9 @@ const (
 	Protocol_Shop_PickupSelectionGachaGet              Protocol = 10014
 	Protocol_Shop_PickupSelectionGachaSet              Protocol = 10015
 	Protocol_Shop_PickupSelectionGachaBuy              Protocol = 10016
+	Protocol_Shop_GachaWishListGet                     Protocol = 10017
+	Protocol_Shop_GachaWishListSet                     Protocol = 10018
+	Protocol_Shop_GachaWishListBuy                     Protocol = 10019
 	Protocol_Recipe_Craft                              Protocol = 11000
 	Protocol_MemoryLobby_List                          Protocol = 12000
 	Protocol_MemoryLobby_SetMain                       Protocol = 12001
@@ -384,6 +389,12 @@ const (
 	Protocol_MiniGame_CCGGiveupGame                    Protocol = 35043
 	Protocol_MiniGame_CCGRerollReward                  Protocol = 35044
 	Protocol_MiniGame_CCGBuyPerk                       Protocol = 35045
+	Protocol_MiniGame_JankenLobby                      Protocol = 35046
+	Protocol_MiniGame_JankenSetEchelon                 Protocol = 35047
+	Protocol_MiniGame_JankenEquipmentLevelUp           Protocol = 35048
+	Protocol_MiniGame_JankenEnterBattle                Protocol = 35049
+	Protocol_MiniGame_JankenEndBattle                  Protocol = 35050
+	Protocol_MiniGame_JankenScoreReward                Protocol = 35051
 	Protocol_Notification_LobbyCheck                   Protocol = 36000
 	Protocol_Notification_EventContentReddotCheck      Protocol = 36001
 	Protocol_ProofToken_RequestQuestion                Protocol = 37000
@@ -460,6 +471,9 @@ const (
 	Protocol_Attachment_EmblemList                     Protocol = 46001
 	Protocol_Attachment_EmblemAcquire                  Protocol = 46002
 	Protocol_Attachment_EmblemAttach                   Protocol = 46003
+	Protocol_Attachment_StudentFrameList               Protocol = 46004
+	Protocol_Attachment_StudentFrameAcquire            Protocol = 46005
+	Protocol_Attachment_StudentFrameAttach             Protocol = 46006
 	Protocol_Sticker_Login                             Protocol = 47000
 	Protocol_Sticker_Lobby                             Protocol = 47001
 	Protocol_Sticker_UseSticker                        Protocol = 47002
@@ -487,10 +501,26 @@ const (
 	Protocol_BattlePass_MissionMultipleReward          Protocol = 51005
 	Protocol_BattlePass_Check                          Protocol = 51006
 	Protocol_DailyRecord_Reward                        Protocol = 52000
+	Protocol_DailyRecord_ClaimStreakReward             Protocol = 52001
+	Protocol_DailyRecord_SupplementSeasonAttendance    Protocol = 52002
+	Protocol_DailyRecord_ClaimSeasonReward             Protocol = 52003
+	Protocol_DailyRecord_RestoreStreakAttendance       Protocol = 52004
 	Protocol_Option_Save                               Protocol = 53000
 	Protocol_PermanentRaid_Lobby                       Protocol = 54000
 	Protocol_PermanentRaid_EnterBattle                 Protocol = 54001
 	Protocol_PermanentRaid_EndBattle                   Protocol = 54002
 	Protocol_PermanentRaid_GiveUp                      Protocol = 54003
 	Protocol_SNS_PostRead                              Protocol = 55000
+	Protocol_WelcomeCampaign_GetInfo                   Protocol = 56000
+	Protocol_WelcomeCampaign_ReceiveEnterReward        Protocol = 56001
+	Protocol_WelcomeCampaign_AttendanceReward          Protocol = 56002
+	Protocol_WelcomeCampaign_MissionList               Protocol = 56003
+	Protocol_WelcomeCampaign_MissionReward             Protocol = 56004
+	Protocol_WelcomeCampaign_MissionMultipleReward     Protocol = 56005
+	Protocol_WelcomeCampaign_Check                     Protocol = 56006
+	Protocol_TacticalRelay_Lobby                       Protocol = 57000
+	Protocol_TacticalRelay_RankingInfo                 Protocol = 57001
+	Protocol_TacticalRelay_EnterBattle                 Protocol = 57002
+	Protocol_TacticalRelay_EndBattle                   Protocol = 57003
+	Protocol_TacticalRelay_GiveUp                      Protocol = 57004
 )

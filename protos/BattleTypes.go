@@ -22,6 +22,7 @@ const (
 	BattleTypes_EliminateRaid       BattleTypes = 16384
 	BattleTypes_Raid                BattleTypes = 26624
 	BattleTypes_MultiFloorRaid      BattleTypes = 32768
+	BattleTypes_TacticalRelay       BattleTypes = 65536
 	BattleTypes_MinigameDefense     BattleTypes = 1048576
 	BattleTypes_Arena               BattleTypes = 2097152
 	BattleTypes_PvP                 BattleTypes = 2097152

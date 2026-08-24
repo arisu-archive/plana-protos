@@ -1,9 +1,9 @@
 package protos
 
 type FriendDB struct {
-	AccountId                   int64                `json:",omitempty,omitzero"`
-	Level                       int32                `json:",omitempty,omitzero"`
-	Nickname                    string               `json:",omitempty,omitzero"`
+	AccountId                   int64 `json:",omitempty,omitzero"`
+	Level                       int32 `json:",omitempty,omitzero"`
+	Nickname                    string
 	LastConnectTime             MxTime               `json:",omitempty,omitzero"`
 	RepresentCharacterUniqueId  int64                `json:",omitempty,omitzero"`
 	RepresentCharacterCostumeId int64                `json:",omitempty,omitzero"`

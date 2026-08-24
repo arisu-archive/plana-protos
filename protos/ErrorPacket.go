@@ -2,6 +2,6 @@ package protos
 
 type ErrorPacket struct {
 	ResponsePacket
-	Reason    string          `json:",omitempty,omitzero"`
+	Reason    string
 	ErrorCode WebAPIErrorCode `json:",omitempty,omitzero"`
 }

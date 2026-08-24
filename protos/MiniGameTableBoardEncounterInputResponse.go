@@ -3,7 +3,6 @@ package protos
 type MiniGameTableBoardEncounterInputResponse struct {
 	ResponsePacket
 	SaveDB                    *TBGBoardSaveDB `json:",omitempty,omitzero"`
-	EncounterDB               TBGEncounterDBPoly
 	PlayerDiceResult          []int32
 	PlayerAddDotEffectResult  *int32             `json:",omitempty,omitzero"`
 	PlayerDicePlayResult      *TBGDiceRollResult `json:",omitempty,omitzero"`

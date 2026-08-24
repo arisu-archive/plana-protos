@@ -2,6 +2,6 @@ package protos
 
 type ClanChatLogRequest struct {
 	RequestPacket
-	Channel  string `json:",omitempty,omitzero"`
+	Channel  string
 	FromDate MxTime `json:",omitempty,omitzero"`
 }

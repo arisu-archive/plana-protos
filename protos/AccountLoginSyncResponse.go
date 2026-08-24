@@ -24,13 +24,16 @@ type AccountLoginSyncResponse struct {
 	EventContentPermanentListResponse        *EventContentPermanentListResponse        `json:",omitempty,omitzero"`
 	AttachmentGetResponse                    *AttachmentGetResponse                    `json:",omitempty,omitzero"`
 	AttachmentEmblemListResponse             *AttachmentEmblemListResponse             `json:",omitempty,omitzero"`
+	AttachmentStudentFrameListResponse       *AttachmentStudentFrameListResponse       `json:",omitempty,omitzero"`
 	ContentSweepMultiSweepPresetListResponse *ContentSweepMultiSweepPresetListResponse `json:",omitempty,omitzero"`
 	StickerListResponse                      *StickerLoginResponse                     `json:",omitempty,omitzero"`
 	MultiFloorRaidSyncResponse               *MultiFloorRaidSyncResponse               `json:",omitempty,omitzero"`
 	MultiFloorRaidLoginResponse              *MultiFloorRaidLoginResponse              `json:",omitempty,omitzero"`
+	TacticalRelayLobbyResponse               *TacticalRelayLobbyResponse               `json:",omitempty,omitzero"`
 	FriendCount                              int64                                     `json:",omitempty,omitzero"`
-	FriendCode                               string                                    `json:",omitempty,omitzero"`
+	FriendCode                               string
 	PickupFirstGetHistoryDBs                 []*PickupFirstGetHistoryDB
 	AccountLevelRewardIds                    []int64
 	SNSPostDBs                               []*SNSPostDB
+	ShopRecruitMileageHistoryDBs             []*ShopRecruitMileageHistoryDB
 }

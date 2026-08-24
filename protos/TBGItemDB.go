@@ -1,5 +1,5 @@
 package protos
 
 type TBGItemDB struct {
-	UniqueId int64 `json:"id,omitempty,omitzero"`
+	UniqueId int64 `json:",omitempty,omitzero"`
 }
