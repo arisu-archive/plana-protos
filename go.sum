@@ -1,11 +1,11 @@
 github.com/Masterminds/semver/v3 v3.4.0 h1:Zog+i5UMtVoCU8oKka5P7i9q9HgrJeGzI9SA1Xbatp0=
 github.com/Masterminds/semver/v3 v3.4.0/go.mod h1:4V+yj/TJE1HU9XfppCwVMZq3I84lprf4nC11bSS5beM=
-github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20260501232406-c0b3ccdb8eaa h1:g9JIeO1WB0oyfbmvADNtJgYsFqnm1HkT53qwn6/klak=
-github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20260501232406-c0b3ccdb8eaa/go.mod h1:xVV8J56yx9gEu5a4x/zDMWpYyHuaoKT1pGoVA1za5X8=
+github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20260824210021-d8b78076e87f h1:k2EoijG+Kk4IOVMDBA+pqkbecRyRjgvdH9CMCcZ1Jog=
+github.com/arisu-archive/bluearchive-fbs-utils v0.0.0-20260824210021-d8b78076e87f/go.mod h1:xVV8J56yx9gEu5a4x/zDMWpYyHuaoKT1pGoVA1za5X8=
 github.com/arisu-archive/mapx v1.1.0 h1:P64Cm983i6WhGPiy9m/zHRys08/MRpvwdy/eRgDxoQ8=
 github.com/arisu-archive/mapx v1.1.0/go.mod h1:5LgeqXk+dI+G0pVFd6e9W0XN4OZNnNt04mb2MsBmAX0=
-github.com/arisu-archive/plana-flatbuffers v0.14.0 h1:XnIbYi1iEHOFFDtrv/uE7rsGSfjTZLPlpbKvockhe8k=
-github.com/arisu-archive/plana-flatbuffers v0.14.0/go.mod h1:WybmdBUybYUXMTKa7t5jpJa/+bNHsOhwGUz2/DybeQc=
+github.com/arisu-archive/plana-flatbuffers v0.15.0 h1:5KTZjtdXampOxDbWoqoGwD1EtJlmsiYaOLtXsCEdecw=
+github.com/arisu-archive/plana-flatbuffers v0.15.0/go.mod h1:KFIvLBiDtH2EJIgZ1fZAgAmeyHnxudR3X4MHsr7w3OE=
 github.com/go-logr/logr v1.4.3 h1:CjnDlHq8ikf6E492q6eKboGOC0T8CDaOvkHCIg8idEI=
 github.com/go-logr/logr v1.4.3/go.mod h1:9T104GzyrTigFIr8wt5mBrctHMim0Nb2HLGrmQ40KvY=
 github.com/go-task/slim-sprig/v3 v3.0.0 h1:sUs3vkvUymDpBKi3qH1YSqBQk9+9D/8M2mN1vB6EwHI=
