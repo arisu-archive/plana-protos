@@ -144,6 +144,7 @@ const (
 	WebAPIErrorCode_EchelonEmptyNotAcceptable                      WebAPIErrorCode = 5006
 	WebAPIErrorCode_EchelonPresetInvalidSave                       WebAPIErrorCode = 5007
 	WebAPIErrorCode_EchelonPresetLabelLengthInvalid                WebAPIErrorCode = 5008
+	WebAPIErrorCode_EchelonSystemAssistInfoInvalid                 WebAPIErrorCode = 5009
 	WebAPIErrorCode_CampaignStageNotOpen                           WebAPIErrorCode = 6000
 	WebAPIErrorCode_CampaignStagePlayLimit                         WebAPIErrorCode = 6001
 	WebAPIErrorCode_CampaignStageEnterFail                         WebAPIErrorCode = 6002
@@ -389,6 +390,8 @@ const (
 	WebAPIErrorCode_BillingRewardParcelNotFound                    WebAPIErrorCode = 30030
 	WebAPIErrorCode_BillingCannotAcquireLock                       WebAPIErrorCode = 30031
 	WebAPIErrorCode_BillingPendingProductExists                    WebAPIErrorCode = 30032
+	WebAPIErrorCode_BillingNotStepupProduct                        WebAPIErrorCode = 30033
+	WebAPIErrorCode_BillingStepupInvalidStep                       WebAPIErrorCode = 30034
 	WebAPIErrorCode_ClanNotFound                                   WebAPIErrorCode = 31000
 	WebAPIErrorCode_ClanSearchFailed                               WebAPIErrorCode = 31001
 	WebAPIErrorCode_ClanEmptySearchString                          WebAPIErrorCode = 31002

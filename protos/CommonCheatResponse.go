@@ -10,14 +10,14 @@ type CommonCheatResponse struct {
 	GearDBs                 []*GearDB
 	CostumeDBs              []*CostumeDB
 	ItemDBs                 []*ItemDB
-	ScenarioHistoryDBs      []*ScenarioHistoryDB
+	ScenarioHistoryIds      []int64
 	ScenarioGroupHistoryDBs []*ScenarioGroupHistoryDB
 	EmblemDBs               []*EmblemDB
 	StudentFrameDBs         []*StudentFrameDB
 	AttendanceBookRewards   []*AttendanceBookReward
 	AttendanceHistoryDBs    []*AttendanceHistoryDB
 	StickerDBs              []*StickerDB
-	MemoryLobbyDBs          []*MemoryLobbyDB
+	MemoryLobbyIds          []int64
 	ScenarioCollectionDBs   []*ScenarioCollectionDB
 	SNSPostDBs              []*SNSPostDB
 	CheatFlags              CheatFlags `json:",omitempty,omitzero"`

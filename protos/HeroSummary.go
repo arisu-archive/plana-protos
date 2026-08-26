@@ -20,6 +20,7 @@ type HeroSummary struct {
 	ExtraPassiveSkillLevel    int32 `json:",omitempty,omitzero"`
 	FavorRank                 int32 `json:",omitempty,omitzero"`
 	IsApc                     bool  `json:",omitempty,omitzero"`
+	IsSystemAssist            bool  `json:",omitempty,omitzero"`
 	StatSnapshotCollection    StatSnapshotCollection
 	HPRateBefore              int64                     `json:",omitempty,omitzero"`
 	HPRateAfter               int64                     `json:",omitempty,omitzero"`

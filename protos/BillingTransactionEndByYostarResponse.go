@@ -9,4 +9,5 @@ type BillingTransactionEndByYostarResponse struct {
 	MonthlyProductList    []*MonthlyProductPurchaseDB
 	BattlePassInfo        *BattlePassInfoDB `json:",omitempty,omitzero"`
 	BattlePassProductList []*BattlePassProductPurchaseDB
+	StepupPackageDB       *ProductStepupPackageDB `json:",omitempty,omitzero"`
 }

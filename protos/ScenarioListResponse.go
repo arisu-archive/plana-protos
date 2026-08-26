@@ -2,7 +2,7 @@ package protos
 
 type ScenarioListResponse struct {
 	ResponsePacket
-	ScenarioHistoryDBs      []*ScenarioHistoryDB
+	ScenarioHistoryIds      []int64
 	ScenarioGroupHistoryDBs []*ScenarioGroupHistoryDB
 	ScenarioCollectionDBs   []*ScenarioCollectionDB
 }
