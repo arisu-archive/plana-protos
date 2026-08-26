@@ -2,12 +2,12 @@ package protos
 
 type AccountAuthResponse struct {
 	ResponsePacket
-	CurrentVersion                      int64 `json:",omitempty,omitzero"`
-	MinimumVersion                      int64 `json:",omitempty,omitzero"`
-	IsDevelopment                       bool  `json:",omitempty,omitzero"`
-	BattleValidation                    bool  `json:",omitempty,omitzero"`
-	UpdateRequired                      bool  `json:",omitempty,omitzero"`
-	TTSCdnUri                           string
+	CurrentVersion                      int64      `json:",omitempty,omitzero"`
+	MinimumVersion                      int64      `json:",omitempty,omitzero"`
+	IsDevelopment                       bool       `json:",omitempty,omitzero"`
+	BattleValidation                    bool       `json:",omitempty,omitzero"`
+	UpdateRequired                      bool       `json:",omitempty,omitzero"`
+	TTSCdnUri                           string     `json:",omitempty,omitzero"`
 	AccountDB                           *AccountDB `json:",omitempty,omitzero"`
 	AttendanceBookRewards               []*AttendanceBookReward
 	AttendanceHistoryDBs                []*AttendanceHistoryDB
@@ -18,7 +18,7 @@ type AccountAuthResponse struct {
 	BiweeklyProductMail                 []*ParcelInfo
 	WeeklyProductParcel                 []*ParcelInfo
 	WeeklyProductMail                   []*ParcelInfo
-	EncryptedUID                        string
+	EncryptedUID                        string                 `json:",omitempty,omitzero"`
 	AccountRestrictionsDB               *AccountRestrictionsDB `json:",omitempty,omitzero"`
 	IssueAlertInfos                     []*IssueAlertInfoDB
 	DailyRecordDBs                      []*DailyRecordDB

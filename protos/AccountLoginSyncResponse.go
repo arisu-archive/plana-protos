@@ -31,7 +31,7 @@ type AccountLoginSyncResponse struct {
 	MultiFloorRaidLoginResponse              *MultiFloorRaidLoginResponse              `json:",omitempty,omitzero"`
 	TacticalRelayLobbyResponse               *TacticalRelayLobbyResponse               `json:",omitempty,omitzero"`
 	FriendCount                              int64                                     `json:",omitempty,omitzero"`
-	FriendCode                               string
+	FriendCode                               string                                    `json:",omitempty,omitzero"`
 	PickupFirstGetHistoryDBs                 []*PickupFirstGetHistoryDB
 	AccountLevelRewardIds                    []int64
 	SNSPostDBs                               []*SNSPostDB

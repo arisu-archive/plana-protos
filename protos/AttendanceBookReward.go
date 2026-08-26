@@ -6,13 +6,13 @@ import (
 )
 
 type AttendanceBookReward struct {
-	UniqueId          int64                   `json:",omitempty,omitzero"`
-	Type              flatdata.AttendanceType `json:",omitempty,omitzero"`
-	TargetGroup       flatdata.TargetGroup    `json:",omitempty,omitzero"`
-	DisplayOrder      int64                   `json:",omitempty,omitzero"`
-	AccountLevelLimit int64                   `json:",omitempty,omitzero"`
-	Title             string
-	TitleImagePath    string
+	UniqueId          int64                        `json:",omitempty,omitzero"`
+	Type              flatdata.AttendanceType      `json:",omitempty,omitzero"`
+	TargetGroup       flatdata.TargetGroup         `json:",omitempty,omitzero"`
+	DisplayOrder      int64                        `json:",omitempty,omitzero"`
+	AccountLevelLimit int64                        `json:",omitempty,omitzero"`
+	Title             string                       `json:",omitempty,omitzero"`
+	TitleImagePath    string                       `json:",omitempty,omitzero"`
 	CountRule         flatdata.AttendanceCountRule `json:",omitempty,omitzero"`
 	CountReset        flatdata.AttendanceResetType `json:",omitempty,omitzero"`
 	BookSize          int64                        `json:",omitempty,omitzero"`

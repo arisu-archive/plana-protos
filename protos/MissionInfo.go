@@ -28,12 +28,12 @@ type MissionInfo struct {
 	CompleteConditionMissionIds   []int64
 	CompleteConditionMissionCount int64 `json:",omitempty,omitzero"`
 	CompleteConditionRewards      []*ParcelInfo
-	RewardIcon                    string
+	RewardIcon                    string `json:",omitempty,omitzero"`
 	Rewards                       []*ParcelInfo
 	DateAutoRefer                 flatdata.ContentType
-	ToastImagePath                string
-	DisplayOrder                  int64 `json:",omitempty,omitzero"`
-	HasFollowingMission           bool  `json:",omitempty,omitzero"`
+	ToastImagePath                string `json:",omitempty,omitzero"`
+	DisplayOrder                  int64  `json:",omitempty,omitzero"`
+	HasFollowingMission           bool   `json:",omitempty,omitzero"`
 	Shortcuts                     []string
 	ChallengeStageId              int64 `json:",omitempty,omitzero"`
 	IsCompleteExtensionTime       bool  `json:",omitempty,omitzero"`

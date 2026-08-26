@@ -6,6 +6,6 @@ import (
 
 type ClanCreateRequest struct {
 	RequestPacket
-	ClanNickName   string
+	ClanNickName   string                  `json:",omitempty,omitzero"`
 	ClanJoinOption flatdata.ClanJoinOption `json:",omitempty,omitzero"`
 }

@@ -6,10 +6,10 @@ import (
 
 type BillingTransactionStartByYostarResponse struct {
 	ResponsePacket
-	PurchaseCount             int64  `json:",omitempty,omitzero"`
-	PurchaseResetDate         MxTime `json:",omitempty,omitzero"`
-	PurchaseOrderId           int64  `json:",omitempty,omitzero"`
-	MXSeedKey                 string
+	PurchaseCount             int64                      `json:",omitempty,omitzero"`
+	PurchaseResetDate         MxTime                     `json:",omitempty,omitzero"`
+	PurchaseOrderId           int64                      `json:",omitempty,omitzero"`
+	MXSeedKey                 string                     `json:",omitempty,omitzero"`
 	PurchaseServerTag         flatdata.PurchaseServerTag `json:",omitempty,omitzero"`
-	PurchaseServerCallbackUrl string
+	PurchaseServerCallbackUrl string                     `json:",omitempty,omitzero"`
 }
