@@ -11,6 +11,7 @@ type RaidTeamSettingDB struct {
 	EchelonExtensionType          flatdata.EchelonExtensionType `json:",omitempty,omitzero"`
 	MainCharacterDBs              []*RaidCharacterDB
 	SupportCharacterDBs           []*RaidCharacterDB
+	APCCharacterDBs               []*RaidCharacterDB
 	SkillCardMulliganCharacterIds []int64
 	TSSInteractionUniqueId        int64 `json:",omitempty,omitzero"`
 	LeaderCharacterUniqueId       int64 `json:",omitempty,omitzero"`

@@ -9,4 +9,5 @@ type CharacterAllocateEngraveNodeRequest struct {
 	TargetCharacterDBId int64                    `json:",omitempty,omitzero"`
 	TreeType            flatdata.EngraveTreeType `json:",omitempty,omitzero"`
 	NodeIndex           int32                    `json:",omitempty,omitzero"`
+	ReplaceInfos        []*SelectTicketReplaceInfo
 }

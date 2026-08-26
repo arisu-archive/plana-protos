@@ -9,6 +9,7 @@ type MailReceiveSemiPermanentResponse struct {
 	AppliedBattlePassProductPurchaseDB *BattlePassProductPurchaseDB `json:",omitempty,omitzero"`
 	AppliedBattlePassInfoDB            *BattlePassInfoDB            `json:",omitempty,omitzero"`
 	BattlePassInfoDBs                  []*BattlePassInfoDB
-	StreakRecordDB                     *StreakRecordDB  `json:",omitempty,omitzero"`
-	PurchaseCountDBWithMonthlyProduct  *PurchaseCountDB `json:",omitempty,omitzero"`
+	StreakRecordDB                     *StreakRecordDB         `json:",omitempty,omitzero"`
+	PurchaseCountDBWithMonthlyProduct  *PurchaseCountDB        `json:",omitempty,omitzero"`
+	StepupPackageDB                    *ProductStepupPackageDB `json:",omitempty,omitzero"`
 }

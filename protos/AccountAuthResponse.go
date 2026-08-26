@@ -29,4 +29,5 @@ type AccountAuthResponse struct {
 	WelcomeCampaignInfo                 *WelcomeCampaignDB `json:",omitempty,omitzero"`
 	StreakRecordDBs                     []*StreakRecordDB
 	SeasonRecordDBs                     []*AttendanceSeasonRecordDB
+	StepupPackageDBs                    []*ProductStepupPackageDB
 }

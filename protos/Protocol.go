@@ -65,6 +65,7 @@ const (
 	Protocol_Echelon_PresetList                        Protocol = 5002
 	Protocol_Echelon_PresetSave                        Protocol = 5003
 	Protocol_Echelon_PresetGroupRename                 Protocol = 5004
+	Protocol_Echelon_BatchSave                         Protocol = 5005
 	Protocol_Campaign_List                             Protocol = 6000
 	Protocol_Campaign_EnterMainStage                   Protocol = 6001
 	Protocol_Campaign_ConfirmMainStage                 Protocol = 6002
