@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.0](https://github.com/arisu-archive/plana-protos/compare/v1.6.0...v1.7.0) (2026-08-26)
+
+
+### Features
+
+* **apk:** generate protos for 1.72.452186 ([#56](https://github.com/arisu-archive/plana-protos/issues/56)) ([b4a511b](https://github.com/arisu-archive/plana-protos/commit/b4a511b58755cd98493cbb6c1e57be31804d949e))
+* **apk:** generate protos for 1.72.452186 ([#58](https://github.com/arisu-archive/plana-protos/issues/58)) ([2cf974a](https://github.com/arisu-archive/plana-protos/commit/2cf974a7efc483a825fe59e5493ad8946555cb43))
+
 ## [1.6.0](https://github.com/arisu-archive/plana-protos/compare/v1.5.5...v1.6.0) (2026-08-24)
 
 
