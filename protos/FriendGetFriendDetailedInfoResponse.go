@@ -2,12 +2,12 @@ package protos
 
 type FriendGetFriendDetailedInfoResponse struct {
 	ResponsePacket
-	Nickname                       string
-	Level                          int64 `json:",omitempty,omitzero"`
-	ClanName                       string
-	Comment                        string
-	FriendCount                    int64 `json:",omitempty,omitzero"`
-	FriendCode                     string
+	Nickname                       string                 `json:",omitempty,omitzero"`
+	Level                          int64                  `json:",omitempty,omitzero"`
+	ClanName                       string                 `json:",omitempty,omitzero"`
+	Comment                        string                 `json:",omitempty,omitzero"`
+	FriendCount                    int64                  `json:",omitempty,omitzero"`
+	FriendCode                     string                 `json:",omitempty,omitzero"`
 	RepresentCharacterUniqueId     int64                  `json:",omitempty,omitzero"`
 	RepresentCharacterCostumeId    int64                  `json:",omitempty,omitzero"`
 	CharacterCount                 int64                  `json:",omitempty,omitzero"`

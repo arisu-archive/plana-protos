@@ -1,7 +1,7 @@
 package protos
 
 type MinigameRhythmSummary struct {
-	MusicTitle           string
+	MusicTitle           string  `json:",omitempty,omitzero"`
 	PatternDifficulty    int32   `json:",omitempty,omitzero"`
 	IsSpecial            bool    `json:",omitempty,omitzero"`
 	TotalNoteCount       int32   `json:",omitempty,omitzero"`

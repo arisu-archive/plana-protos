@@ -15,7 +15,7 @@ type RaidDB struct {
 	End                           MxTime `json:",omitempty,omitzero"`
 	PlayerCount                   int64  `json:",omitempty,omitzero"`
 	Tags                          []int32
-	SecretCode                    string
+	SecretCode                    string              `json:",omitempty,omitzero"`
 	RaidState                     flatdata.RaidStatus `json:",omitempty,omitzero"`
 	IsPractice                    bool                `json:",omitempty,omitzero"`
 	RaidBossDBs                   []*RaidBossDB

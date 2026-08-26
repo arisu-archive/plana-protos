@@ -2,6 +2,6 @@ package protos
 
 type QueuingGetCryptoKeysRequest struct {
 	RequestPacket
-	ClientGeneratedKey string
-	ClientGeneratedIV  string
+	ClientGeneratedKey string `json:",omitempty,omitzero"`
+	ClientGeneratedIV  string `json:",omitempty,omitzero"`
 }
