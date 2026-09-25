@@ -33,4 +33,6 @@ type ParcelResultDB struct {
 	AdditionalAccountExp            int64 `json:",omitempty,omitzero"`
 	NewbieBoostAccountExp           int64 `json:",omitempty,omitzero"`
 	ProductMonthlyBoostAccountExp   int64 `json:",omitempty,omitzero"`
+	BaseMasterCoin                  int64 `json:",omitempty,omitzero"`
+	AdditionalMasterCoin            int64 `json:",omitempty,omitzero"`
 }

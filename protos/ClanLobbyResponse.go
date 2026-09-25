@@ -7,4 +7,5 @@ type ClanLobbyResponse struct {
 	DefaultExposedClanDBs []*ClanDB
 	AccountClanMemberDB   *ClanMemberDB `json:",omitempty,omitzero"`
 	ClanMemberDBs         []*ClanMemberDB
+	KickHistoryAccountIds []int64
 }

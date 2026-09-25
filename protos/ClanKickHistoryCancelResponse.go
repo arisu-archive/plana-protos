@@ -1,6 +1,6 @@
 package protos
 
-type ClanKickResponse struct {
+type ClanKickHistoryCancelResponse struct {
 	ResponsePacket
 	KickHistoryAccountIds []int64
 }

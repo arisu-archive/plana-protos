@@ -16,7 +16,7 @@ type RaidLobbyInfoDB struct {
 	PlayingRaidDB                 *RaidDB `json:",omitempty,omitzero"`
 	ReceiveRewardIds              []int64
 	ReceiveLimitedRewardIds       []int64
-	ParticipateCharacterServerIds []int64
+	ParticipateCharacterUniqueIds []int64
 	PlayableHighestDifficulty     *mapx.OrderedMap[string, flatdata.Difficulty]
 	SweepPointByRaidUniqueId      *mapx.OrderedMap[int64, int64]
 	SeasonStartDate               MxTime             `json:",omitempty,omitzero"`

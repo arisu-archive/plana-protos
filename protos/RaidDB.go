@@ -19,8 +19,10 @@ type RaidDB struct {
 	RaidState                     flatdata.RaidStatus `json:",omitempty,omitzero"`
 	IsPractice                    bool                `json:",omitempty,omitzero"`
 	RaidBossDBs                   []*RaidBossDB
-	ParticipateCharacterServerIds *mapx.OrderedMap[int64, []int64]
+	ParticipateCharacterUniqueIds *mapx.OrderedMap[int64, []int64]
 	IsEnterRoom                   bool  `json:",omitempty,omitzero"`
 	AccountLevelWhenCreateDB      int64 `json:",omitempty,omitzero"`
 	ClanAssistUsed                bool  `json:",omitempty,omitzero"`
+	ResetCount                    int64 `json:",omitempty,omitzero"`
+	CanIgnoreAssistRentalFee      bool  `json:",omitempty,omitzero"`
 }

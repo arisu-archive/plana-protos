@@ -9,5 +9,4 @@ type TacticalRelayEnterBattleRequest struct {
 	SeasonId                      int64 `json:",omitempty,omitzero"`
 	StageId                       int64 `json:",omitempty,omitzero"`
 	AssistUseInfosByEchelonNumber *mapx.OrderedMap[int64, *ClanAssistUseInfo]
-	AssistUseInfos                []*ClanAssistUseInfo
 }

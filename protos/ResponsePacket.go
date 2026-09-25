@@ -12,5 +12,6 @@ type ResponsePacket struct {
 	EventMissionProgressDBDict      *mapx.OrderedMap[int64, []*MissionProgressDB]
 	BattlePassMissionProgressDBDict *mapx.OrderedMap[int64, []*MissionProgressDB]
 	WelcomeCampaignProgressDBDict   *mapx.OrderedMap[int64, []*MissionProgressDB]
+	CharacterAdaptationProgress     *mapx.OrderedMap[int64, []*MissionProgressDB]
 	StaticOpenConditions            *mapx.OrderedMap[string, OpenConditionLockReason]
 }

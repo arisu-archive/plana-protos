@@ -6,10 +6,8 @@ import (
 
 type TacticalRelayEndBattleRequest struct {
 	RequestPacket
-	SeasonId           int64          `json:",omitempty,omitzero"`
-	StageId            int64          `json:",omitempty,omitzero"`
-	EchelonId          int64          `json:",omitempty,omitzero"`
-	Summary            *BattleSummary `json:",omitempty,omitzero"`
-	AssistUseInfos     []*ClanAssistUseInfo
+	SeasonId           int64                    `json:",omitempty,omitzero"`
+	StageId            int64                    `json:",omitempty,omitzero"`
+	Summary            *BattleSummary           `json:",omitempty,omitzero"`
 	SelectedRewardType flatdata.EngraveTreeType `json:",omitempty,omitzero"`
 }
