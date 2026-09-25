@@ -6,7 +6,7 @@ toolchain go1.26.2
 
 require (
 	github.com/arisu-archive/mapx v1.1.0
-	github.com/arisu-archive/plana-flatbuffers v0.15.0
+	github.com/arisu-archive/plana-flatbuffers v0.17.0
 )
 
 require (
