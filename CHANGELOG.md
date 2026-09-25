@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.8.0](https://github.com/arisu-archive/plana-protos/compare/v1.7.0...v1.8.0) (2026-09-25)
+
+
+### Features
+
+* **apk:** generate protos for 1.73.459696 ([#61](https://github.com/arisu-archive/plana-protos/issues/61)) ([400fc3e](https://github.com/arisu-archive/plana-protos/commit/400fc3e67ce1178eae14074928173ed20133bd7c))
+
+
+### Bug Fixes
+
+* **deps:** bump plana-flatbuffers to latest ([#59](https://github.com/arisu-archive/plana-protos/issues/59)) ([3f5ef57](https://github.com/arisu-archive/plana-protos/commit/3f5ef57f05b27e22a92c699930624bb3568a58dc))
+
 ## [1.7.0](https://github.com/arisu-archive/plana-protos/compare/v1.6.0...v1.7.0) (2026-08-26)
 
 
