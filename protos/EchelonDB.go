@@ -17,4 +17,5 @@ type EchelonDB struct {
 	UsingFlag                     EchelonDB_EchelonStatusFlag `json:",omitempty,omitzero"`
 	SkillCardMulliganCharacterIds []int64
 	CombatStyleIndex              []int32
+	AdaptationInfo                *SystemAssistInfo `json:",omitempty,omitzero"`
 }

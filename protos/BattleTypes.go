@@ -3,7 +3,7 @@ package protos
 type BattleTypes int32
 
 const (
-	BattleTypes_PvE                 BattleTypes = -301988865
+	BattleTypes_PvE                 BattleTypes = -301595649
 	BattleTypes_All                 BattleTypes = -1
 	BattleTypes_None                BattleTypes = 0
 	BattleTypes_Adventure           BattleTypes = 1
@@ -13,7 +13,6 @@ const (
 	BattleTypes_WeekDungeonChaserB  BattleTypes = 16
 	BattleTypes_WeekDungeonChaserC  BattleTypes = 32
 	BattleTypes_WeekDungeonFindGift BattleTypes = 64
-	BattleTypes_WeekDungeon         BattleTypes = 124
 	BattleTypes_EventContent        BattleTypes = 128
 	BattleTypes_TutorialAdventure   BattleTypes = 256
 	BattleTypes_Profiling           BattleTypes = 512
@@ -23,6 +22,9 @@ const (
 	BattleTypes_Raid                BattleTypes = 26624
 	BattleTypes_MultiFloorRaid      BattleTypes = 32768
 	BattleTypes_TacticalRelay       BattleTypes = 65536
+	BattleTypes_WeekDungeonChaserD  BattleTypes = 131072
+	BattleTypes_WeekDungeonChaserE  BattleTypes = 262144
+	BattleTypes_WeekDungeon         BattleTypes = 393340
 	BattleTypes_MinigameDefense     BattleTypes = 1048576
 	BattleTypes_Arena               BattleTypes = 2097152
 	BattleTypes_PvP                 BattleTypes = 2097152

@@ -298,6 +298,7 @@ const (
 	WebAPIErrorCode_RaidSeasonOpen                                 WebAPIErrorCode = 18025
 	WebAPIErrorCode_RaidRoomIsAlreadyClose                         WebAPIErrorCode = 18026
 	WebAPIErrorCode_RaidRankingNotFound                            WebAPIErrorCode = 18027
+	WebAPIErrorCode_RaidRoomAlreadyReset                           WebAPIErrorCode = 18028
 	WebAPIErrorCode_WeekDungeonInfoNotFound                        WebAPIErrorCode = 19000
 	WebAPIErrorCode_WeekDungeonNotOpenToday                        WebAPIErrorCode = 19001
 	WebAPIErrorCode_WeekDungeonBattleWinnerInvalid                 WebAPIErrorCode = 19002
@@ -420,6 +421,7 @@ const (
 	WebAPIErrorCode_ClanAssistAlreadyUsedInRaidRoom                WebAPIErrorCode = 31025
 	WebAPIErrorCode_ClanAssistAlreadyUsedInTimeAttackDungeonRoom   WebAPIErrorCode = 31026
 	WebAPIErrorCode_ClanAssistEchelonHasAssistOnly                 WebAPIErrorCode = 31027
+	WebAPIErrorCode_ClanKickedMember                               WebAPIErrorCode = 31028
 	WebAPIErrorCode_PaymentInvalidSign                             WebAPIErrorCode = 32000
 	WebAPIErrorCode_PaymentInvalidSeed1                            WebAPIErrorCode = 32001
 	WebAPIErrorCode_PaymentInvalidSeed2                            WebAPIErrorCode = 32002
@@ -644,6 +646,18 @@ const (
 	WebAPIErrorCode_StudentFrameAttachFailed                       WebAPIErrorCode = 57001
 	WebAPIErrorCode_StudentFrameCannotReceive                      WebAPIErrorCode = 57002
 	WebAPIErrorCode_StudentFramePassCheckIsEmpty                   WebAPIErrorCode = 57003
+	WebAPIErrorCode_CharacterAdaptationSeasonNotOpened             WebAPIErrorCode = 58000
+	WebAPIErrorCode_CharacterAdaptationInvalidCharacter            WebAPIErrorCode = 58001
+	WebAPIErrorCode_CharacterAdaptationProgressOrderNotSatisfied   WebAPIErrorCode = 58002
+	WebAPIErrorCode_CharacterAdaptationAlreadyInProgress           WebAPIErrorCode = 58003
+	WebAPIErrorCode_CharacterAdaptationAlreadyReceived             WebAPIErrorCode = 58004
+	WebAPIErrorCode_CharacterAdaptationStartDeniedByAssist         WebAPIErrorCode = 58005
+	WebAPIErrorCode_CharacterAdaptationStartDeniedByArenaDefence   WebAPIErrorCode = 58006
+	WebAPIErrorCode_CharacterAdaptationNotInProgress               WebAPIErrorCode = 58007
+	WebAPIErrorCode_CharacterAdaptationGrowthStepNotCleared        WebAPIErrorCode = 58008
+	WebAPIErrorCode_CharacterAdaptationAlreadyMaxStep              WebAPIErrorCode = 58009
+	WebAPIErrorCode_ClanAssistDeniedByCharacterAdaptation          WebAPIErrorCode = 58010
+	WebAPIErrorCode_EchelonDeniedByCharacterAdaptation             WebAPIErrorCode = 58011
 	WebAPIErrorCode_FieldDataNotFound                              WebAPIErrorCode = 60000
 	WebAPIErrorCode_FieldInteracionFailed                          WebAPIErrorCode = 60001
 	WebAPIErrorCode_FieldQuestClearFailed                          WebAPIErrorCode = 60002

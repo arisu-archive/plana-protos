@@ -12,5 +12,5 @@ type PermanentRaidBattleHistoryDB struct {
 	AssistCharacterDBId           int64               `json:",omitempty,omitzero"`
 	RaidBattleDB                  *RaidBattleDB       `json:",omitempty,omitzero"`
 	RaidBossDBs                   []*RaidBossDB
-	ParticipateCharacterServerIds []int64
+	ParticipateCharacterUniqueIds []int64
 }

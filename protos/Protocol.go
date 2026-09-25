@@ -157,6 +157,7 @@ const (
 	Protocol_Raid_Sweep                                Protocol = 17019
 	Protocol_Raid_GetBestTeam                          Protocol = 17020
 	Protocol_Raid_RankingIndex                         Protocol = 17021
+	Protocol_Raid_Reset                                Protocol = 17022
 	Protocol_SkipHistory_List                          Protocol = 18000
 	Protocol_SkipHistory_Save                          Protocol = 18001
 	Protocol_Scenario_List                             Protocol = 19000
@@ -180,6 +181,7 @@ const (
 	Protocol_Scenario_Portal                           Protocol = 19018
 	Protocol_Scenario_RestartMainStage                 Protocol = 19019
 	Protocol_Scenario_SkipMainStage                    Protocol = 19020
+	Protocol_Scenario_Collection                       Protocol = 19021
 	Protocol_Cafe_Get                                  Protocol = 20000
 	Protocol_Cafe_Ack                                  Protocol = 20001
 	Protocol_Cafe_Deploy                               Protocol = 20002
@@ -277,6 +279,8 @@ const (
 	Protocol_Clan_ChatLog                              Protocol = 28018
 	Protocol_Clan_Check                                Protocol = 28019
 	Protocol_Clan_AllAssistList                        Protocol = 28020
+	Protocol_Clan_KickHistoryCancel                    Protocol = 28021
+	Protocol_Clan_KickHistoryList                      Protocol = 28022
 	Protocol_Billing_TransactionStartByYostar          Protocol = 29000
 	Protocol_Billing_TransactionEndByYostar            Protocol = 29001
 	Protocol_Billing_PurchaseListByYostar              Protocol = 29002
@@ -335,8 +339,12 @@ const (
 	Protocol_EventContent_ClueSearchGetInfo            Protocol = 30051
 	Protocol_EventContent_ClueSearchSubmit             Protocol = 30052
 	Protocol_EventContent_ClueSearchRoundComplete      Protocol = 30053
+	Protocol_EventContent_ClueSearchInvestigate        Protocol = 30054
+	Protocol_EventContent_ClueSearchReveal             Protocol = 30055
+	Protocol_EventContent_ClueSearchBatchSubmit        Protocol = 30056
 	Protocol_TTS_GetFile                               Protocol = 31000
 	Protocol_ContentLog_UIOpenStatistics               Protocol = 32000
+	Protocol_ContentLog_BannerClickLog                 Protocol = 32001
 	Protocol_MomoTalk_OutLine                          Protocol = 33000
 	Protocol_MomoTalk_MessageList                      Protocol = 33001
 	Protocol_MomoTalk_Read                             Protocol = 33002
@@ -468,6 +476,7 @@ const (
 	Protocol_EliminateRaid_RankingReward               Protocol = 45010
 	Protocol_EliminateRaid_LimitedReward               Protocol = 45011
 	Protocol_EliminateRaid_RankingIndex                Protocol = 45012
+	Protocol_EliminateRaid_Reset                       Protocol = 45013
 	Protocol_Attachment_Get                            Protocol = 46000
 	Protocol_Attachment_EmblemList                     Protocol = 46001
 	Protocol_Attachment_EmblemAcquire                  Protocol = 46002
@@ -524,4 +533,8 @@ const (
 	Protocol_TacticalRelay_EnterBattle                 Protocol = 57002
 	Protocol_TacticalRelay_EndBattle                   Protocol = 57003
 	Protocol_TacticalRelay_GiveUp                      Protocol = 57004
+	Protocol_CharacterAdaptation_Sync                  Protocol = 58000
+	Protocol_CharacterAdaptation_Start                 Protocol = 58001
+	Protocol_CharacterAdaptation_GrowthStep            Protocol = 58002
+	Protocol_CharacterAdaptation_Receive               Protocol = 58003
 )
