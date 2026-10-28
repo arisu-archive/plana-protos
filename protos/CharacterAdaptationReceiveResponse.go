@@ -5,4 +5,5 @@ type CharacterAdaptationReceiveResponse struct {
 	CharacterAdaptationDB *CharacterAdaptationDB `json:",omitempty,omitzero"`
 	ParcelResult          *ParcelResultDB        `json:",omitempty,omitzero"`
 	ReturnParcels         []*ParcelInfo
+	EquipmentDBs          []*EquipmentDB
 }

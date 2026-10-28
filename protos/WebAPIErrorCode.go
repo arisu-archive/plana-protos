@@ -209,6 +209,9 @@ const (
 	WebAPIErrorCode_GachaWishNotContainCharacter                   WebAPIErrorCode = 10028
 	WebAPIErrorCode_GachaWishNotSelected                           WebAPIErrorCode = 10029
 	WebAPIErrorCode_GachaWishDataInvalid                           WebAPIErrorCode = 10030
+	WebAPIErrorCode_NormalGachaCategoryNotAllowed                  WebAPIErrorCode = 10031
+	WebAPIErrorCode_UnownedGachaDataNotFound                       WebAPIErrorCode = 10032
+	WebAPIErrorCode_UnownedGachaDataInvalid                        WebAPIErrorCode = 10033
 	WebAPIErrorCode_RecipeCraftNoData                              WebAPIErrorCode = 11000
 	WebAPIErrorCode_RecipeCraftInsufficientIngredients             WebAPIErrorCode = 11001
 	WebAPIErrorCode_RecipeCraftDataError                           WebAPIErrorCode = 11002
@@ -515,6 +518,12 @@ const (
 	WebAPIErrorCode_MiniGameJankenConditionNotSatisfied            WebAPIErrorCode = 37041
 	WebAPIErrorCode_MiniGameJankenEchelonNotSet                    WebAPIErrorCode = 37042
 	WebAPIErrorCode_MiniGameJankenInvalidScore                     WebAPIErrorCode = 37043
+	WebAPIErrorCode_MiniGameTankStageNotOpen                       WebAPIErrorCode = 37044
+	WebAPIErrorCode_MiniGameTankCharacterNotOpen                   WebAPIErrorCode = 37045
+	WebAPIErrorCode_MiniGameTankSweepNotOpen                       WebAPIErrorCode = 37046
+	WebAPIErrorCode_MiniGameTankStageNotClear                      WebAPIErrorCode = 37047
+	WebAPIErrorCode_MiniGameTankInvalidBossId                      WebAPIErrorCode = 37048
+	WebAPIErrorCode_MiniGameTankCharacterLevelMax                  WebAPIErrorCode = 37049
 	WebAPIErrorCode_ProofTokenNotSubmitted                         WebAPIErrorCode = 38000
 	WebAPIErrorCode_SchoolDungeonInfoNotFound                      WebAPIErrorCode = 39000
 	WebAPIErrorCode_SchoolDungeonNotOpened                         WebAPIErrorCode = 39001
