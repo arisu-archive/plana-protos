@@ -66,6 +66,7 @@ const (
 	Protocol_Echelon_PresetSave                        Protocol = 5003
 	Protocol_Echelon_PresetGroupRename                 Protocol = 5004
 	Protocol_Echelon_BatchSave                         Protocol = 5005
+	Protocol_Echelon_Suggestion                        Protocol = 5006
 	Protocol_Campaign_List                             Protocol = 6000
 	Protocol_Campaign_EnterMainStage                   Protocol = 6001
 	Protocol_Campaign_ConfirmMainStage                 Protocol = 6002
@@ -124,6 +125,8 @@ const (
 	Protocol_Shop_GachaWishListGet                     Protocol = 10017
 	Protocol_Shop_GachaWishListSet                     Protocol = 10018
 	Protocol_Shop_GachaWishListBuy                     Protocol = 10019
+	Protocol_Shop_GachaHistory                         Protocol = 10020
+	Protocol_Shop_UnownedStudentTicketGachaBuy         Protocol = 10021
 	Protocol_Recipe_Craft                              Protocol = 11000
 	Protocol_MemoryLobby_List                          Protocol = 12000
 	Protocol_MemoryLobby_SetMain                       Protocol = 12001
@@ -404,6 +407,11 @@ const (
 	Protocol_MiniGame_JankenEnterBattle                Protocol = 35049
 	Protocol_MiniGame_JankenEndBattle                  Protocol = 35050
 	Protocol_MiniGame_JankenScoreReward                Protocol = 35051
+	Protocol_MiniGame_TankRaceLobby                    Protocol = 35052
+	Protocol_MiniGame_TankRaceEndStage                 Protocol = 35053
+	Protocol_MiniGame_TankRaceLevelUp                  Protocol = 35054
+	Protocol_MiniGame_TankRaceSweep                    Protocol = 35055
+	Protocol_MiniGame_TankRaceEndFreeStage             Protocol = 35056
 	Protocol_Notification_LobbyCheck                   Protocol = 36000
 	Protocol_Notification_EventContentReddotCheck      Protocol = 36001
 	Protocol_ProofToken_RequestQuestion                Protocol = 37000
