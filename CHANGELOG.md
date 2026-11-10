@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.1](https://github.com/arisu-archive/plana-protos/compare/v1.9.0...v1.9.1) (2026-11-10)
+
+
+### Bug Fixes
+
+* update download URL for decompiled zip file ([d67d046](https://github.com/arisu-archive/plana-protos/commit/d67d0468827431fb544d5ad8ec86bbaabc0ee5f4))
+
 ## [1.9.0](https://github.com/arisu-archive/plana-protos/compare/v1.8.0...v1.9.0) (2026-10-28)
 
 
